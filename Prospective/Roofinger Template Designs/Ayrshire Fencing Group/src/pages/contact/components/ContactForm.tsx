@@ -101,22 +101,16 @@ export const ContactForm = () => {
               Select Service...
             </option>
             <option
-              value="Bespoke Fencing"
+              value="Fencing"
               className="font-normal items-center box-border caret-transparent gap-x-2 min-h-6 min-w-6 gap-y-2"
             >
-              Bespoke Fencing
+              Fencing
             </option>
             <option
-              value="Sheds & Gates"
+              value="Fence Repairs"
               className="font-normal items-center box-border caret-transparent gap-x-2 min-h-6 min-w-6 gap-y-2"
             >
-              Sheds & Gates
-            </option>
-            <option
-              value="Trellis"
-              className="font-normal items-center box-border caret-transparent gap-x-2 min-h-6 min-w-6 gap-y-2"
-            >
-              Trellis
+              Fence Repairs
             </option>
             <option
               value="Decking"
@@ -125,16 +119,22 @@ export const ContactForm = () => {
               Decking
             </option>
             <option
-              value="Palisade Fencing"
+              value="Gates"
               className="font-normal items-center box-border caret-transparent gap-x-2 min-h-6 min-w-6 gap-y-2"
             >
-              Palisade Fencing
+              Gates
             </option>
             <option
-              value="Fencing Repairs"
+              value="Sheds"
               className="font-normal items-center box-border caret-transparent gap-x-2 min-h-6 min-w-6 gap-y-2"
             >
-              Fencing Repairs
+              Sheds
+            </option>
+            <option
+              value="Garden Rooms"
+              className="font-normal items-center box-border caret-transparent gap-x-2 min-h-6 min-w-6 gap-y-2"
+            >
+              Garden Rooms
             </option>
           </select>
         </div>

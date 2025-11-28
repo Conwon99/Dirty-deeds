@@ -4,17 +4,23 @@ interface ServiceImageProps {
 
 export const ServiceImage = ({ slug }: ServiceImageProps = {}) => {
   const getImageSrc = () => {
-    if (slug === "decking") {
-      return "/projects/project-4.jpg";
-    }
+    if (slug === "decking") return "/projects/project-4.jpg";
+    if (slug === "fencing") return "/projects/project-1.jpg";
+    if (slug === "fence-repairs") return "/projects/project-2.jpg";
+    if (slug === "gates") return "/projects/project-3.jpg";
+    if (slug === "sheds") return "/projects/project-5.jpg";
+    if (slug === "garden-rooms") return "/projects/project-6.jpg";
     return "/projects/project-1.jpg";
   };
 
   const getImageAlt = () => {
-    if (slug === "decking") {
-      return "Decking service in Ayrshire";
-    }
-    return "Fencing service in Ayrshire";
+    if (slug === "decking") return "Decking service in Ayrshire";
+    if (slug === "fencing") return "Fencing service in Ayrshire";
+    if (slug === "fence-repairs") return "Fence repair service in Ayrshire";
+    if (slug === "gates") return "Gate installation service in Ayrshire";
+    if (slug === "sheds") return "Shed installation service in Ayrshire";
+    if (slug === "garden-rooms") return "Garden room installation service in Ayrshire";
+    return "Service in Ayrshire";
   };
 
   return (

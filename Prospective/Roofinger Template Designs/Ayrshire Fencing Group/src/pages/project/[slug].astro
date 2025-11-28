@@ -9,9 +9,9 @@ import { Footer } from "@/sections/Footer";
 
 export async function getStaticPaths() {
   return [
-    { params: { slug: "fencing-project-one" } },
+    { params: { slug: "wooden-gate-and-fencing" } },
     { params: { slug: "fencing-project-two" } },
-    { params: { slug: "fencing-project-three" } },
+    { params: { slug: "wooden-fencing" } },
     { params: { slug: "decking-project-four" } },
     { params: { slug: "decking-project-five" } },
     { params: { slug: "decking-project-six" } },
@@ -22,10 +22,10 @@ const { slug } = Astro.params;
 ---
 
 <BaseLayout title="Project - Ayrshire Fencing Group">
-    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-white box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
       <Header client:only="react" />
       <Hero slug={slug} client:only="react" />
-      <ProjectContent client:only="react" />
+      <ProjectContent slug={slug} client:only="react" />
       <RelatedProjects client:only="react" />
       <CTASection client:only="react" />
       <Footer client:only="react" />

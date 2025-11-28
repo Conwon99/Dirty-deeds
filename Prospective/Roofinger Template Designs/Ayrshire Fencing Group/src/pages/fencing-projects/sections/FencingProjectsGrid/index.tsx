@@ -10,12 +10,12 @@ export const FencingProjectsGrid = () => {
             className="box-border caret-transparent gap-x-10 grid flex-col auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] gap-y-10 md:gap-x-[70px] md:grid-cols-[1fr_1fr] md:gap-y-[70px]"
           >
             <ProjectCard
-              href="/project/fencing-project-one"
+              href="/project/wooden-gate-and-fencing"
               imageUrl="/projects/project-1.jpg"
-              imageAlt="Fencing Project One"
+              imageAlt="Wooden Gate and Fencing"
               imageClassName="transform-none md:scale-[1.00989px]"
               location="Ayrshire"
-              title="Fencing Project One"
+              title="Wooden Gate and Fencing"
             />
             <ProjectCard
               href="/project/fencing-project-two"
@@ -25,11 +25,11 @@ export const FencingProjectsGrid = () => {
               title="Fencing Project Two"
             />
             <ProjectCard
-              href="/project/fencing-project-three"
+              href="/project/wooden-fencing"
               imageUrl="/projects/project-3.jpg"
-              imageAlt="Fencing Project Three"
+              imageAlt="Wooden Fencing"
               location="Ayrshire"
-              title="Fencing Project Three"
+              title="Wooden Fencing"
             />
           </div>
         </div>

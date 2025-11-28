@@ -8,7 +8,7 @@ export const NavbarLogo = () => {
       <img
         src="/logo.png"
         alt="Ayrshire Fencing Group Logo"
-        className="box-border caret-transparent inline-block h-10 max-w-full w-full md:h-12 lg:h-14 scale-[1.2] md:scale-[1.3] lg:scale-[1.4] origin-left"
+        className="box-border caret-transparent inline-block h-20 max-w-full w-full md:h-24 lg:h-28 scale-[1.7] md:scale-[1.9] lg:scale-[2.1] origin-left"
       />
     </a>
   );

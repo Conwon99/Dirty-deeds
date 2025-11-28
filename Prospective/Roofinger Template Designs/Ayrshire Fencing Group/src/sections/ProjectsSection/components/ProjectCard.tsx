@@ -25,8 +25,8 @@ export const ProjectCard = (props: ProjectCardProps) => {
           alt={props.imageAlt || ""}
           className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full"
         />
-        <div className="absolute bg-white box-border caret-transparent pr-2.5 pb-2.5 rounded-br-[20px] left-[0%] top-[0%] md:pr-[15px] md:pb-[15px]">
-          <div className="text-gray-900 text-xs font-bold items-center bg-white box-border caret-transparent gap-x-1.5 flex justify-start leading-[16.8px] gap-y-1.5 px-2.5 py-1 rounded-[10px] left-2.5 top-2.5 md:text-sm md:leading-[19.6px] md:pr-5 md:py-2 md:left-auto md:top-auto">
+        <div className="absolute bg-gray-800 box-border caret-transparent pr-2.5 pb-2.5 rounded-br-[20px] left-[0%] top-[0%] md:pr-[15px] md:pb-[15px]">
+          <div className="text-white text-xs font-bold items-center bg-gray-800 box-border caret-transparent gap-x-1.5 flex justify-start leading-[16.8px] gap-y-1.5 px-2.5 py-1 rounded-[10px] left-2.5 top-2.5 md:text-sm md:leading-[19.6px] md:pr-5 md:py-2 md:left-auto md:top-auto">
             <img
               src={
                 props.locationIconUrl ||
@@ -45,7 +45,8 @@ export const ProjectCard = (props: ProjectCardProps) => {
               "https://c.animaapp.com/mhooxuovKXaEfR/assets/67a32569be90004c73f6cf4e_bf4df3c7f28098d382f9ca48f7190044_shape-03.svg"
             }
             alt={props.shapeIconAlt || "Shape 03"}
-            className="absolute box-border caret-transparent h-5 max-w-full w-5 -right-5 top-[0%] brightness-0 invert"
+            className="absolute box-border caret-transparent h-5 max-w-full w-5 -right-5 top-[0%]"
+            style={{ filter: 'brightness(0) saturate(100%) invert(20%)' }}
           />
           <img
             src={
@@ -53,12 +54,13 @@ export const ProjectCard = (props: ProjectCardProps) => {
               "https://c.animaapp.com/mhooxuovKXaEfR/assets/67a32569be90004c73f6cf4e_bf4df3c7f28098d382f9ca48f7190044_shape-03.svg"
             }
             alt={props.shapeIconAlt || "Shape 03"}
-            className="absolute bottom-[-19px] box-border caret-transparent h-5 max-w-full w-5 left-[0%] brightness-0 invert"
+            className="absolute bottom-[-19px] box-border caret-transparent h-5 max-w-full w-5 left-[0%]"
+            style={{ filter: 'brightness(0) saturate(100%) invert(20%)' }}
           />
         </div>
       </div>
       <div className="box-border caret-transparent">
-        <h3 className="text-gray-900 text-xl font-bold box-border caret-transparent leading-[26.4px] sm:text-[22px] md:text-[26px] md:leading-[31.2px]">
+        <h3 className="text-white text-xl font-bold box-border caret-transparent leading-[26.4px] sm:text-[22px] md:text-[26px] md:leading-[31.2px]">
           {props.title}
         </h3>
       </div>

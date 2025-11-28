@@ -6,17 +6,17 @@ export type ReviewCardProps = {
 
 export const ReviewCard = (props: ReviewCardProps) => {
   return (
-    <div className="bg-slate-200 box-border caret-transparent flex flex-col gap-y-4 max-w-full overflow-hidden p-5 rounded-[20px] md:p-[30px] md:gap-y-5">
+    <div className="bg-gray-800 box-border caret-transparent flex flex-col gap-y-4 max-w-full overflow-hidden p-5 rounded-[20px] md:p-[30px] md:gap-y-5">
       <div className="box-border caret-transparent">
         {props.isRecommendation && (
-          <div className="text-orange-500 text-sm font-medium box-border caret-transparent mb-2 md:text-base">
+          <div className="text-green-500 text-sm font-medium box-border caret-transparent mb-2 md:text-base">
             ★ Recommended
           </div>
         )}
-        <div className="text-gray-900 text-lg font-semibold box-border caret-transparent leading-6 mb-2 md:text-xl md:leading-7">
+        <div className="text-white text-lg font-semibold box-border caret-transparent leading-6 mb-2 md:text-xl md:leading-7">
           {props.author}
         </div>
-        <p className="text-gray-700 text-base box-border caret-transparent leading-6 md:text-lg md:leading-7">
+        <p className="text-gray-200 text-base box-border caret-transparent leading-6 md:text-lg md:leading-7">
           "{props.text}"
         </p>
       </div>
@@ -24,7 +24,7 @@ export const ReviewCard = (props: ReviewCardProps) => {
         {[...Array(5)].map((_, i) => (
           <svg
             key={i}
-            className="text-orange-500 h-5 w-5"
+            className="text-green-500 h-5 w-5"
             fill="currentColor"
             viewBox="0 0 20 20"
           >

@@ -1,36 +1,42 @@
 const projectHeroImages: Record<
   string,
-  { src: string; alt: string; projectNumber: string }
+  { src: string; alt: string; projectNumber: string; imagePrefix: string }
 > = {
-  "fencing-project-one": {
+  "wooden-gate-and-fencing": {
     src: "/projects/project-1.jpg",
-    alt: "Fencing project completed in Ayrshire",
+    alt: "Wooden gate and fencing project completed in Ayrshire",
     projectNumber: "001",
+    imagePrefix: "wooden-gate-fencing",
   },
   "fencing-project-two": {
     src: "/projects/project-2.jpg",
     alt: "Fencing project completed in Ayrshire",
     projectNumber: "002",
+    imagePrefix: "project-2",
   },
-  "fencing-project-three": {
+  "wooden-fencing": {
     src: "/projects/project-3.jpg",
-    alt: "Fencing project completed in Ayrshire",
+    alt: "Wooden fencing project completed in Ayrshire",
     projectNumber: "003",
+    imagePrefix: "wooden-fencing",
   },
   "decking-project-four": {
     src: "/projects/project-4.jpg",
     alt: "Decking project completed in Ayrshire",
     projectNumber: "004",
+    imagePrefix: "project-004",
   },
   "decking-project-five": {
     src: "/projects/project-5.jpg",
     alt: "Decking project completed in Ayrshire",
     projectNumber: "005",
+    imagePrefix: "project-005",
   },
   "decking-project-six": {
     src: "/projects/project-6.jpg",
     alt: "Decking project completed in Ayrshire",
     projectNumber: "006",
+    imagePrefix: "project-006",
   },
 };
 
@@ -42,7 +48,7 @@ export const MainImage = ({ slug }: MainImageProps) => {
 
   const project =
     (slug && projectHeroImages[slug]) ??
-    projectHeroImages["fencing-project-one"];
+    projectHeroImages["wooden-gate-and-fencing"];
 
   return (
     <a
@@ -62,6 +68,13 @@ export const MainImage = ({ slug }: MainImageProps) => {
 export const getProjectNumber = (slug?: string): string => {
   const project =
     (slug && projectHeroImages[slug]) ??
-    projectHeroImages["fencing-project-one"];
+    projectHeroImages["wooden-gate-and-fencing"];
   return project.projectNumber;
+};
+
+export const getProjectImagePrefix = (slug?: string): string => {
+  const project =
+    (slug && projectHeroImages[slug]) ??
+    projectHeroImages["wooden-gate-and-fencing"];
+  return project.imagePrefix || `project-${project.projectNumber}`;
 };

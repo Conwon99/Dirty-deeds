@@ -8,7 +8,7 @@ import { Footer } from "@/sections/Footer";
 
 export const ServicesPage = () => {
   return (
-    <div className="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-white box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+    <div className="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
       <Header />
       <Hero />
       <section className="box-border caret-transparent pt-5 md:pt-0">

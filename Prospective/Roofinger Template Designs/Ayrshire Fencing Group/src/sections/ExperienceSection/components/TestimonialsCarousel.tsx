@@ -30,14 +30,14 @@ export const TestimonialsCarousel = () => {
 
   return (
     <div className="box-border caret-transparent mt-5 md:mt-5 relative">
-      <div className="box-border caret-transparent p-4 bg-slate-100 rounded-lg md:p-5 relative">
+      <div className="box-border caret-transparent p-4 bg-gray-800 rounded-lg md:p-5 relative">
         <button
           onClick={goToPrevious}
-          className="absolute left-2 top-1/2 -translate-y-1/2 items-center bg-white box-border caret-transparent flex h-10 justify-center w-10 rounded-[50%] shadow-md hover:bg-gray-100 transition-colors z-10 md:h-12 md:w-12"
+          className="absolute left-2 top-1/2 -translate-y-1/2 items-center bg-gray-700 box-border caret-transparent flex h-10 justify-center w-10 rounded-[50%] shadow-md hover:bg-gray-600 transition-colors z-10 md:h-12 md:w-12"
           aria-label="Previous testimonial"
         >
           <svg
-            className="box-border caret-transparent h-5 w-5 text-gray-900"
+            className="box-border caret-transparent h-5 w-5 text-white"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -46,10 +46,10 @@ export const TestimonialsCarousel = () => {
           </svg>
         </button>
         <div className="box-border caret-transparent px-10 md:px-12">
-          <p className="text-gray-700 text-base italic box-border caret-transparent leading-6 md:text-lg md:leading-7">
+          <p className="text-gray-200 text-base italic box-border caret-transparent leading-6 md:text-lg md:leading-7">
             "{currentTestimonial.text}"
           </p>
-          <p className="text-gray-900 text-sm font-semibold box-border caret-transparent mt-3 md:text-base">
+          <p className="text-white text-sm font-semibold box-border caret-transparent mt-3 md:text-base">
             - {currentTestimonial.author}
           </p>
         </div>
@@ -59,7 +59,7 @@ export const TestimonialsCarousel = () => {
           aria-label="Next testimonial"
         >
           <svg
-            className="box-border caret-transparent h-5 w-5 text-gray-900"
+            className="box-border caret-transparent h-5 w-5 text-white"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -74,7 +74,7 @@ export const TestimonialsCarousel = () => {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`box-border caret-transparent h-2 w-2 rounded-[50%] transition-colors ${
-              index === currentIndex ? "bg-gray-900" : "bg-gray-300"
+              index === currentIndex ? "bg-white" : "bg-gray-500"
             }`}
             aria-label={`Go to testimonial ${index + 1}`}
           />

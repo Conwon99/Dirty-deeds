@@ -14,7 +14,7 @@ export const FAQItem = (props: FAQItemProps) => {
         onClick={() => setIsOpen(!isOpen)}
         className="items-start box-border caret-transparent gap-x-5 flex justify-between gap-y-5 w-full text-left md:gap-x-[normal] md:gap-y-[normal] hover:opacity-80 transition-opacity"
       >
-        <h3 className="text-gray-900 text-xl font-bold box-border caret-transparent leading-[26px] md:text-[22px] md:leading-[28.6px]">
+        <h3 className="text-white text-xl font-bold box-border caret-transparent leading-[26px] md:text-[22px] md:leading-[28.6px]">
           {props.question}
         </h3>
         <div className="items-center bg-gray-900 box-border caret-transparent flex shrink-0 justify-center min-h-5 w-5 mt-1 rounded-[50%] md:min-h-6 md:w-6 md:mt-0">
@@ -29,11 +29,11 @@ export const FAQItem = (props: FAQItemProps) => {
         </div>
       </button>
       {isOpen && (
-        <div className="mt-4 text-gray-700 text-base box-border caret-transparent leading-7 md:text-lg md:leading-8">
+        <div className="mt-4 text-gray-200 text-base box-border caret-transparent leading-7 md:text-lg md:leading-8">
           {props.answer}
         </div>
       )}
-      <div className="bg-gray-900 box-border caret-transparent h-0.5 opacity-10 w-full mt-5 md:mt-[30px]"></div>
+      <div className="bg-white box-border caret-transparent h-0.5 opacity-20 w-full mt-5 md:mt-[30px]"></div>
     </div>
   );
 };

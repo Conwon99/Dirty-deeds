@@ -4,7 +4,7 @@ export const Logo = () => {
       <a
         href="/"
         aria-label="home"
-        className="relative text-gray-900 box-border caret-transparent block h-10 max-h-10 overflow-visible md:h-12 md:max-h-12 lg:h-14 lg:max-h-14"
+        className="relative text-gray-900 box-border caret-transparent block h-16 max-h-16 overflow-visible md:h-18 md:max-h-18 lg:h-20 lg:max-h-20"
       >
         <img
           src="/logo.png"

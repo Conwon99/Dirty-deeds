@@ -1,0 +1,73 @@
+GOOGLE BUSINESS PROFILE - CATEGORIES & SERVICES
+Ayrshire Fencing Group
+==================================================
+
+PRIMARY CATEGORY:
+• Fence contractor
+
+ADDITIONAL CATEGORIES:
+• Contractor
+• Deck builder
+• Shed builder
+• Landscape designer
+• Construction Company
+
+PENDING CATEGORIES:
+• Fence contractor (PRIMARY)
+• Contractor
+• Deck builder
+• Shed builder
+• Landscape designer
+• Construction Company
+
+ADDITIONAL CATEGORIES SHOWN (Available but not selected):
+○ Garage builder
+○ General Contractor
+○ Landscape architect
+
+==================================================
+
+SERVICES:
+
+• Custom fence construction
+• Fence installation
+• Wood fence installation
+• Fence repair
+• Fence replacement
+• Garden fence installation
+• Composite fencing installation
+• Chainlink fencing installation
+• Decking installation
+• Timber decking
+• Gate installation
+• Shed installation
+
+==================================================
+
+SERVICE-TO-CATEGORY ASSIGNMENTS:
+
+FENCE CONTRACTOR (PRIMARY):
+- Custom fence construction
+- Fence installation
+- Wood fence installation
+- Fence repair
+- Fence replacement
+- Garden fence installation
+- Composite fencing installation
+- Chainlink fencing installation
+- Gate installation
+
+DECK BUILDER:
+- Decking installation
+- Timber decking
+
+SHED BUILDER:
+- Shed installation
+
+==================================================
+
+NOTES:
+- Keep "Fence contractor" as PRIMARY category
+- Do not assign services to generic categories like "Contractor" or "Construction Company"
+- Do not assign services to "Landscape designer" (design-focused, not installation)
+

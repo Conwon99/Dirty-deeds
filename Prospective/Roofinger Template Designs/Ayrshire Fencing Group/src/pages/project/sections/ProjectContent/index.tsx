@@ -1,9 +1,13 @@
 import { ContentSection } from "@/pages/project/sections/ProjectContent/components/ContentSection";
 
-export const ProjectContent = () => {
+interface ProjectContentProps {
+  slug?: string;
+}
+
+export const ProjectContent = ({ slug }: ProjectContentProps) => {
   return (
     <section className="box-border caret-transparent pb-[70px] md:pb-[140px]">
-      <ContentSection />
+      <ContentSection slug={slug} />
     </section>
   );
 };

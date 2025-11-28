@@ -18,12 +18,12 @@ export const ServicesDropdown = ({ onCloseMobileMenu }: ServicesDropdownProps = 
   }, []);
 
   const services = [
-    { name: "Bespoke Fencing", href: "/service/bespoke-fencing" },
+    { name: "Fencing", href: "/service/fencing" },
+    { name: "Fence Repairs", href: "/service/fence-repairs" },
     { name: "Decking", href: "/service/decking" },
-    { name: "Sheds & Gates", href: "/service/sheds-gates" },
-    { name: "Trellis", href: "/service/trellis" },
-    { name: "Palisade Fencing", href: "/service/palisade-fencing" },
-    { name: "Fencing Repairs", href: "/service/fencing-repairs" },
+    { name: "Gates", href: "/service/gates" },
+    { name: "Sheds", href: "/service/sheds" },
+    { name: "Garden Rooms", href: "/service/garden-rooms" },
   ];
 
   const handleLinkClick = () => {
@@ -47,9 +47,9 @@ export const ServicesDropdown = ({ onCloseMobileMenu }: ServicesDropdownProps = 
             setIsOpen(!isOpen);
           }
         }}
-        className="text-slate-900 box-border caret-transparent flex justify-center max-w-full text-center md:text-gray-900 hover:text-orange-500 hover:border-orange-500"
+        className="text-white box-border caret-transparent flex justify-center max-w-full text-center md:text-white hover:text-green-500 hover:border-green-500"
       >
-        <div className="text-slate-900 text-xs box-border caret-transparent leading-4 min-h-0 min-w-0 md:text-gray-900 md:text-sm md:leading-5 lg:text-[15px] lg:leading-6 lg:min-h-[auto] lg:min-w-[auto]">
+        <div className="text-white text-xs box-border caret-transparent leading-4 min-h-0 min-w-0 md:text-white md:text-sm md:leading-5 lg:text-[15px] lg:leading-6 lg:min-h-[auto] lg:min-w-[auto]">
           Services
         </div>
       </a>
@@ -61,7 +61,7 @@ export const ServicesDropdown = ({ onCloseMobileMenu }: ServicesDropdownProps = 
                 key={service.href}
                 href={service.href}
                 onClick={handleLinkClick}
-                className="relative box-border caret-transparent block text-nowrap align-top w-full mb-2 text-sm hover:text-orange-500 hover:decoration-transparent last:mb-0"
+                className="relative box-border caret-transparent block text-nowrap align-top w-full mb-2 text-sm hover:text-green-500 hover:decoration-transparent last:mb-0"
               >
                 {service.name}
               </a>
