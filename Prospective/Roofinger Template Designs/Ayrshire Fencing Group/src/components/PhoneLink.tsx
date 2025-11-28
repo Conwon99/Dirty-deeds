@@ -57,7 +57,7 @@ export const PhoneLink = ({
           <img
             src={iconSrc}
             alt={iconAlt}
-            className={`box-border caret-transparent flex-shrink-0 ${iconSize}`}
+            className={`box-border caret-transparent flex-shrink-0 ${iconSize} ${variant !== "footer" && variant !== "hero" ? "brightness-0" : ""}`}
           />
         );
       })()}

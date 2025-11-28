@@ -14,7 +14,7 @@ export const ContactForm = () => {
         if (errorMessage) errorMessage.classList.add("hidden");
 
         const formData = new FormData(form);
-        formData.append("_website", window.location.href);
+        formData.append("websiteUrl", "www.ayrshirefencinggroup.com");
 
         try {
           const response = await fetch("https://formspree.io/f/mnnkggzv", {
@@ -57,7 +57,7 @@ export const ContactForm = () => {
           Name
         </label>
         <input
-          name="Name"
+          name="name"
           placeholder="Dennis Barrett"
           type="text"
           className="text-gray-900 text-base bg-slate-200 box-border caret-transparent block h-12 leading-[25.6px] align-middle w-full border border-slate-200 mb-2.5 px-5 py-2.5 rounded-[20px] border-solid"
@@ -68,7 +68,7 @@ export const ContactForm = () => {
           Email
         </label>
         <input
-          name="Email"
+          name="email"
           placeholder="your.email@example.com"
           type="email"
           className="text-gray-900 text-base bg-slate-200 box-border caret-transparent block h-12 leading-[25.6px] align-middle w-full border border-slate-200 mb-2.5 px-5 py-2.5 rounded-[20px] border-solid"
@@ -80,7 +80,7 @@ export const ContactForm = () => {
             Phone
           </label>
           <input
-            name="Phone-No"
+            name="phone"
             placeholder="07926 592704"
             type="tel"
             className="text-gray-900 text-base bg-slate-200 box-border caret-transparent block h-12 leading-[25.6px] align-middle w-full border border-slate-200 mb-2.5 px-5 py-2.5 rounded-[20px] border-solid"
@@ -91,7 +91,7 @@ export const ContactForm = () => {
             Select Service
           </label>
           <select
-            name="Field"
+            name="service"
             className="text-base bg-slate-200 caret-transparent block h-12 leading-[normal] align-middle w-full border-slate-200 mb-2.5 px-5 py-2 rounded-[20px]"
           >
             <option
@@ -144,7 +144,7 @@ export const ContactForm = () => {
           Message
         </label>
         <textarea
-          name="Message"
+          name="message"
           placeholder="Tell us about your fencing and decking needs..."
           rows={6}
           className="text-gray-900 text-base bg-slate-200 box-border caret-transparent block leading-[25.6px] align-middle w-full border border-slate-200 mb-2.5 px-5 py-2.5 rounded-[20px] border-solid resize-vertical"

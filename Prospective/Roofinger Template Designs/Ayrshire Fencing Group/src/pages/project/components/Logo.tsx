@@ -8,7 +8,7 @@ export const Logo = () => {
       <img
         src="/logo.png"
         alt="Ayrshire Fencing Group Logo"
-        className="box-border caret-transparent inline-block h-[26px] max-w-full w-full md:h-9"
+        className="box-border caret-transparent inline-block h-6 max-w-full w-full md:h-7"
       />
     </a>
   );

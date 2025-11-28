@@ -10,7 +10,8 @@ export const NavActions = ({ onToggleMobileMenu }: NavActionsProps) => {
       <div className="items-center box-border caret-transparent gap-x-2 hidden min-h-0 min-w-0 md:flex md:min-h-[auto] md:min-w-[auto] md:gap-x-8 lg:gap-x-12 md:flex-nowrap md:whitespace-nowrap">
         <PhoneLink
           iconSrc="https://c.animaapp.com/mhooxuovKXaEfR/assets/670f86de88858acaf330ddd9_phone.svg"
-          iconAlt=""
+          iconAlt="Phone"
+          showIcon={true}
           className="text-gray-900 items-center box-border caret-transparent gap-x-1.5 flex justify-start max-w-full gap-y-1.5 whitespace-nowrap hover:text-orange-500 hover:decoration-transparent hover:border-orange-500 relative z-0"
           displayClassName="box-border caret-transparent text-lg font-medium md:text-xl md:font-semibold lg:text-2xl lg:font-semibold"
         />

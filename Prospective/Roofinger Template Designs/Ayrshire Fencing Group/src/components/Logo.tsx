@@ -4,12 +4,12 @@ export const Logo = () => {
       <a
         href="/"
         aria-label="home"
-        className="relative text-gray-900 box-border caret-transparent block h-12 max-h-12 overflow-visible md:h-16 md:max-h-16 lg:h-20 lg:max-h-20"
+        className="relative text-gray-900 box-border caret-transparent block h-10 max-h-10 overflow-visible md:h-12 md:max-h-12 lg:h-14 lg:max-h-14"
       >
         <img
           src="/logo.png"
           alt="Ayrshire Fencing Group Logo"
-          className="box-border caret-transparent inline-block h-full max-w-full object-contain scale-[1.75] md:scale-[2] lg:scale-[2.25] origin-left"
+          className="box-border caret-transparent inline-block h-full max-w-full object-contain scale-[1.2] md:scale-[1.3] lg:scale-[1.4] origin-left"
         />
       </a>
     </div>

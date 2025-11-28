@@ -10,7 +10,7 @@ export const FooterNewsletter = () => {
         <img
           src="/logo.png"
           alt="Ayrshire Fencing Group Logo"
-          className="box-border caret-transparent inline-block h-[34px] max-w-full w-full md:h-10"
+          className="box-border caret-transparent inline-block h-8 max-w-full w-full md:h-9"
         />
       </a>
       <p className="text-white box-border caret-transparent mb-2.5">

@@ -14,7 +14,7 @@ export const BookingForm = () => {
         if (errorMessage) errorMessage.classList.add("hidden");
 
         const formData = new FormData(form);
-        formData.append("_website", window.location.href);
+        formData.append("websiteUrl", "www.ayrshirefencinggroup.com");
 
         try {
           const response = await fetch("https://formspree.io/f/mnnkggzv", {
@@ -74,7 +74,7 @@ export const BookingForm = () => {
                 Phone
               </label>
               <input
-                name="Phone"
+                name="phone"
                 placeholder="07926 592704"
                 type="tel"
                 className="text-gray-900 text-base bg-amber-400 box-border caret-transparent block h-12 leading-[25.6px] align-middle w-full border border-amber-400 mb-2.5 px-5 py-2.5 rounded-[20px] border-solid"
@@ -85,7 +85,7 @@ export const BookingForm = () => {
                 Message
               </label>
               <textarea
-                name="Message"
+                name="message"
                 placeholder="Your message..."
                 rows={4}
                 className="text-gray-900 text-base bg-amber-400 box-border caret-transparent block leading-[25.6px] align-middle w-full border border-amber-400 mb-2.5 px-5 py-2.5 rounded-[20px] border-solid resize-vertical"
