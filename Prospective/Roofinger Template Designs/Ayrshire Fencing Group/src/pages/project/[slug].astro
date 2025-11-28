@@ -1,0 +1,32 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { Hero } from "@/pages/project/sections/Hero";
+import { ProjectContent } from "@/pages/project/sections/ProjectContent";
+import { RelatedProjects } from "@/pages/project/sections/RelatedProjects";
+import { CTASection } from "@/sections/Footer/components/CTASection";
+import { Footer } from "@/sections/Footer";
+
+export async function getStaticPaths() {
+  return [
+    { params: { slug: "new-roof-with-fascias-soffits" } },
+    { params: { slug: "new-roughcast-job-completed" } },
+    { params: { slug: "complete-roof-renovation" } },
+    { params: { slug: "roof-roughcast-exterior-upgrade" } },
+  ];
+}
+
+const { slug } = Astro.params;
+---
+
+<BaseLayout title="Project - Ayrshire Fencing Group">
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-white box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:only="react" />
+      <Hero slug={slug} client:only="react" />
+      <ProjectContent client:only="react" />
+      <RelatedProjects client:only="react" />
+      <CTASection client:only="react" />
+      <Footer client:only="react" />
+    </div>
+</BaseLayout>
+

@@ -1,0 +1,29 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { Hero } from "@/sections/Hero";
+import { ExperienceSection } from "@/sections/ExperienceSection";
+import { ServicesSection } from "@/sections/ServicesSection";
+import { ProjectsSection } from "@/sections/ProjectsSection";
+import { ReviewsSection } from "@/sections/ReviewsSection";
+import { VideoSection } from "@/sections/VideoSection";
+import { FAQSection } from "@/sections/FAQSection";
+import { CTASection } from "@/sections/Footer/components/CTASection";
+import { Footer } from "@/sections/Footer";
+---
+
+<BaseLayout title="Ayrshire Fencing Group - Quality Fencing & Decking Services Across Ayrshire">
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-white box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:only="react" />
+      <Hero client:only="react" />
+      <ExperienceSection client:only="react" />
+      <ServicesSection client:only="react" />
+      <ProjectsSection client:only="react" />
+      <ReviewsSection client:only="react" />
+      <VideoSection client:only="react" />
+      <FAQSection client:only="react" />
+      <CTASection client:only="react" />
+      <Footer client:only="react" />
+    </div>
+</BaseLayout>
+
