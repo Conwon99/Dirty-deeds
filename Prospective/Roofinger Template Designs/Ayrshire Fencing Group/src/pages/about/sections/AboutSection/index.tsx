@@ -8,30 +8,11 @@ export const AboutSection = () => {
           </h2>
         </div>
         <div className="box-border caret-transparent mb-[30px] md:mb-[50px]">
-          <div className="box-border caret-transparent gap-x-5 grid auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] gap-y-5 md:gap-x-[30px] md:grid-cols-[1fr_1fr] md:gap-y-[30px]">
-            <img 
-              src="/ABOUTMCINES.jpg" 
-              alt="About Ayrshire Fencing Group" 
-              className="box-border caret-transparent w-full h-auto rounded-[20px] object-cover"
-            />
-            <img 
-              src="/about-image-1.jpg" 
-              alt="Ayrshire Fencing Group work" 
-              className="box-border caret-transparent w-full h-auto rounded-[20px] object-cover"
-            />
-          </div>
-          <div className="box-border caret-transparent gap-x-5 grid auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] gap-y-5 mt-5 md:gap-x-[30px] md:grid-cols-[1fr_1fr] md:gap-y-[30px]">
-            <img 
-              src="/about-image-2.jpg" 
-              alt="Ayrshire Fencing Group fencing work" 
-              className="box-border caret-transparent w-full h-auto rounded-[20px] object-cover"
-            />
-            <img 
-              src="/about-image-3.jpg" 
-              alt="Ayrshire Fencing Group services" 
-              className="box-border caret-transparent w-full h-auto rounded-[20px] object-cover"
-            />
-          </div>
+          <img 
+            src="/ABOUTMCINES.jpg" 
+            alt="About Ayrshire Fencing Group" 
+            className="box-border caret-transparent w-full h-auto rounded-[20px] object-cover"
+          />
         </div>
         <p className="text-base sm:text-lg md:text-xl box-border caret-transparent leading-7 mb-2.5">
           With over 13 years' experience, Ayrshire Fencing Group is a reliable fencing contractor based in Irvine, North Ayrshire.

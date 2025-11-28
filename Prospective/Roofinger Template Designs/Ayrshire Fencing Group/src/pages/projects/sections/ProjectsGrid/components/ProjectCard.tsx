@@ -9,14 +9,12 @@ export type ProjectCardProps = {
   title: string;
 };
 
-import { Link } from "react-router-dom";
-
 export const ProjectCard = (props: ProjectCardProps) => {
   return (
     <div role="listitem" className="box-border caret-transparent shrink-0">
-      <Link
+      <a
         aria-label="link"
-        to={props.href}
+        href={props.href}
         className="box-border caret-transparent inline-block h-full max-w-full w-full hover:decoration-transparent"
       >
         <ProjectImage
@@ -30,7 +28,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
             {props.title}
           </h2>
         </div>
-      </Link>
+      </a>
     </div>
   );
 };

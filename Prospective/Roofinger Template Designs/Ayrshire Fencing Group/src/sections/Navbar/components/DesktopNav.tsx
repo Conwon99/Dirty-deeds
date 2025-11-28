@@ -1,3 +1,5 @@
+import { ServicesDropdown } from "@/sections/Navbar/components/ServicesDropdown";
+
 const smoothScrollTo = (elementId: string) => {
   const element = document.getElementById(elementId);
   if (element) {
@@ -75,10 +77,15 @@ export const DesktopNav = ({ isMobileMenuOpen = false, onCloseMobileMenu }: Desk
             </div>
           </a>
         </li>
+        <ServicesDropdown onCloseMobileMenu={onCloseMobileMenu} />
         <li className="box-border caret-transparent min-h-0 min-w-0 bg-[position:0px_0px] mx-0 md:min-h-[auto] md:min-w-[auto] md:mx-1 lg:mx-1.5">
           <a
-            href={isHomePage ? "#projects" : "/#projects"}
-            onClick={(e) => handleLinkClick(e, isHomePage ? "#projects" : "/#projects")}
+            href="/projects"
+            onClick={() => {
+              if (onCloseMobileMenu) {
+                onCloseMobileMenu();
+              }
+            }}
             className="text-slate-900 box-border caret-transparent flex justify-center max-w-full text-center md:text-gray-900 hover:text-orange-500 hover:border-orange-500"
           >
             <div className="text-slate-900 text-xs box-border caret-transparent leading-4 min-h-0 min-w-0 md:text-gray-900 md:text-sm md:leading-5 lg:text-[15px] lg:leading-6 lg:min-h-[auto] lg:min-w-[auto]">

@@ -3,7 +3,7 @@ export const RatingDisplay = () => {
     <div className="text-gray-900 items-start box-border caret-transparent gap-x-2.5 flex flex-col justify-start gap-y-2.5 mb-5 md:items-center md:gap-x-[30px] md:flex-row md:gap-y-[30px] md:mb-[50px]">
       <div className="box-border caret-transparent flex items-center gap-x-3 md:gap-x-4">
         <a
-          href="https://www.trustatrader.com/traders/ayrshire-fencing-group"
+          href="https://www.trustatrader.com/traders/ayrshire-fencing-group-saltcoats-irvine-troon-and-prewick"
           target="_blank"
           rel="noopener noreferrer"
           className="box-border caret-transparent hover:opacity-80"

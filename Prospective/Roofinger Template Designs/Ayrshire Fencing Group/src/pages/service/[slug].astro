@@ -10,10 +10,12 @@ import { Footer } from "@/sections/Footer";
 
 export async function getStaticPaths() {
   return [
-    { params: { slug: "fencing" } },
+    { params: { slug: "bespoke-fencing" } },
     { params: { slug: "decking" } },
-    { params: { slug: "gates-sheds" } },
-    { params: { slug: "garden-rooms" } },
+    { params: { slug: "sheds-gates" } },
+    { params: { slug: "trellis" } },
+    { params: { slug: "palisade-fencing" } },
+    { params: { slug: "fencing-repairs" } },
   ];
 }
 
@@ -24,7 +26,7 @@ const { slug } = Astro.params;
     <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-white box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
       <Header client:only="react" />
       <Hero slug={slug} client:only="react" />
-      <ServiceDetail client:only="react" />
+      <ServiceDetail slug={slug} client:only="react" />
       <ServicesSection client:only="react" />
       <FAQ client:only="react" />
       <CTASection client:only="react" />

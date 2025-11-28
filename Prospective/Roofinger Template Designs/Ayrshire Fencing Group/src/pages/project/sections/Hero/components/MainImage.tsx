@@ -2,25 +2,35 @@ const projectHeroImages: Record<
   string,
   { src: string; alt: string; projectNumber: string }
 > = {
-  "new-roof-with-fascias-soffits": {
-    src: "/projects/project-004-004.jpg",
+  "fencing-project-one": {
+    src: "/projects/project-1.jpg",
     alt: "Fencing project completed in Ayrshire",
-    projectNumber: "004",
+    projectNumber: "001",
   },
-  "new-roughcast-job-completed": {
-    src: "/projects/project-002-003.jpg",
+  "fencing-project-two": {
+    src: "/projects/project-2.jpg",
     alt: "Fencing project completed in Ayrshire",
     projectNumber: "002",
   },
-  "complete-roof-renovation": {
-    src: "/projects/project-003-001.jpg",
+  "fencing-project-three": {
+    src: "/projects/project-3.jpg",
     alt: "Fencing project completed in Ayrshire",
     projectNumber: "003",
   },
-  "roof-roughcast-exterior-upgrade": {
-    src: "/projects/project-005-001.jpg",
-    alt: "Fencing project completed in Ayrshire",
+  "decking-project-four": {
+    src: "/projects/project-4.jpg",
+    alt: "Decking project completed in Ayrshire",
+    projectNumber: "004",
+  },
+  "decking-project-five": {
+    src: "/projects/project-5.jpg",
+    alt: "Decking project completed in Ayrshire",
     projectNumber: "005",
+  },
+  "decking-project-six": {
+    src: "/projects/project-6.jpg",
+    alt: "Decking project completed in Ayrshire",
+    projectNumber: "006",
   },
 };
 
@@ -32,7 +42,7 @@ export const MainImage = ({ slug }: MainImageProps) => {
 
   const project =
     (slug && projectHeroImages[slug]) ??
-    projectHeroImages["new-roof-with-fascias-soffits"];
+    projectHeroImages["fencing-project-one"];
 
   return (
     <a
@@ -52,6 +62,6 @@ export const MainImage = ({ slug }: MainImageProps) => {
 export const getProjectNumber = (slug?: string): string => {
   const project =
     (slug && projectHeroImages[slug]) ??
-    projectHeroImages["new-roof-with-fascias-soffits"];
+    projectHeroImages["fencing-project-one"];
   return project.projectNumber;
 };

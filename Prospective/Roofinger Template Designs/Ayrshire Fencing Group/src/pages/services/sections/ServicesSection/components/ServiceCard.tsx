@@ -5,12 +5,10 @@ export type ServiceCardProps = {
   description: string;
 };
 
-import { Link } from "react-router-dom";
-
 export const ServiceCard = (props: ServiceCardProps) => {
   return (
-    <Link
-      to={props.href}
+    <a
+      href={props.href}
       className="relative items-start bg-slate-200 box-border caret-transparent flex flex-col justify-between max-w-full overflow-hidden p-5 rounded-r-[20px] rounded-tl-[20px] md:p-[30px] hover:decoration-transparent"
     >
       <div className="box-border caret-transparent">
@@ -49,7 +47,7 @@ export const ServiceCard = (props: ServiceCardProps) => {
           />
         </div>
       </div>
-    </Link>
+    </a>
   );
 };
 

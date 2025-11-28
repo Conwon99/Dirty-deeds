@@ -11,7 +11,7 @@ export const ServicesSection = () => {
         </div>
         <div className="box-border caret-transparent gap-x-[30px] grid auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] gap-y-[30px] md:grid-cols-[1fr_1fr_1fr]">
           <ServiceCard
-            href="/service/fencing"
+            href="/service/bespoke-fencing"
             iconUrl="https://c.animaapp.com/mhqqhnhjBr0jWt/assets/670f922acd8bf79374aa2c10_service-01.svg"
             title="Bespoke Fencing"
             description="Custom-designed fences tailored to your specific needs. Whether you need privacy, security, or aesthetic appeal, we create fencing solutions that match your requirements."

@@ -2,7 +2,7 @@ export const WhyChooseImage = () => {
   return (
     <div className="relative box-border caret-transparent h-full overflow-hidden rounded-r-[20px] rounded-tl-[20px] md:h-[500px]">
       <img
-        src="/projects/project-003-01.jpg"
+        src="/projects/project-2.jpg"
         sizes="(max-width: 479px) 94vw, (max-width: 991px) 96vw, (max-width: 1279px) 95vw, (max-width: 1919px) 96vw, 1480px"
         alt="Why Choose Ayrshire Fencing Group"
         className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full"

@@ -1,4 +1,5 @@
 import { ReviewCard } from "@/sections/ReviewsSection/components/ReviewCard";
+import { ReviewStats } from "@/sections/ReviewsSection/components/ReviewStats";
 
 export const ReviewsSection = () => {
   return (
@@ -9,6 +10,7 @@ export const ReviewsSection = () => {
             What Our Customers Say
           </h2>
         </div>
+        <ReviewStats />
         <div className="box-border caret-transparent gap-x-[30px] grid auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] gap-y-[30px] md:grid-cols-[1fr_1fr] md:gap-y-[30px] lg:grid-cols-[1fr_1fr_1fr]">
           <ReviewCard
             author="Nicole Saunders"
