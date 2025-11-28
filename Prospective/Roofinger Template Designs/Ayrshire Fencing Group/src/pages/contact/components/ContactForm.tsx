@@ -1,8 +1,55 @@
+import { useEffect } from "react";
+
 export const ContactForm = () => {
+  useEffect(() => {
+    const form = document.querySelector('form[name="wf-form-Contact-Form"]') as HTMLFormElement;
+    const successMessage = document.querySelector('[aria-label="Contact Form success"]') as HTMLElement;
+    const errorMessage = document.querySelector('[aria-label="Contact Form failure"]') as HTMLElement;
+
+    if (form) {
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        
+        if (successMessage) successMessage.classList.add("hidden");
+        if (errorMessage) errorMessage.classList.add("hidden");
+
+        const formData = new FormData(form);
+        formData.append("_website", window.location.href);
+
+        try {
+          const response = await fetch("https://formspree.io/f/mnnkggzv", {
+            method: "POST",
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          });
+
+          if (response.ok) {
+            form.reset();
+            if (successMessage) {
+              successMessage.classList.remove("hidden");
+              successMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            }
+          } else {
+            throw new Error("Form submission failed");
+          }
+        } catch (error) {
+          if (errorMessage) {
+            errorMessage.classList.remove("hidden");
+            errorMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          }
+        }
+      });
+    }
+  }, []);
+
   return (
     <form
       name="wf-form-Contact-Form"
       aria-label="Contact Form"
+      action="https://formspree.io/f/mnnkggzv"
+      method="POST"
       className="box-border caret-transparent"
     >
       <div className="text-base items-start box-border caret-transparent flex-col w-full mb-5 md:text-lg md:items-center md:flex-row">

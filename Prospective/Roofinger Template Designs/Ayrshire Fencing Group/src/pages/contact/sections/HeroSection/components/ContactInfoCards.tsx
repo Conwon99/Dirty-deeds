@@ -26,10 +26,8 @@ export const ContactInfoCards = () => {
         iconSrc="https://c.animaapp.com/mhqqiiyn5JzZir/assets/67a4386d06c59bfc5ccc1f63_phone-dark.svg"
         iconAlt="Phone dark"
         title="Talk to us directly"
-        content="07926 592704"
+        isPhone={true}
         contentClassName="box-border caret-transparent block underline hover:text-orange-500 hover:decoration-transparent hover:border-orange-500"
-        isLink={true}
-        linkHref="tel:+447926592704"
       />
     </div>
   );

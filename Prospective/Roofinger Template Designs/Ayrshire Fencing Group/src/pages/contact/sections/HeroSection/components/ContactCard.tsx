@@ -1,13 +1,16 @@
+import { PhoneLink } from "@/components/PhoneLink";
+
 export type ContactCardProps = {
   variant: string;
   iconSrc: string;
   iconAlt: string;
   title: string;
   titleClassName?: string;
-  content: string;
+  content?: string;
   contentClassName?: string;
   isLink?: boolean;
   linkHref?: string;
+  isPhone?: boolean;
 };
 
 export const ContactCard = (props: ContactCardProps) => {
@@ -44,7 +47,13 @@ export const ContactCard = (props: ContactCardProps) => {
       >
         {props.title}
       </h2>
-      {props.isLink ? (
+      {props.isPhone ? (
+        <PhoneLink
+          variant="default"
+          showIcon={false}
+          className={props.contentClassName || "box-border caret-transparent block underline"}
+        />
+      ) : props.isLink ? (
         <a
           href={props.linkHref}
           className={

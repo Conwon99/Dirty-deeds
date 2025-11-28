@@ -1,4 +1,4 @@
-
+import { PhoneLink } from "@/components/PhoneLink";
 
 export const Footer = () => {
   return (
@@ -38,9 +38,11 @@ export const Footer = () => {
             <div className="text-white text-base font-semibold box-border caret-transparent mb-2">
               Contact Us
             </div>
-            <a href="tel:+447926592704" className="text-white/80 text-sm box-border caret-transparent hover:text-white hover:decoration-transparent">
-              07926 592704
-            </a>
+            <PhoneLink
+              variant="footer"
+              showIcon={false}
+              className="text-white/80 text-sm box-border caret-transparent hover:text-white hover:decoration-transparent"
+            />
             <a href="mailto:ayrshirefencinggroup@outlook.com" className="text-white/80 text-sm box-border caret-transparent hover:text-white hover:decoration-transparent">
               ayrshirefencinggroup@outlook.com
             </a>

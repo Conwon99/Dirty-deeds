@@ -6,6 +6,10 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+// Canonical phone number for SEO and structured data
+const CANONICAL_PHONE = "07926 592704";
+const CANONICAL_PHONE_TEL = "+447926592704";
 ---
 
 <!doctype html>
@@ -17,6 +21,31 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Ayrshire Fencing Group",
+      "description": "Fully qualified and insured fencing and decking specialists. Bespoke Fencing, Sheds & Gates, Trellis, Decking, Palisade Fencing, Fencing Repairs across Ayrshire. Over 13 years' experience.",
+      "telephone": CANONICAL_PHONE_TEL,
+      "email": "ayrshirefencinggroup@outlook.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Irvine",
+        "addressRegion": "North Ayrshire",
+        "addressCountry": "GB"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Ayrshire"
+      },
+      "url": Astro.url.origin,
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "16"
+      }
+    })} />
   </head>
   <body>
     <slot />

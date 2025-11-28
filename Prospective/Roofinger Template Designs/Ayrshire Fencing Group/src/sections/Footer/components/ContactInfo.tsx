@@ -1,3 +1,5 @@
+import { PhoneLink } from "@/components/PhoneLink";
+
 export const ContactInfo = () => {
   return (
     <div className="items-start box-border caret-transparent gap-x-[15px] flex flex-col justify-start gap-y-[15px] md:gap-x-5 md:gap-y-5">
@@ -20,12 +22,11 @@ export const ContactInfo = () => {
           alt=""
           className="box-border caret-transparent h-6 max-w-full w-6 mt-1"
         />
-        <a
-          href="tel:+447926592704"
+        <PhoneLink
+          variant="footer"
+          showIcon={false}
           className="box-border caret-transparent block underline hover:text-orange-500 hover:decoration-transparent hover:border-orange-500"
-        >
-          07926 592704
-        </a>
+        />
       </div>
       <div className="text-white items-start box-border caret-transparent gap-x-2.5 flex justify-start gap-y-2.5">
         <img

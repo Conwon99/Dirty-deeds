@@ -1,3 +1,5 @@
+import { PhoneLink } from "@/components/PhoneLink";
+
 interface NavActionsProps {
   onToggleMobileMenu?: () => void;
 }
@@ -6,31 +8,26 @@ export const NavActions = ({ onToggleMobileMenu }: NavActionsProps) => {
   return (
     <div className="items-center box-border caret-transparent flex basis-auto grow-0 shrink-0 justify-end justify-self-end md:basis-[0%] md:grow md:shrink md:mr-0 md:ml-auto">
       <div className="items-center box-border caret-transparent gap-x-2 hidden min-h-0 min-w-0 md:flex md:min-h-[auto] md:min-w-[auto] md:gap-x-8 lg:gap-x-12 md:flex-nowrap md:whitespace-nowrap">
-        <a
-          href="tel:+447926592704"
+        <PhoneLink
+          iconSrc="https://c.animaapp.com/mhooxuovKXaEfR/assets/670f86de88858acaf330ddd9_phone.svg"
+          iconAlt=""
           className="text-gray-900 items-center box-border caret-transparent gap-x-1.5 flex justify-start max-w-full gap-y-1.5 whitespace-nowrap hover:text-orange-500 hover:decoration-transparent hover:border-orange-500 relative z-0"
-        >
-          <img
-            src="https://c.animaapp.com/mhooxuovKXaEfR/assets/670f86de88858acaf330ddd9_phone.svg"
-            alt=""
-            className="box-border caret-transparent h-5 max-w-full w-5 md:h-6 md:w-6 lg:h-7 lg:w-7 brightness-0"
-          />
-          <div className="box-border caret-transparent text-base font-medium md:text-lg lg:text-xl">07926 592704</div>
-        </a>
+          displayClassName="box-border caret-transparent text-lg font-medium md:text-xl md:font-semibold lg:text-2xl lg:font-semibold"
+        />
         <div className="box-border caret-transparent min-h-0 min-w-0 md:min-h-[auto] md:min-w-[auto]">
           <div className="box-border caret-transparent flex">
             <a
               href="/contact"
-              className="text-gray-900 items-center bg-orange-500 box-border caret-transparent gap-x-2 flex min-h-0 min-w-0 text-center border px-4 py-2 rounded-[100px] border-solid border-transparent md:min-h-[auto] md:min-w-[auto] md:px-6 md:py-2.5 lg:px-8 lg:py-3 hover:bg-white hover:border-orange-600 whitespace-nowrap flex-shrink-0 relative z-10"
+              className="text-gray-900 items-center bg-orange-500 box-border caret-transparent gap-x-2 flex min-h-0 min-w-0 text-center border px-4 py-2 rounded-[100px] border-solid border-transparent md:min-h-[auto] md:min-w-[auto] md:px-6 md:py-2.5 lg:px-8 lg:py-3 hover:bg-white hover:border-orange-600 whitespace-nowrap flex-shrink-0 relative z-10 shadow-[0_0_20px_rgba(249,115,22,0.5),0_0_40px_rgba(249,115,22,0.3)] hover:shadow-[0_0_30px_rgba(249,115,22,0.7),0_0_60px_rgba(249,115,22,0.5)] transition-shadow duration-300"
             >
               <div className="relative box-border caret-transparent min-h-0 min-w-0 overflow-hidden md:min-h-[auto] md:min-w-[auto]">
                 <div className="box-border caret-transparent">
-                  <div className="relative text-sm font-medium box-border caret-transparent leading-5 z-[2] md:text-base md:leading-6 lg:text-lg lg:leading-7 lg:font-semibold">
+                  <div className="relative text-sm font-bold box-border caret-transparent leading-5 z-[2] md:text-base md:leading-6 md:font-bold lg:text-lg lg:leading-7 lg:font-bold">
                     Get a free quote
                   </div>
                 </div>
                 <div className="absolute box-border caret-transparent w-full">
-                  <div className="relative text-sm font-medium box-border caret-transparent leading-5 z-[2] md:text-base md:leading-6 lg:text-lg lg:leading-7 lg:font-semibold">
+                  <div className="relative text-sm font-bold box-border caret-transparent leading-5 z-[2] md:text-base md:leading-6 md:font-bold lg:text-lg lg:leading-7 lg:font-bold">
                     Get a free quote
                   </div>
                 </div>

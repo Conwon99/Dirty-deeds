@@ -1,19 +1,19 @@
 export const HeroStats = () => {
   return (
-    <div className="backdrop-blur-[21px] bg-[linear-gradient(45deg,rgba(255,255,255,0),rgba(255,255,255,0.33))] box-border caret-transparent gap-x-4 flex blur-0 flex-col max-w-48 gap-y-4 border p-2 rounded-lg border-solid border-white/20 md:p-3">
-      <div className="box-border caret-transparent gap-x-1 flex flex-col gap-y-1">
-        <div className="text-white text-[22px] font-medium box-border caret-transparent leading-[30px] md:text-[28px] md:leading-9">
+    <div className="backdrop-blur-[21px] bg-[linear-gradient(45deg,rgba(255,255,255,0),rgba(255,255,255,0.33))] box-border caret-transparent gap-x-4 flex blur-0 flex-col max-w-52 gap-y-5 border p-3 rounded-lg border-solid border-white/20 md:p-4">
+      <div className="box-border caret-transparent gap-x-1 flex flex-col gap-y-1.5">
+        <div className="text-white text-[26px] font-medium box-border caret-transparent leading-[34px] md:text-[32px] md:leading-[40px]">
           13+
         </div>
-        <div className="text-white text-[15px] box-border caret-transparent leading-6 md:text-base">
+        <div className="text-white text-base box-border caret-transparent leading-7 md:text-lg md:leading-8">
           Years Experience
         </div>
       </div>
-      <div className="box-border caret-transparent flex items-center gap-x-1">
+      <div className="box-border caret-transparent flex items-center gap-x-1.5">
         {[...Array(5)].map((_, i) => (
           <svg
             key={i}
-            className="box-border caret-transparent h-4 w-4 text-orange-500"
+            className="box-border caret-transparent h-5 w-5 text-orange-500 md:h-6 md:w-6"
             fill="currentColor"
             viewBox="0 0 20 20"
           >
@@ -27,7 +27,7 @@ export const HeroStats = () => {
           className="box-border caret-transparent ml-2 hover:opacity-80"
         >
           <svg
-            className="box-border caret-transparent h-4 w-4 text-white"
+            className="box-border caret-transparent h-5 w-5 text-white md:h-6 md:w-6"
             fill="currentColor"
             viewBox="0 0 24 24"
           >

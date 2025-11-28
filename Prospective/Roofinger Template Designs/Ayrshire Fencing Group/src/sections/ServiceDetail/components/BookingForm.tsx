@@ -1,4 +1,49 @@
+import { useEffect } from "react";
+
 export const BookingForm = () => {
+  useEffect(() => {
+    const form = document.querySelector('form[name="wf-form-Booking-Form"]') as HTMLFormElement;
+    const successMessage = document.querySelector('[aria-label="Booking Form success"]') as HTMLElement;
+    const errorMessage = document.querySelector('[aria-label="Booking Form failure"]') as HTMLElement;
+
+    if (form) {
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        
+        if (successMessage) successMessage.classList.add("hidden");
+        if (errorMessage) errorMessage.classList.add("hidden");
+
+        const formData = new FormData(form);
+        formData.append("_website", window.location.href);
+
+        try {
+          const response = await fetch("https://formspree.io/f/mnnkggzv", {
+            method: "POST",
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          });
+
+          if (response.ok) {
+            form.reset();
+            if (successMessage) {
+              successMessage.classList.remove("hidden");
+              successMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            }
+          } else {
+            throw new Error("Form submission failed");
+          }
+        } catch (error) {
+          if (errorMessage) {
+            errorMessage.classList.remove("hidden");
+            errorMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          }
+        }
+      });
+    }
+  }, []);
+
   return (
     <div className="box-border caret-transparent">
       <div className="static bg-orange-500 box-border caret-transparent p-5 rounded-[20px] top-[50px] md:sticky md:p-[50px]">
@@ -9,6 +54,8 @@ export const BookingForm = () => {
           <form
             name="wf-form-Booking-Form"
             aria-label="Booking Form"
+            action="https://formspree.io/f/mnnkggzv"
+            method="POST"
             className="box-border caret-transparent"
           >
             <div className="text-base items-start box-border caret-transparent flex-col w-full mb-5 md:text-lg md:items-center md:flex-row">
