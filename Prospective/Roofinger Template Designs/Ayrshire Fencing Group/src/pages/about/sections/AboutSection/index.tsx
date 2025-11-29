@@ -4,13 +4,13 @@ export const AboutSection = () => {
       <div className="box-border caret-transparent max-w-[980px] mx-auto px-[15px] md:px-[30px] before:accent-auto before:caret-transparent before:text-neutral-600 before:table before:text-lg before:not-italic before:normal-nums before:font-medium before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-[27px] before:list-outside before:list-disc before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-manrope after:accent-auto after:caret-transparent after:clear-both after:text-neutral-600 after:table after:text-lg after:not-italic after:normal-nums after:font-medium after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-[27px] after:list-outside after:list-disc after:pointer-events-auto after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-manrope">
         <div className="relative box-border caret-transparent mb-[30px] md:mb-[50px] overflow-hidden rounded-[20px]">
           <img 
-            src="/ABOUTMCINES.jpg" 
-            alt="About Ayrshire Fencing Group" 
+            src="/ABOUTMCINES.webp" 
+            alt="Ayrshire Fencing Group professional fencing contractors working on installation project in Ayrshire" 
             className="box-border caret-transparent w-full h-auto rounded-[20px] object-cover"
           />
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 p-4 md:p-6 lg:p-8 z-20 text-center">
             <img
-              src="/logo.png"
+              src="/logo.webp"
               alt="Ayrshire Fencing Group Logo"
               className="box-border caret-transparent h-14 md:h-20 lg:h-24 max-w-[180px] md:max-w-[220px] lg:max-w-[260px] object-contain drop-shadow-2xl filter brightness-110"
             />

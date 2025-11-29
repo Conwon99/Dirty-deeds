@@ -15,14 +15,14 @@ export const ProjectsSection = () => {
           >
             <ProjectCard
               href="/project/wooden-gate-and-fencing"
-              imageUrl="/projects/project-1.jpg"
-              imageAlt="Wooden Gate and Fencing"
+              imageUrl="/projects/project-1.webp"
+              imageAlt="Professional wooden gate and fencing installation completed by Ayrshire Fencing Group in Ayrshire"
               location="Ayrshire"
               title="Wooden Gate and Fencing"
               locationIconUrl="https://c.animaapp.com/mhooxuovKXaEfR/assets/676a5588102623a5b87071eb_location-dot.svg"
-              locationIconAlt=""
+              locationIconAlt="Location icon"
               shapeIconUrl="https://c.animaapp.com/mhooxuovKXaEfR/assets/67a32569be90004c73f6cf4e_bf4df3c7f28098d382f9ca48f7190044_shape-03.svg"
-              shapeIconAlt="Shape 03"
+              shapeIconAlt=""
             />
           </div>
           <div
@@ -31,14 +31,14 @@ export const ProjectsSection = () => {
           >
             <ProjectCard
               href="/project/fencing-project-two"
-              imageUrl="/projects/project-2.jpg"
-              imageAlt="Fencing Project Two"
+              imageUrl="/projects/project-2.webp"
+              imageAlt="Professional fencing installation project completed by Ayrshire Fencing Group in Ayrshire"
               location="Ayrshire"
               title="Fencing Project Two"
               locationIconUrl="https://c.animaapp.com/mhooxuovKXaEfR/assets/676a5588102623a5b87071eb_location-dot.svg"
-              locationIconAlt=""
+              locationIconAlt="Location icon"
               shapeIconUrl="https://c.animaapp.com/mhooxuovKXaEfR/assets/67a32569be90004c73f6cf4e_bf4df3c7f28098d382f9ca48f7190044_shape-03.svg"
-              shapeIconAlt="Shape 03"
+              shapeIconAlt=""
             />
           </div>
           <div
@@ -47,14 +47,14 @@ export const ProjectsSection = () => {
           >
             <ProjectCard
               href="/project/wooden-fencing"
-              imageUrl="/projects/project-3.jpg"
-              imageAlt="Wooden Fencing"
+              imageUrl="/projects/project-3.webp"
+              imageAlt="Professional wooden fencing installation completed by Ayrshire Fencing Group in Ayrshire"
               location="Ayrshire"
               title="Wooden Fencing"
               locationIconUrl="https://c.animaapp.com/mhooxuovKXaEfR/assets/676a5588102623a5b87071eb_location-dot.svg"
-              locationIconAlt=""
+              locationIconAlt="Location icon"
               shapeIconUrl="https://c.animaapp.com/mhooxuovKXaEfR/assets/67a32569be90004c73f6cf4e_bf4df3c7f28098d382f9ca48f7190044_shape-03.svg"
-              shapeIconAlt="Shape 03"
+              shapeIconAlt=""
             />
           </div>
           </div>
@@ -78,14 +78,14 @@ export const ProjectsSection = () => {
             >
               <ProjectCard
                 href="/project/decking-project-four"
-                imageUrl="/projects/project-4.jpg"
-                imageAlt="Decking Project Four"
+                imageUrl="/projects/project-4.webp"
+                imageAlt="Professional decking installation completed by Ayrshire Fencing Group in Ayrshire"
                 location="Ayrshire"
                 title="Decking Project Four"
                 locationIconUrl="https://c.animaapp.com/mhooxuovKXaEfR/assets/676a5588102623a5b87071eb_location-dot.svg"
-                locationIconAlt=""
+                locationIconAlt="Location icon"
                 shapeIconUrl="https://c.animaapp.com/mhooxuovKXaEfR/assets/67a32569be90004c73f6cf4e_bf4df3c7f28098d382f9ca48f7190044_shape-03.svg"
-                shapeIconAlt="Shape 03"
+                shapeIconAlt=""
               />
             </div>
             <div
@@ -94,14 +94,14 @@ export const ProjectsSection = () => {
             >
               <ProjectCard
                 href="/project/decking-project-five"
-                imageUrl="/projects/project-5.jpg"
-                imageAlt="Decking Project Five"
+                imageUrl="/projects/project-5.webp"
+                imageAlt="Professional decking installation completed by Ayrshire Fencing Group in Ayrshire"
                 location="Ayrshire"
                 title="Decking Project Five"
                 locationIconUrl="https://c.animaapp.com/mhooxuovKXaEfR/assets/676a5588102623a5b87071eb_location-dot.svg"
-                locationIconAlt=""
+                locationIconAlt="Location icon"
                 shapeIconUrl="https://c.animaapp.com/mhooxuovKXaEfR/assets/67a32569be90004c73f6cf4e_bf4df3c7f28098d382f9ca48f7190044_shape-03.svg"
-                shapeIconAlt="Shape 03"
+                shapeIconAlt=""
               />
             </div>
             <div
@@ -110,14 +110,14 @@ export const ProjectsSection = () => {
             >
               <ProjectCard
                 href="/project/decking-project-six"
-                imageUrl="/projects/project-6.jpg"
-                imageAlt="Decking Project Six"
+                imageUrl="/projects/project-6.webp"
+                imageAlt="Professional decking installation completed by Ayrshire Fencing Group in Ayrshire"
                 location="Ayrshire"
                 title="Decking Project Six"
                 locationIconUrl="https://c.animaapp.com/mhooxuovKXaEfR/assets/676a5588102623a5b87071eb_location-dot.svg"
-                locationIconAlt=""
+                locationIconAlt="Location icon"
                 shapeIconUrl="https://c.animaapp.com/mhooxuovKXaEfR/assets/67a32569be90004c73f6cf4e_bf4df3c7f28098d382f9ca48f7190044_shape-03.svg"
-                shapeIconAlt="Shape 03"
+                shapeIconAlt=""
               />
             </div>
           </div>

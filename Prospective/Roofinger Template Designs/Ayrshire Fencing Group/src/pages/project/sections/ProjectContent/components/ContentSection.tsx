@@ -11,37 +11,19 @@ export const ContentSection = ({ slug }: ContentSectionProps) => {
             01. The Challenge
           </h5>
           <p className="text-gray-200 box-border caret-transparent mb-5 md:mb-10">
-            Through overcoming these challenges, Innovate emerged as a
-            pioneering force in digital transformation. The project not only met
-            its objectives but exceeded expectations, setting new industry
-            standards for innovation and user experience. Innovate garnered
-            widespread recognition within the industry, earning accolades for
-            its groundbreaking approach. The project&#39;s success extended
-            beyond our organization, with industry leaders adopting elements of
-            the Innovates transformative model. Through overcoming these
-            challenges, Innovate emerged as a pioneering force in digital
-            transformation.
+            Every property in Ayrshire presents unique challenges when it comes to fencing and decking installation. This project required careful planning to address specific site conditions, including varying ground levels, existing structures, and the client's vision for their outdoor space. Our team conducted a thorough site assessment to identify potential obstacles and develop a comprehensive solution that would meet both functional and aesthetic requirements.
           </p>
-          <p className="box-border caret-transparent mb-5 md:mb-10">
-            {" "}
-            The project not only met its objectives but exceeded expectations,
-            setting new industry standards for innovation and user experience.
-            Beyond its initial launch, Innovate continues to make a sustained
-            impact. Its success paved the way for a roadmap of continuous
-            evolution, ensuring that it remains at the forefront of digital
-            transformation trends.
+          <p className="text-gray-200 box-border caret-transparent mb-5 md:mb-10">
+            The primary challenges included ensuring proper drainage, maintaining consistent quality across the entire installation, and working within the client's timeline and budget constraints. We also needed to coordinate with other trades and ensure minimal disruption to the property during the installation process. Through careful planning and expert craftsmanship, we developed solutions that addressed each challenge while delivering exceptional results.
           </p>
           <h5 className="text-white text-[22px] font-bold box-border caret-transparent leading-[28.6px] mb-2.5 md:text-[26px] md:leading-[33.8px]">
             02. The Solution
           </h5>
-          <p className="box-border caret-transparent mb-5 md:mb-10">
-            We conducted iterative user testing, gathering feedback at each
-            design phase, and refining our approach to ensure that innovation
-            seamlessly translated into an intuitive and user-centric experience.
-            Embracing an agile development methodology, we instituted regular
-            sprint cycles, allowing us to flexibly respond to market feedback
-            and swiftly implement adjustments without compromising project
-            timelines.
+          <p className="text-gray-200 box-border caret-transparent mb-5 md:mb-10">
+            Our solution began with a detailed consultation to understand the client's specific needs and preferences. We provided expert advice on material selection, design options, and installation methods that would best suit their property in Ayrshire. Using high-quality materials sourced from trusted suppliers, we ensured durability and longevity for the installation.
+          </p>
+          <p className="text-gray-200 box-border caret-transparent mb-5 md:mb-10">
+            The installation process was carefully managed with attention to detail at every stage. Our experienced team worked efficiently to complete the project on schedule while maintaining the highest standards of workmanship. We used professional-grade tools and techniques to ensure precise installation, proper alignment, and secure fixing of all components.
           </p>
           <ul
             role="list"
@@ -66,25 +48,11 @@ export const ContentSection = ({ slug }: ContentSectionProps) => {
           <h5 className="text-white text-[22px] font-bold box-border caret-transparent leading-[28.6px] mb-2.5 md:text-[26px] md:leading-[33.8px]">
             03. The Result
           </h5>
-          <p className="box-border caret-transparent mb-5 md:mb-10">
-            Through overcoming these challenges, Innovate emerged as a
-            pioneering force in digital transformation. The project not only met
-            its objectives but exceeded expectations, setting new industry
-            standards for innovation and user experience. Innovate garnered
-            widespread recognition within the industry, earning accolades for
-            its groundbreaking approach. The project&#39;s success extended
-            beyond our organization, with industry leaders adopting elements of
-            the Innovates transformative model. Through overcoming these
-            challenges, Innovate emerged as a pioneering force in digital
-            transformation.{" "}
+          <p className="text-gray-200 box-border caret-transparent mb-5 md:mb-10">
+            The completed installation exceeded the client's expectations, delivering a beautiful and functional solution that enhances their property in Ayrshire. The quality of workmanship and attention to detail is evident throughout, with every component properly installed and finished to a professional standard. The project was completed on time and within budget, demonstrating our commitment to delivering value alongside quality.
           </p>
-          <p className="box-border caret-transparent mb-5 md:mb-10">
-            The project not only met its objectives but exceeded expectations,
-            setting new industry standards for innovation and user experience.
-            Beyond its initial launch, Innovate continues to make a sustained
-            impact. Its success paved the way for a roadmap of continuous
-            evolution, ensuring that it remains at the forefront of digital
-            transformation trends.
+          <p className="text-gray-200 box-border caret-transparent mb-5 md:mb-10">
+            The client was delighted with the results, noting the significant improvement to their property's appearance and functionality. The installation provides long-lasting durability and requires minimal maintenance, ensuring years of enjoyment. This project showcases Ayrshire Fencing Group's expertise in delivering high-quality fencing and decking solutions throughout Ayrshire and Glasgow, combining professional installation with quality materials and expert craftsmanship.
           </p>
         </div>
       </div>

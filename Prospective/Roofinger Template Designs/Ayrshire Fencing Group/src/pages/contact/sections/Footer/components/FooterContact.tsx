@@ -7,7 +7,7 @@ export const FooterContact = () => {
         <div className="text-white items-start box-border caret-transparent gap-x-2.5 flex justify-start gap-y-2.5">
           <img
             src="https://c.animaapp.com/mhqqiiyn5JzZir/assets/67108bda6761bcf051e210eb_envelope.svg"
-            alt=""
+            alt="Email icon"
             className="box-border caret-transparent h-6 max-w-full w-6 mt-1"
           />
           <a
@@ -20,7 +20,7 @@ export const FooterContact = () => {
         <div className="text-white items-start box-border caret-transparent gap-x-2.5 flex justify-start gap-y-2.5">
           <img
             src="https://c.animaapp.com/mhqqiiyn5JzZir/assets/670f86de88858acaf330ddd9_phone.svg"
-            alt=""
+            alt="Phone icon"
             className="box-border caret-transparent h-6 max-w-full w-6 mt-1"
           />
           <PhoneLink
@@ -32,7 +32,7 @@ export const FooterContact = () => {
         <div className="text-white items-start box-border caret-transparent gap-x-2.5 flex justify-start gap-y-2.5">
           <img
             src="https://c.animaapp.com/mhqqiiyn5JzZir/assets/67108bda6d31254d6c320ce3_location-01.svg"
-            alt=""
+            alt="Location icon - Ayrshire Fencing Group service area"
             className="box-border caret-transparent h-6 max-w-full w-6 mt-1"
           />
           <div className="box-border caret-transparent">
@@ -47,7 +47,7 @@ export const FooterContact = () => {
         >
           <img
             src="https://c.animaapp.com/mhqqiiyn5JzZir/assets/670f58e333797fd0eb9fa085_instagram.svg"
-            alt="Social Icon"
+            alt="Instagram icon - Follow Ayrshire Fencing Group on Instagram"
             className="box-border caret-transparent h-5 max-w-full w-5"
           />
         </a>
@@ -57,7 +57,7 @@ export const FooterContact = () => {
         >
           <img
             src="https://c.animaapp.com/mhqqiiyn5JzZir/assets/670f58e375e253beb4db0e54_facebook.svg"
-            alt="Social Icon"
+            alt="Facebook icon - Follow Ayrshire Fencing Group on Facebook"
             className="box-border caret-transparent h-5 max-w-full w-5"
           />
         </a>
@@ -67,7 +67,7 @@ export const FooterContact = () => {
         >
           <img
             src="https://c.animaapp.com/mhqqiiyn5JzZir/assets/670f58e3c0bab665af9c269a_twitter-x.svg"
-            alt="Social Icon"
+            alt="Twitter icon - Follow Ayrshire Fencing Group on Twitter"
             className="box-border caret-transparent h-5 max-w-full w-5"
           />
         </a>

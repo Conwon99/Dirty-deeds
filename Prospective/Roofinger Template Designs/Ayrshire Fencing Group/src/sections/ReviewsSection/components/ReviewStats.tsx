@@ -21,7 +21,7 @@ export const ReviewStats = () => {
           </div>
         </div>
         <img
-          src="/trust.jpg"
+          src="/trust.webp"
           alt="Trust a Trader Logo"
           className="box-border caret-transparent h-8 w-auto"
         />

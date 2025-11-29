@@ -11,7 +11,7 @@ export const FencingProjectsGrid = () => {
           >
             <ProjectCard
               href="/project/wooden-gate-and-fencing"
-              imageUrl="/projects/project-1.jpg"
+              imageUrl="/projects/project-1.webp"
               imageAlt="Wooden Gate and Fencing"
               imageClassName="transform-none md:scale-[1.00989px]"
               location="Ayrshire"
@@ -19,14 +19,14 @@ export const FencingProjectsGrid = () => {
             />
             <ProjectCard
               href="/project/fencing-project-two"
-              imageUrl="/projects/project-2.jpg"
+              imageUrl="/projects/project-2.webp"
               imageAlt="Fencing Project Two"
               location="Ayrshire"
               title="Fencing Project Two"
             />
             <ProjectCard
               href="/project/wooden-fencing"
-              imageUrl="/projects/project-3.jpg"
+              imageUrl="/projects/project-3.webp"
               imageAlt="Wooden Fencing"
               location="Ayrshire"
               title="Wooden Fencing"

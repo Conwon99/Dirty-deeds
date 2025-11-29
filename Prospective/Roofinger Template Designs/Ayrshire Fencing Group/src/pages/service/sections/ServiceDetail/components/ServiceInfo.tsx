@@ -90,6 +90,14 @@ export const ServiceInfo = ({ slug }: ServiceInfoProps = {}) => {
         <p className="text-gray-200 box-border caret-transparent mb-5 md:mb-6">
           {getDescription()}
         </p>
+        <p className="text-gray-200 box-border caret-transparent mb-5 md:mb-6">
+          {isDecking && "At Ayrshire Fencing Group, we understand that decking is more than just an outdoor surface - it's an extension of your living space. Our decking installations in Ayrshire and Glasgow are designed to create beautiful, functional areas where you can relax, entertain, and enjoy your garden year-round. We work with both timber and composite materials, each offering unique benefits for different applications and preferences."}
+          {isFencing && !isWoodFence && !isCompositeFence && !isChainlinkFence && !isNyloforFence && !isConcreteFence && "Our fencing solutions in Ayrshire are designed to provide security, privacy, and aesthetic appeal for your property. Whether you need boundary fencing, privacy screening, or decorative fencing, we offer a comprehensive range of materials and styles to suit every requirement. From traditional wooden fencing to modern composite and concrete options, we help you choose the perfect solution for your property."}
+          {isFenceRepairs && "When your fencing needs attention, our expert repair services in Ayrshire can restore it to perfect condition. We handle all types of fence repairs, from minor damage to complete section replacements. Our team quickly identifies issues and provides cost-effective solutions that extend the life of your fencing while maintaining its appearance and functionality."}
+          {isGates && "Gates are an essential element of property security and access control. Our gate installation services in Ayrshire cover everything from garden gates to secure access gates, all designed to complement your property's style while providing reliable security. We work with various materials and designs to create gates that are both functional and attractive."}
+          {isSheds && "Custom sheds provide valuable storage space and can enhance your property's functionality. Our shed building services in Ayrshire create practical, attractive storage solutions tailored to your specific needs. Whether you need a small garden shed or a larger storage building, we design and construct sheds that are built to last and complement your property."}
+          {isGardenRooms && "Garden rooms offer versatile additional living space that can be used for work, relaxation, or entertainment. Our garden room installations in Ayrshire and Glasgow create comfortable, well-insulated spaces that extend your home's functionality. These versatile structures can serve as home offices, studios, gyms, or simply peaceful retreats in your garden."}
+        </p>
         <div className="mb-5 md:mb-6">
           <PhoneLink
             variant="default"

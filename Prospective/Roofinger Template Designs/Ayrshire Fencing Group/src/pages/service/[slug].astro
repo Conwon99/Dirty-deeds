@@ -66,18 +66,47 @@ const getTitle = (slug: string | undefined) => {
   return titleMap[slug || ""] || "Service - Ayrshire Fencing Group";
 };
 
+// Generate meta description based on slug (optimized to 120-160 characters)
+const getDescription = (slug: string | undefined) => {
+  const descriptionMap: Record<string, string> = {
+    "fencing": "Professional fence installation in Ayrshire & Glasgow. Expert contractors, 13+ years experience. Quality materials, free quotes, fully insured.",
+    "fence-repairs": "Expert fence repair services in Ayrshire. Fast, reliable repairs for all fence types. Fully qualified contractors, free quotes, 13+ years experience.",
+    "decking": "Professional decking installation in Ayrshire & Glasgow. High-quality timber and composite decking. Expert installation, free quotes, 13+ years experience.",
+    "gates": "Gate installation services in Ayrshire. Garden gates, security gates, and custom solutions. Professional installation, quality materials, free quotes.",
+    "sheds": "Custom shed building and installation in Ayrshire. Professional construction services. Quality materials, expert craftsmanship, free quotes available.",
+    "garden-rooms": "Garden room installation in Ayrshire & Glasgow. Professional construction for versatile spaces. Expert installation, free quotes, 13+ years experience.",
+    "custom-fence-construction-irvine": "Custom fence construction in Ayrshire. Bespoke fencing solutions tailored to your needs. Professional installation, quality materials, free quotes.",
+    "wood-fence-installation-irvine": "Wood fence installation in Ayrshire. Professional timber fencing services. Natural, beautiful solutions. Expert installation, free quotes.",
+    "fence-replacement-irvine": "Fence replacement services in Ayrshire. Complete removal and professional installation. Long-lasting solutions, expert craftsmanship, free quotes.",
+    "garden-fence-installation-irvine": "Garden fence installation in Ayrshire. Perfect balance of privacy, security, and visual appeal. Professional installation, quality materials.",
+    "composite-fencing-installation-irvine": "Composite fencing installation in Ayrshire. Low-maintenance fencing with wood-like appearance. Enhanced weather resistance, professional installation.",
+    "chainlink-fencing-installation-irvine": "Chainlink fencing installation in Ayrshire. Cost-effective security solutions. Excellent visibility, strong boundaries. Professional installation, free quotes.",
+    "timber-decking-irvine": "Timber decking installation in Ayrshire. High-quality timber decking solutions. Professional installation, expert craftsmanship, free quotes available.",
+    "wooden-fencing-irvine": "Wooden fencing installation in Ayrshire. Professional timber fencing with natural beauty. Customizable solutions, expert installation, free quotes.",
+    "composite-fencing-irvine": "Composite fencing in Ayrshire. Low-maintenance fencing combining wood appearance with weather resistance. Professional installation, free quotes.",
+    "chainlink-fencing-irvine": "Chainlink fencing in Ayrshire. Cost-effective security fencing with excellent visibility. Strong boundaries, professional installation, free quotes.",
+    "nylofor-fencing-irvine": "Nylofor fencing installation in Ayrshire. Modern privacy fencing with excellent weather resistance. Contemporary appearance, professional installation.",
+    "concrete-fencing-irvine": "Concrete fencing installation in Ayrshire. Maximum durability and security. Minimal maintenance, professional installation for residential and commercial.",
+    "composite-decking-irvine": "Composite decking installation in Ayrshire. Low-maintenance decking that maintains appearance for years. Professional installation, expert craftsmanship.",
+    "wooden-decking-irvine": "Wooden decking installation in Ayrshire. Premium timber decking with natural beauty. Professional installation, quality materials, free quotes.",
+  };
+  return descriptionMap[slug || ""] || "Professional fencing and decking services in Ayrshire. Expert installation, quality materials, free quotes, 13+ years experience.";
+};
+
 const pageTitle = getTitle(slug);
+const pageDescription = getDescription(slug);
+const canonicalUrl = `https://www.ayrshirefencinggroup.com/service/${slug}`;
 ---
 
-<BaseLayout title={pageTitle}>
+<BaseLayout title={pageTitle} description={pageDescription} canonical={canonicalUrl}>
     <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
-      <Header client:only="react" />
+      <Header client:load />
       <Hero slug={slug} client:only="react" />
       <ServiceDetail slug={slug} client:only="react" />
       <ServicesSection client:only="react" />
       <FAQ client:only="react" />
-      <CTASection client:only="react" />
-      <Footer client:only="react" />
+      <CTASection client:load />
+      <Footer client:load />
     </div>
 </BaseLayout>
 

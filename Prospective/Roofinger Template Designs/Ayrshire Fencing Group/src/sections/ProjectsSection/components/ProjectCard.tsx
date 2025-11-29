@@ -32,7 +32,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
                 props.locationIconUrl ||
                 "https://c.animaapp.com/mhooxuovKXaEfR/assets/676a5588102623a5b87071eb_location-dot.svg"
               }
-              alt={props.locationIconAlt || ""}
+              alt={props.locationIconAlt || "Location icon"}
               className="text-xs box-border caret-transparent h-[18px] leading-[16.8px] max-w-full w-5 md:text-sm md:h-5 md:leading-[19.6px]"
             />
             <div className="text-xs box-border caret-transparent leading-[16.8px] md:text-sm md:leading-[19.6px]">
@@ -44,7 +44,8 @@ export const ProjectCard = (props: ProjectCardProps) => {
               props.shapeIconUrl ||
               "https://c.animaapp.com/mhooxuovKXaEfR/assets/67a32569be90004c73f6cf4e_bf4df3c7f28098d382f9ca48f7190044_shape-03.svg"
             }
-            alt={props.shapeIconAlt || "Shape 03"}
+            alt=""
+            aria-hidden="true"
             className="absolute box-border caret-transparent h-5 max-w-full w-5 -right-5 top-[0%]"
             style={{ filter: 'brightness(0) saturate(100%) invert(20%)' }}
           />
@@ -53,7 +54,8 @@ export const ProjectCard = (props: ProjectCardProps) => {
               props.shapeIconUrl ||
               "https://c.animaapp.com/mhooxuovKXaEfR/assets/67a32569be90004c73f6cf4e_bf4df3c7f28098d382f9ca48f7190044_shape-03.svg"
             }
-            alt={props.shapeIconAlt || "Shape 03"}
+            alt=""
+            aria-hidden="true"
             className="absolute bottom-[-19px] box-border caret-transparent h-5 max-w-full w-5 left-[0%]"
             style={{ filter: 'brightness(0) saturate(100%) invert(20%)' }}
           />

@@ -16,14 +16,14 @@ export const RelatedProjects = () => {
           >
             <ProjectCard
               href="/project/new-roof-with-fascias-soffits"
-              imageUrl="/projects/project-004-01.jpg"
+              imageUrl="/projects/project-004-01.webp"
               imageAlt="Fencing project in Ayrshire"
               location="Ayrshire"
               title="Fencing project"
             />
             <ProjectCard
               href="/project/complete-roof-renovation"
-              imageUrl="/projects/project-003-01.jpg"
+              imageUrl="/projects/project-003-01.webp"
               imageAlt="Fencing project in Ayrshire"
               location="Ayrshire"
               title="Fencing project"

@@ -12,18 +12,22 @@ import { CTASection } from "@/sections/Footer/components/CTASection";
 import { Footer } from "@/sections/Footer";
 ---
 
-<BaseLayout title="Fence Contractor Ayrshire | Ayrshire Fencing Group - Quality Fencing & Decking Services">
+<BaseLayout 
+  title="Fence Contractor Ayrshire | Ayrshire Fencing Group - Quality Fencing & Decking Services"
+  description="Professional fence contractor in Ayrshire & Glasgow. Expert fencing, decking, gates, sheds & garden rooms installation. Fully qualified, insured, 13+ years experience. Free quotes available."
+  canonical="https://www.ayrshirefencinggroup.com/"
+>
     <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
-      <Header client:only="react" />
-      <Hero client:only="react" />
-      <ExperienceSection client:only="react" />
-      <ServicesSection client:only="react" />
-      <ProjectsSection client:only="react" />
-      <ReviewsSection client:only="react" />
-      <VideoSection client:only="react" />
-      <FAQSection client:only="react" />
-      <CTASection client:only="react" />
-      <Footer client:only="react" />
+      <Header client:load />
+      <Hero client:load />
+      <ExperienceSection client:load />
+      <ServicesSection client:load />
+      <ProjectsSection client:load />
+      <ReviewsSection client:load />
+      <VideoSection client:load />
+      <FAQSection client:load />
+      <CTASection client:load />
+      <Footer client:load />
     </div>
 </BaseLayout>
 

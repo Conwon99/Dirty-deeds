@@ -11,21 +11,21 @@ export const DeckingProjectsGrid = () => {
           >
             <ProjectCard
               href="/project/decking-project-four"
-              imageUrl="/projects/project-4.jpg"
+              imageUrl="/projects/project-4.webp"
               imageAlt="Decking Project Four"
               location="Ayrshire"
               title="Decking Project Four"
             />
             <ProjectCard
               href="/project/decking-project-five"
-              imageUrl="/projects/project-5.jpg"
+              imageUrl="/projects/project-5.webp"
               imageAlt="Decking Project Five"
               location="Ayrshire"
               title="Decking Project Five"
             />
             <ProjectCard
               href="/project/decking-project-six"
-              imageUrl="/projects/project-6.jpg"
+              imageUrl="/projects/project-6.webp"
               imageAlt="Decking Project Six"
               location="Ayrshire"
               title="Decking Project Six"

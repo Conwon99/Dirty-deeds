@@ -11,8 +11,8 @@ import { Footer } from "@/sections/Footer";
 
 <BaseLayout title="Contractor Irvine | Professional Construction Services | Ayrshire Fencing Group">
     <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
-      <Header client:only="react" />
-      <Hero client:only="react" />
+      <Header client:load />
+      <Hero client:load />
       <section class="box-border caret-transparent pt-5 md:pt-0">
         <div class="box-border caret-transparent max-w-[1540px] mx-auto px-[15px] md:px-[30px]">
           <div class="text-white text-center mb-10">
@@ -39,11 +39,11 @@ import { Footer } from "@/sections/Footer";
           </div>
         </div>
       </section>
-      <ServicesSection client:only="react" />
-      <WhyChooseSection client:only="react" />
-      <FAQSection client:only="react" />
-      <CTASection client:only="react" />
-      <Footer client:only="react" />
+      <ServicesSection client:load />
+      <WhyChooseSection client:load />
+      <FAQSection client:load />
+      <CTASection client:load />
+      <Footer client:load />
     </div>
 </BaseLayout>
 

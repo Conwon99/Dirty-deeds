@@ -33,9 +33,27 @@ export const ThumbnailGrid = ({ slug }: ThumbnailGridProps) => {
       } else {
         formattedNumber = number.toString();
       }
+      // Generate descriptive alt text based on project type
+      let altText = "";
+      if (slug?.includes("wooden-gate-and-fencing")) {
+        altText = `Wooden gate and fencing project ${number} completed in Ayrshire`;
+      } else if (slug?.includes("fencing-project-two")) {
+        altText = `Fencing project ${number} completed in Ayrshire`;
+      } else if (slug?.includes("wooden-fencing")) {
+        altText = `Wooden fencing project ${number} completed in Ayrshire`;
+      } else if (slug?.includes("decking-project-four")) {
+        altText = `Decking project ${number} completed in Ayrshire`;
+      } else if (slug?.includes("decking-project-five")) {
+        altText = `Decking project ${number} completed in Ayrshire`;
+      } else if (slug?.includes("decking-project-six")) {
+        altText = `Decking project ${number} completed in Ayrshire`;
+      } else {
+        altText = `Fencing and decking project ${number} completed in Ayrshire`;
+      }
+      
       return {
         number: formattedNumber,
-        alt: `Project image ${number}`,
+        alt: altText,
       };
     });
 
@@ -53,7 +71,7 @@ export const ThumbnailGrid = ({ slug }: ThumbnailGridProps) => {
               className="box-border caret-transparent inline-block h-full max-w-full underline w-full overflow-hidden rounded-[20px] hover:decoration-transparent"
             >
               <img
-                src={`/projects/${imagePrefix}-${img.number}.jpg`}
+                src={`/projects/${imagePrefix}-${img.number}.webp`}
                 alt={img.alt}
                 className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full"
               />

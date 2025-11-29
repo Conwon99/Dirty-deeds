@@ -6,7 +6,7 @@ export const ContactInfoCards = () => {
       <ContactCard
         variant="bg-[#787e59]"
         iconSrc="https://c.animaapp.com/mhqqiiyn5JzZir/assets/67a43fa6cdc6190922f4a6ed_location-dark.svg"
-        iconAlt="Location dark"
+        iconAlt="Location icon - Ayrshire Fencing Group service area"
         title="Visit our location"
         titleClassName="text-white text-xl font-bold box-border caret-transparent leading-6 mb-2.5 md:text-2xl md:leading-[28.8px]"
         content="Serving Ayrshire, Scotland"
@@ -15,7 +15,7 @@ export const ContactInfoCards = () => {
       <ContactCard
         variant="bg-[#787e59]"
         iconSrc="https://c.animaapp.com/mhqqiiyn5JzZir/assets/67108bda6761bcf051e210eb_envelope.svg"
-        iconAlt=""
+        iconAlt="Email icon - Contact Ayrshire Fencing Group"
         title="Email support"
         titleClassName="text-white text-xl font-bold box-border caret-transparent leading-6 mb-2.5 md:text-2xl md:leading-[28.8px]"
         content="ayrshirefencinggroup@outlook.com"
@@ -26,7 +26,7 @@ export const ContactInfoCards = () => {
       <ContactCard
         variant="bg-[#787e59]"
         iconSrc="https://c.animaapp.com/mhqqiiyn5JzZir/assets/67a4386d06c59bfc5ccc1f63_phone-dark.svg"
-        iconAlt="Phone dark"
+        iconAlt="Phone icon - Call Ayrshire Fencing Group"
         title="Talk to us directly"
         titleClassName="text-white text-xl font-bold box-border caret-transparent leading-6 mb-2.5 md:text-2xl md:leading-[28.8px]"
         isPhone={true}

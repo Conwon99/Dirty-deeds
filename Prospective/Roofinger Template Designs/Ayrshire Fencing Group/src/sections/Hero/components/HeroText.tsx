@@ -41,7 +41,7 @@ export const HeroText = () => {
                   <div className="box-border caret-transparent h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 before:accent-auto before:caret-transparent before:text-[#5a6045] before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-5 before:list-outside before:list-disc before:pointer-events-auto before:text-center before:indent-[0px] before:normal-case before:visible before:border-separate before:font-geist after:accent-auto after:caret-transparent after:clear-both after:text-[#5a6045] after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-5 after:list-outside after:list-disc after:pointer-events-auto after:text-center after:indent-[0px] after:normal-case after:visible after:border-separate after:font-geist">
                     <img
                       src="https://c.animaapp.com/mhnzg6knJo6lE7/assets/icon-4.svg"
-                      alt="Icon"
+                      alt="Arrow icon for Get a free quote button"
                       className="box-border caret-transparent h-full w-full"
                       style={{ filter: 'brightness(0.3) saturate(2) hue-rotate(0deg)' }}
                     />
@@ -51,7 +51,7 @@ export const HeroText = () => {
                   <div className="box-border caret-transparent h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 before:accent-auto before:caret-transparent before:text-[#5a6045] before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-5 before:list-outside before:list-disc before:pointer-events-auto before:text-center before:indent-[0px] before:normal-case before:visible before:border-separate before:font-geist after:accent-auto after:caret-transparent after:clear-both after:text-[#5a6045] after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-5 after:list-outside after:list-disc after:pointer-events-auto after:text-center after:indent-[0px] after:normal-case after:visible after:border-separate after:font-geist">
                     <img
                       src="https://c.animaapp.com/mhnzg6knJo6lE7/assets/icon-4.svg"
-                      alt="Icon"
+                      alt="Arrow icon for Get a free quote button"
                       className="box-border caret-transparent h-full w-full"
                       style={{ filter: 'brightness(0.3) saturate(2) hue-rotate(0deg)' }}
                     />

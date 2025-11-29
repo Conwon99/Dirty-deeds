@@ -3,47 +3,232 @@ import '../styles/global.css';
 
 interface Props {
   title: string;
+  description?: string;
+  canonical?: string;
+  keywords?: string;
+  ogImage?: string;
 }
 
-const { title } = Astro.props;
+const { title, description, canonical, keywords, ogImage } = Astro.props;
 
 // Canonical phone number for SEO and structured data
 const CANONICAL_PHONE = "07926 592704";
 const CANONICAL_PHONE_TEL = "+447926592704";
+
+// Default meta description (optimized to 120-160 characters)
+const defaultDescription = "Professional fencing and decking services in Ayrshire. Expert installation, quality materials, free quotes. Fully insured contractors with 13+ years experience.";
+
+// Default keywords
+const defaultKeywords = "fence contractor ayrshire, fencing ayrshire, decking ayrshire, fence installation ayrshire, fence repairs ayrshire, gates ayrshire, sheds ayrshire, garden rooms ayrshire, wooden fencing ayrshire, composite fencing ayrshire, chainlink fencing ayrshire, timber decking ayrshire, composite decking ayrshire, fencing glasgow, decking glasgow";
+
+// Generate canonical URL
+const siteUrl = "https://www.ayrshirefencinggroup.com";
+const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString();
+const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Ayrshire Fencing Group - Reliable fencing contractors in Irvine, North Ayrshire. Bespoke fencing, sheds & gates, trellis, decking, palisade fencing, and fencing repairs. Free quotes, insured contractors, over 13 years' experience." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description || defaultDescription} />
+    <meta name="keywords" content={keywords || defaultKeywords} />
+    <meta name="author" content="Ayrshire Fencing Group" />
+    <meta name="language" content="English" />
+    <meta name="geo.region" content="GB-AYS" />
+    <meta name="geo.placename" content="Ayrshire, Scotland" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalUrl} />
+    
+    <!-- Hreflang for UK targeting -->
+    <link rel="alternate" hreflang="en-gb" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en" href={canonicalUrl} />
+    <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description || defaultDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={defaultOgImage} />
+    <meta property="og:site_name" content="Ayrshire Fencing Group" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description || defaultDescription} />
+    <meta name="twitter:image" content={defaultOgImage} />
+    
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": ["HomeAndConstructionBusiness", "ProfessionalService", "LocalBusiness"],
       "name": "Ayrshire Fencing Group",
       "description": "Fully qualified and insured fencing and decking specialists. Fencing, Fence Repairs, Decking, Gates, Sheds, Garden Rooms across Ayrshire. Over 13 years' experience.",
       "telephone": CANONICAL_PHONE_TEL,
       "email": "ayrshirefencinggroup@outlook.com",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "",
         "addressLocality": "Irvine",
         "addressRegion": "North Ayrshire",
+        "postalCode": "",
         "addressCountry": "GB"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Ayrshire"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "55.6194",
+        "longitude": "-4.6551"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Ayrshire"
+        },
+        {
+          "@type": "City",
+          "name": "Irvine"
+        },
+        {
+          "@type": "City",
+          "name": "Kilmarnock"
+        },
+        {
+          "@type": "City",
+          "name": "Ayr"
+        },
+        {
+          "@type": "City",
+          "name": "Troon"
+        },
+        {
+          "@type": "City",
+          "name": "Prestwick"
+        },
+        {
+          "@type": "City",
+          "name": "Kilwinning"
+        },
+        {
+          "@type": "City",
+          "name": "Glasgow"
+        }
+      ],
+      "serviceType": [
+        "Fence Installation",
+        "Fence Repair",
+        "Decking Installation",
+        "Gate Installation",
+        "Shed Installation",
+        "Garden Room Installation",
+        "Wooden Fencing",
+        "Composite Fencing",
+        "Chainlink Fencing",
+        "Concrete Fencing",
+        "Nylofor Fencing",
+        "Timber Decking",
+        "Composite Decking"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Fencing and Decking Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fence Installation",
+              "description": "Professional fence installation services in Ayrshire"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fence Repair",
+              "description": "Expert fence repair and restoration services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Decking Installation",
+              "description": "Professional decking installation and design"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gate Installation",
+              "description": "Garden and security gate installation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Shed Installation",
+              "description": "Custom shed building and installation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Garden Room Installation",
+              "description": "Professional garden room installation"
+            }
+          }
+        ]
       },
       "url": Astro.url.origin,
       "priceRange": "$$",
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
-        "reviewCount": "16"
+        "reviewCount": "16",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Nicole Saunders"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Brilliant service and an amazing job completed. Would highly recommend!"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "foundingDate": "2011",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": "5-10"
       }
     })} />
   </head>

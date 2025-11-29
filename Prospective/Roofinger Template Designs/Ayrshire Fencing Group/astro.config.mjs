@@ -12,6 +12,10 @@ export default defineConfig({
   ],
   output: 'static',
   publicDir: './static',
+  build: {
+    format: 'file'
+  },
+  trailingSlash: 'never',
   vite: {
     resolve: {
       alias: {

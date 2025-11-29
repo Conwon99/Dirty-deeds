@@ -19,16 +19,46 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
+
+// Generate unique title based on slug
+const getProjectTitle = (slug: string | undefined) => {
+  const titleMap: Record<string, string> = {
+    "wooden-gate-and-fencing": "Wooden Gate and Fencing Project Ayrshire | Ayrshire Fencing Group",
+    "fencing-project-two": "Fencing Installation Project Ayrshire | Ayrshire Fencing Group",
+    "wooden-fencing": "Wooden Fencing Project Ayrshire | Ayrshire Fencing Group",
+    "decking-project-four": "Decking Installation Project Ayrshire | Ayrshire Fencing Group",
+    "decking-project-five": "Timber Decking Project Ayrshire | Ayrshire Fencing Group",
+    "decking-project-six": "Composite Decking Project Ayrshire | Ayrshire Fencing Group",
+  };
+  return titleMap[slug || ""] || "Project - Ayrshire Fencing Group";
+};
+
+// Generate unique meta description based on slug
+const getProjectDescription = (slug: string | undefined) => {
+  const descriptionMap: Record<string, string> = {
+    "wooden-gate-and-fencing": "View our completed wooden gate and fencing project in Ayrshire. Professional installation showcasing quality craftsmanship and durable timber solutions.",
+    "fencing-project-two": "Explore our fencing installation project in Ayrshire. Expert craftsmanship delivering secure, attractive boundary solutions for residential properties.",
+    "wooden-fencing": "See our wooden fencing project completed in Ayrshire. High-quality timber fencing installation demonstrating professional workmanship and natural beauty.",
+    "decking-project-four": "Discover our decking installation project in Ayrshire. Professional timber decking transforming outdoor spaces with quality materials and expert installation.",
+    "decking-project-five": "View our timber decking project in Ayrshire. Premium decking installation showcasing natural wood beauty and professional craftsmanship.",
+    "decking-project-six": "Explore our composite decking project in Ayrshire. Low-maintenance decking installation demonstrating durability and modern design solutions.",
+  };
+  return descriptionMap[slug || ""] || "Professional fencing and decking project completed by Ayrshire Fencing Group. Quality workmanship and expert installation in Ayrshire.";
+};
+
+const pageTitle = getProjectTitle(slug);
+const pageDescription = getProjectDescription(slug);
+const canonicalUrl = `https://www.ayrshirefencinggroup.com/project/${slug}`;
 ---
 
-<BaseLayout title="Project - Ayrshire Fencing Group">
+<BaseLayout title={pageTitle} description={pageDescription} canonical={canonicalUrl}>
     <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
-      <Header client:only="react" />
+      <Header client:load />
       <Hero slug={slug} client:only="react" />
       <ProjectContent slug={slug} client:only="react" />
       <RelatedProjects client:only="react" />
-      <CTASection client:only="react" />
-      <Footer client:only="react" />
+      <CTASection client:load />
+      <Footer client:load />
     </div>
 </BaseLayout>
 

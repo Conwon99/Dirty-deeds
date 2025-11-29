@@ -14,7 +14,7 @@ export const ProjectsGrid = () => {
           >
             <ProjectCard
               href="/project/wooden-gate-and-fencing"
-              imageUrl="/projects/project-1.jpg"
+              imageUrl="/projects/project-1.webp"
               imageAlt="Wooden Gate and Fencing"
               imageClassName="transform-none md:scale-[1.00989px]"
               location="Ayrshire"
@@ -22,14 +22,14 @@ export const ProjectsGrid = () => {
             />
             <ProjectCard
               href="/project/fencing-project-two"
-              imageUrl="/projects/project-2.jpg"
+              imageUrl="/projects/project-2.webp"
               imageAlt="Fencing Project Two"
               location="Ayrshire"
               title="Fencing Project Two"
             />
             <ProjectCard
               href="/project/wooden-fencing"
-              imageUrl="/projects/project-3.jpg"
+              imageUrl="/projects/project-3.webp"
               imageAlt="Wooden Fencing"
               location="Ayrshire"
               title="Wooden Fencing"
@@ -46,21 +46,21 @@ export const ProjectsGrid = () => {
           >
             <ProjectCard
               href="/project/decking-project-four"
-              imageUrl="/projects/project-4.jpg"
+              imageUrl="/projects/project-4.webp"
               imageAlt="Decking Project Four"
               location="Ayrshire"
               title="Decking Project Four"
             />
             <ProjectCard
               href="/project/decking-project-five"
-              imageUrl="/projects/project-5.jpg"
+              imageUrl="/projects/project-5.webp"
               imageAlt="Decking Project Five"
               location="Ayrshire"
               title="Decking Project Five"
             />
             <ProjectCard
               href="/project/decking-project-six"
-              imageUrl="/projects/project-6.jpg"
+              imageUrl="/projects/project-6.webp"
               imageAlt="Decking Project Six"
               location="Ayrshire"
               title="Decking Project Six"

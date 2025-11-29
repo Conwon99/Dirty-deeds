@@ -6,7 +6,7 @@ export const VideoPlayer = () => {
         loop=""
         muted=""
         playsinline=""
-        className="absolute bg-[url('https://cdn.prod.website-files.com/670f4a042a66942f7e529f31%2F670f9f7aa00205c29381c215_video-01-poster-00001.jpg')] bg-cover box-border caret-transparent h-full object-cover w-full z-[-100] bg-center m-auto -inset-full"
+        className="absolute bg-[url('https://cdn.prod.website-files.com/670f4a042a66942f7e529f31%2F670f9f7aa00205c29381c215_video-01-poster-00001.webp')] bg-cover box-border caret-transparent h-full object-cover w-full z-[-100] bg-center m-auto -inset-full"
       >
         <source
           src="https://cdn.prod.website-files.com/670f4a042a66942f7e529f31/670f9f7aa00205c29381c215_video-01-transcode.mp4"

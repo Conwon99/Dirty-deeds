@@ -10,7 +10,7 @@ export const RatingDisplay = () => {
           aria-label="Trust a Trader"
         >
           <img
-            src="/trust.jpg"
+            src="/trust.webp"
             alt="Trust a Trader"
             className="box-border caret-transparent h-10 w-auto md:h-12"
           />

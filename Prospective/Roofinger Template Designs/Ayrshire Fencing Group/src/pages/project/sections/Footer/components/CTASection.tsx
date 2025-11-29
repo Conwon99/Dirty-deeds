@@ -38,7 +38,7 @@ export const CTASection = () => {
             className="box-border caret-transparent inline-block max-w-full underline mb-5 md:mb-10 hover:decoration-transparent"
           >
             <img
-              src="/logo.png"
+              src="/logo.webp"
               alt="Ayrshire Fencing Group Logo"
               className="box-border caret-transparent inline-block h-8 max-w-full w-full md:h-9"
             />
