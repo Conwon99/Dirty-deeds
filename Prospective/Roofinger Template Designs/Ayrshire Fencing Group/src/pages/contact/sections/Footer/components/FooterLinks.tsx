@@ -9,43 +9,43 @@ export const FooterLinks = () => {
             href: "/",
             text: "Home 1",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
           {
             href: "/home-2",
             text: "Home 2",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
           {
             href: "/about",
             text: "About",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
           {
             href: "/services",
             text: "Services",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
           {
             href: "/service-static",
             text: "Service Static",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
           {
             href: "/projects",
             text: "Projects",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
           {
             href: "/pricing",
             text: "Pricing",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
         ]}
       />
@@ -55,42 +55,42 @@ export const FooterLinks = () => {
             href: "/blog",
             text: "Blog",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
           {
             href: "/contact",
             text: "Contact",
-            className: "text-orange-500 box-border caret-transparent block",
+            className: "text-[#787e59] box-border caret-transparent block",
           },
           {
             href: "/privacy-policy",
             text: "Privacy Policy",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
           {
             href: "/utility-pages/style-guide",
             text: "Style Guide",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
           {
             href: "/utility-pages/instructions",
             text: "Instructions",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
           {
             href: "/utility-pages/licenses",
             text: "Licenses",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
           {
             href: "/utility-pages/changelog",
             text: "Changelog",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
         ]}
         columnVariant="col-end-[span_1] col-start-[span_1] row-end-[span_1] row-start-[span_1] md:col-end-auto md:col-start-auto md:row-end-auto md:row-start-auto"
@@ -101,25 +101,25 @@ export const FooterLinks = () => {
             href: "/utility-pages/coming-soon",
             text: "Coming Soon",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
           {
             href: "/utility-pages/link-in-bio",
             text: "Link in Bio",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
           {
             href: "https://roofinger-wbs.webflow.io/401",
             text: "Password Protected",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
           {
             href: "https://roofinger-wbs.webflow.io/404",
             text: "Error 404",
             className:
-              "text-white box-border caret-transparent block hover:text-orange-500 hover:decoration-transparent hover:border-orange-500",
+              "text-white box-border caret-transparent block hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]",
           },
         ]}
       />

@@ -1,4 +1,5 @@
 import { Badge } from "@/components/Badge";
+import { TestimonialsCarousel } from "@/sections/ExperienceSection/components/TestimonialsCarousel";
 
 export const ExperienceImage = () => {
   return (
@@ -19,6 +20,9 @@ export const ExperienceImage = () => {
         ></div>
       </div>
       <Badge />
+      <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 z-10">
+        <TestimonialsCarousel />
+      </div>
     </div>
   );
 };

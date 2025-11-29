@@ -1,26 +1,63 @@
+import { PhoneLink } from "@/components/PhoneLink";
+
 interface ServiceInfoProps {
   slug?: string;
 }
 
 export const ServiceInfo = ({ slug }: ServiceInfoProps = {}) => {
-  const isDecking = slug === "decking";
-  const isFencing = slug === "fencing";
-  const isFenceRepairs = slug === "fence-repairs";
+  const isDecking = slug === "decking" || slug === "timber-decking-irvine" || slug === "composite-decking-irvine" || slug === "wooden-decking-irvine";
+  const isFencing = slug === "fencing" || slug === "custom-fence-construction-irvine" || slug === "wood-fence-installation-irvine" || slug === "garden-fence-installation-irvine" || slug === "composite-fencing-installation-irvine" || slug === "chainlink-fencing-installation-irvine" || slug === "wooden-fencing-irvine" || slug === "composite-fencing-irvine" || slug === "chainlink-fencing-irvine" || slug === "nylofor-fencing-irvine" || slug === "concrete-fencing-irvine";
+  const isFenceRepairs = slug === "fence-repairs" || slug === "fence-replacement-irvine";
   const isGates = slug === "gates";
   const isSheds = slug === "sheds";
   const isGardenRooms = slug === "garden-rooms";
+  
+  // Specific service types
+  const isCustomFence = slug === "custom-fence-construction-irvine";
+  const isWoodFence = slug === "wood-fence-installation-irvine" || slug === "wooden-fencing-irvine";
+  const isFenceReplacement = slug === "fence-replacement-irvine";
+  const isGardenFence = slug === "garden-fence-installation-irvine";
+  const isCompositeFence = slug === "composite-fencing-installation-irvine" || slug === "composite-fencing-irvine";
+  const isChainlinkFence = slug === "chainlink-fencing-installation-irvine" || slug === "chainlink-fencing-irvine";
+  const isNyloforFence = slug === "nylofor-fencing-irvine";
+  const isConcreteFence = slug === "concrete-fencing-irvine";
+  const isTimberDecking = slug === "timber-decking-irvine";
+  const isCompositeDecking = slug === "composite-decking-irvine";
+  const isWoodenDecking = slug === "wooden-decking-irvine";
 
   const getTitle = () => {
-    if (isDecking) return "About our decking installations";
-    if (isFencing) return "About our fencing installations";
-    if (isFenceRepairs) return "About our fence repair services";
-    if (isGates) return "About our gate installation services";
-    if (isSheds) return "About our shed installation services";
-    if (isGardenRooms) return "About our garden room installations";
-    return "About our services";
+    if (isCompositeDecking) return "Need Expert Composite Decking In Ayrshire?";
+    if (isWoodenDecking) return "Need Expert Wooden Decking In Ayrshire?";
+    if (isNyloforFence) return "Need Expert Nylofor Fencing In Ayrshire?";
+    if (isConcreteFence) return "Need Expert Concrete Fencing In Ayrshire?";
+    if (isCustomFence) return "Need Expert Custom Fence Construction In Ayrshire?";
+    if (isWoodFence) return "Need Expert Wood Fence Installation In Ayrshire?";
+    if (isFenceReplacement) return "Need Expert Fence Replacement In Ayrshire?";
+    if (isGardenFence) return "Need Expert Garden Fence Installation In Ayrshire?";
+    if (isCompositeFence) return "Need Expert Composite Fencing Installation In Ayrshire?";
+    if (isChainlinkFence) return "Need Expert Chainlink Fencing Installation In Ayrshire?";
+    if (isTimberDecking) return "Need Expert Timber Decking In Ayrshire?";
+    if (isDecking) return "Need Expert Decking In Ayrshire?";
+    if (isFencing) return "Need Expert Fencing In Ayrshire?";
+    if (isFenceRepairs) return "Need Expert Fence Repairs In Ayrshire?";
+    if (isGates) return "Need Expert Gates In Ayrshire?";
+    if (isSheds) return "Need Expert Sheds In Ayrshire?";
+    if (isGardenRooms) return "Need Expert Garden Rooms In Ayrshire?";
+    return "Need Expert Services In Ayrshire?";
   };
 
   const getDescription = () => {
+    if (isCompositeDecking) return "Professional composite decking installation in Ayrshire. Our composite decking offers the beauty of wood with enhanced durability and minimal maintenance. Perfect for properties requiring a long-lasting, weather-resistant decking solution that maintains its appearance for years.";
+    if (isWoodenDecking) return "Professional wooden decking installation in Ayrshire using high-quality timber. Our wooden decking provides natural beauty and warmth, creating a traditional and versatile outdoor space. We use premium timber that can be customized to match your property's style and preferences.";
+    if (isNyloforFence) return "Nylofor fencing installation in Ayrshire providing modern, secure privacy solutions. Our nylofor fencing offers excellent privacy and weather resistance with a contemporary appearance. This durable fencing material is perfect for properties requiring both security and aesthetic appeal.";
+    if (isConcreteFence) return "Concrete fencing installation in Ayrshire offering maximum durability and security. Our concrete fencing provides long-lasting protection with minimal maintenance, making it ideal for properties requiring robust, permanent boundary solutions. Perfect for both residential and commercial applications.";
+    if (isCustomFence) return "Our custom fence construction services in Ayrshire provide bespoke fencing solutions tailored to your specific needs. We work closely with you to design and build fences that match your property's style, whether you need privacy, security, or aesthetic appeal.";
+    if (isWoodFence) return "Professional wood fence installation in Ayrshire using high-quality timber. Our wooden fencing offers natural beauty and can be customized to match your property's style, providing both security and aesthetic appeal.";
+    if (isFenceReplacement) return "Expert fence replacement services in Ayrshire. When your existing fence is beyond repair, we provide complete replacement services, removing old fencing and installing new, durable solutions that will last for years.";
+    if (isGardenFence) return "Garden fence installation in Ayrshire designed to enhance your outdoor space. Our garden fencing solutions provide the perfect balance of privacy, security, and visual appeal for your garden and property boundaries.";
+    if (isCompositeFence) return "Composite fencing installation in Ayrshire offering low-maintenance and durable solutions. Our composite fencing combines the look of wood with enhanced weather resistance, perfect for properties requiring minimal upkeep.";
+    if (isChainlinkFence) return "Chainlink fencing installation in Ayrshire providing cost-effective and practical security solutions. Our chainlink fencing offers excellent visibility while maintaining strong boundaries and security for your property.";
+    if (isTimberDecking) return "Professional timber decking installation in Ayrshire. We use high-quality timber to create beautiful, durable decking that transforms your outdoor space into a functional and attractive area for relaxation and entertainment.";
     if (isDecking) return "Our decking installation services are designed to transform your outdoor space with durable, high-quality timber decking. Whether you need decking for your garden, patio, or commercial property, we offer various materials and styles to suit your needs and enhance your outdoor living area.";
     if (isFencing) return "Our fencing installation services are designed to provide your property with durable, secure fencing that enhances both security and aesthetic appeal. We offer a wide range of fencing types to suit every need and budget.";
     if (isFenceRepairs) return "Expert repair services for all types of fencing. We fix damage, replace sections, and restore your fencing to its best condition, ensuring your property remains secure and well-maintained.";
@@ -33,15 +70,57 @@ export const ServiceInfo = ({ slug }: ServiceInfoProps = {}) => {
   return (
     <div className="items-start box-border caret-transparent gap-x-5 flex flex-col justify-start gap-y-5 md:gap-x-[50px] md:gap-y-[50px]">
       <div className="box-border caret-transparent">
-        <h2 className="text-gray-900 text-[22px] font-bold box-border caret-transparent leading-[30.8px] mb-2.5 md:text-[34px] md:leading-[40.8px] md:mb-[30px]">
+        <h2 className="text-white text-[22px] font-bold box-border caret-transparent leading-[30.8px] mb-2.5 md:text-[34px] md:leading-[40.8px] md:mb-[30px]">
           {getTitle()}
         </h2>
-        <p className="box-border caret-transparent mb-2.5">
+        {(isCompositeDecking || isWoodenDecking) && (
+          <p className="text-gray-200 box-border caret-transparent mb-3">
+            <a href="/service/decking" className="text-[#787e59] hover:underline font-medium">
+              ← Back to Decking Services
+            </a>
+          </p>
+        )}
+        {(slug === "wooden-fencing-irvine" || slug === "composite-fencing-irvine" || slug === "chainlink-fencing-irvine" || isNyloforFence || isConcreteFence) && (
+          <p className="text-gray-200 box-border caret-transparent mb-3">
+            <a href="/service/fencing" className="text-[#787e59] hover:underline font-medium">
+              ← Back to Fencing Services
+            </a>
+          </p>
+        )}
+        <p className="text-gray-200 box-border caret-transparent mb-5 md:mb-6">
           {getDescription()}
         </p>
-        {isFencing && (
+        <div className="mb-5 md:mb-6">
+          <PhoneLink
+            variant="default"
+            iconSrc="https://c.animaapp.com/mhooxuovKXaEfR/assets/670f86de88858acaf330ddd9_phone.svg"
+            iconAlt="Phone"
+            className="inline-flex items-center gap-x-3 text-white bg-[#787e59] hover:bg-[#8a9168] px-6 py-3 rounded-[100px] font-medium transition-colors duration-300 shadow-[0_0_20px_rgba(120,126,89,0.5),0_0_40px_rgba(120,126,89,0.3)] hover:shadow-[0_0_30px_rgba(120,126,89,0.7),0_0_60px_rgba(120,126,89,0.5)]"
+            displayClassName="text-base md:text-lg font-semibold"
+            showIcon={true}
+          />
+        </div>
+        {isDecking && !isCompositeDecking && !isWoodenDecking && !isTimberDecking && (
           <div className="box-border caret-transparent mt-5">
-            <h3 className="text-gray-900 text-lg font-bold box-border caret-transparent leading-[25.2px] mb-3 md:text-xl md:leading-[28px]">
+            <h3 className="text-white text-lg font-bold box-border caret-transparent leading-[25.2px] mb-3 md:text-xl md:leading-[28px]">
+              Types of Decking We Install:
+            </h3>
+            <ul
+              role="list"
+              className="box-border caret-transparent mt-[15px] mb-2.5 pl-5 md:mt-[20px]"
+            >
+              <li className="box-border caret-transparent mb-3">
+                <strong><a href="/service/wooden-decking-irvine" className="text-[#787e59] hover:underline">Wooden Decking:</a></strong> Traditional and natural, wooden decking provides warmth and beauty. We use high-quality timber that can be customized to match your property's style.
+              </li>
+              <li className="box-border caret-transparent mb-3">
+                <strong><a href="/service/composite-decking-irvine" className="text-[#787e59] hover:underline">Composite Decking:</a></strong> Low-maintenance and durable, composite decking combines the look of wood with enhanced weather resistance and minimal upkeep requirements.
+              </li>
+            </ul>
+          </div>
+        )}
+        {isFencing && !isWoodFence && !isCompositeFence && !isChainlinkFence && !isNyloforFence && !isConcreteFence && (
+          <div className="box-border caret-transparent mt-5">
+            <h3 className="text-white text-lg font-bold box-border caret-transparent leading-[25.2px] mb-3 md:text-xl md:leading-[28px]">
               Types of Fencing We Install:
             </h3>
             <ul
@@ -49,29 +128,29 @@ export const ServiceInfo = ({ slug }: ServiceInfoProps = {}) => {
               className="box-border caret-transparent mt-[15px] mb-2.5 pl-5 md:mt-[20px]"
             >
               <li className="box-border caret-transparent mb-3">
-                <strong>Wooden Fencing:</strong> Traditional and versatile, wooden fencing offers natural beauty and can be customized to match your property's style.
+                <strong><a href="/service/wooden-fencing-irvine" className="text-[#787e59] hover:underline">Wooden Fencing:</a></strong> Traditional and versatile, wooden fencing offers natural beauty and can be customized to match your property's style.
               </li>
               <li className="box-border caret-transparent mb-3">
-                <strong>Composite Fencing:</strong> Low-maintenance and durable, composite fencing combines the look of wood with enhanced weather resistance.
+                <strong><a href="/service/composite-fencing-irvine" className="text-[#787e59] hover:underline">Composite Fencing:</a></strong> Low-maintenance and durable, composite fencing combines the look of wood with enhanced weather resistance.
               </li>
               <li className="box-border caret-transparent mb-3">
-                <strong>Chainlink Fencing:</strong> Cost-effective and practical, chainlink fencing provides security and visibility while maintaining boundaries.
+                <strong><a href="/service/chainlink-fencing-irvine" className="text-[#787e59] hover:underline">Chainlink Fencing:</a></strong> Cost-effective and practical, chainlink fencing provides security and visibility while maintaining boundaries.
               </li>
               <li className="box-border caret-transparent mb-3">
-                <strong>Nylofor Fencing:</strong> Modern and secure, nylofor fencing offers excellent privacy and weather resistance with a contemporary appearance.
+                <strong><a href="/service/nylofor-fencing-irvine" className="text-[#787e59] hover:underline">Nylofor Fencing:</a></strong> Modern and secure, nylofor fencing offers excellent privacy and weather resistance with a contemporary appearance.
               </li>
               <li className="box-border caret-transparent mb-3">
-                <strong>Concrete Fencing:</strong> Maximum durability and security, concrete fencing provides long-lasting protection with minimal maintenance.
+                <strong><a href="/service/concrete-fencing-irvine" className="text-[#787e59] hover:underline">Concrete Fencing:</a></strong> Maximum durability and security, concrete fencing provides long-lasting protection with minimal maintenance.
               </li>
             </ul>
           </div>
         )}
       </div>
       <div className="box-border caret-transparent">
-        <h2 className="text-gray-900 text-[22px] font-bold box-border caret-transparent leading-[30.8px] mb-2.5 md:text-[34px] md:leading-[40.8px] md:mb-[30px]">
+        <h2 className="text-white text-[22px] font-bold box-border caret-transparent leading-[30.8px] mb-2.5 md:text-[34px] md:leading-[40.8px] md:mb-[30px]">
           Why choose our {isDecking ? "decking" : isFencing ? "fencing" : isFenceRepairs ? "fence repair" : isGates ? "gate" : isSheds ? "shed" : isGardenRooms ? "garden room" : ""} services?
         </h2>
-        <p className="box-border caret-transparent mb-2.5">
+        <p className="text-gray-200 box-border caret-transparent mb-2.5">
           {isDecking
             ? "Our decking installations combine top-quality timber materials and expert craftsmanship, ensuring durability and style for your outdoor space."
             : isFencing
@@ -117,10 +196,10 @@ export const ServiceInfo = ({ slug }: ServiceInfoProps = {}) => {
         </ul>
       </div>
       <div className="box-border caret-transparent">
-        <h2 className="text-gray-900 text-[22px] font-bold box-border caret-transparent leading-[30.8px] mb-2.5 md:text-[34px] md:leading-[40.8px] md:mb-[30px]">
+        <h2 className="text-white text-[22px] font-bold box-border caret-transparent leading-[30.8px] mb-2.5 md:text-[34px] md:leading-[40.8px] md:mb-[30px]">
           {isDecking ? "Our installation process" : "Our installation process"}
         </h2>
-        <p className="box-border caret-transparent mb-2.5">
+        <p className="text-gray-200 box-border caret-transparent mb-2.5">
           We follow a thorough, step-by-step approach, from consultation to
           completion, ensuring a seamless experience and exceptional results for
           every project.

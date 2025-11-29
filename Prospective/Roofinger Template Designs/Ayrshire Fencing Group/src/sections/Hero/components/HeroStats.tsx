@@ -13,7 +13,7 @@ export const HeroStats = () => {
         {[...Array(5)].map((_, i) => (
           <svg
             key={i}
-            className="box-border caret-transparent h-5 w-5 text-[#787e59] md:h-6 md:w-6"
+            className="box-border caret-transparent h-5 w-5 text-yellow-400 md:h-6 md:w-6"
             fill="currentColor"
             viewBox="0 0 20 20"
           >

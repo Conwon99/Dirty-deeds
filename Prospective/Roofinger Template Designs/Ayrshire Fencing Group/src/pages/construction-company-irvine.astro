@@ -1,0 +1,51 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { Hero } from "@/pages/services/sections/Hero";
+import { ServicesSection } from "@/pages/services/sections/ServicesSection";
+import { WhyChooseSection } from "@/pages/services/sections/WhyChooseSection";
+import { FAQSection } from "@/pages/services/sections/FAQSection";
+import { CTASection } from "@/sections/Footer/components/CTASection";
+import { Footer } from "@/sections/Footer";
+---
+
+<BaseLayout title="Construction Company Irvine | Professional Builders | Ayrshire Fencing Group">
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:only="react" />
+      <Hero client:only="react" />
+      <section class="box-border caret-transparent pt-5 md:pt-0">
+        <div class="box-border caret-transparent max-w-[1540px] mx-auto px-[15px] md:px-[30px]">
+          <div class="text-white text-center mb-10">
+            <h1 class="text-4xl font-bold mb-4 md:text-5xl">Construction Company in Irvine</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto">
+              As a professional construction company in Irvine, Ayrshire Fencing Group provides comprehensive building and installation services for outdoor structures including fencing, decking, gates, sheds, and garden rooms.
+            </p>
+          </div>
+          <div class="text-white mb-8">
+            <h2 class="text-2xl font-bold mb-4">Our Construction Services in Irvine</h2>
+            <p class="text-lg mb-4">
+              Our construction company in Irvine specializes in outdoor construction projects:
+            </p>
+            <ul class="list-disc list-inside space-y-2 mb-6">
+              <li>Fence construction and installation</li>
+              <li>Decking construction and installation</li>
+              <li>Gate construction and installation</li>
+              <li>Shed construction and installation</li>
+              <li>Garden room construction</li>
+              <li>Outdoor structure repairs and maintenance</li>
+            </ul>
+            <p class="text-lg">
+              As a trusted construction company in Irvine, we are fully qualified and insured, with over 13 years of experience delivering quality construction services throughout Ayrshire.
+            </p>
+          </div>
+        </div>
+      </section>
+      <ServicesSection client:only="react" />
+      <WhyChooseSection client:only="react" />
+      <FAQSection client:only="react" />
+      <CTASection client:only="react" />
+      <Footer client:only="react" />
+    </div>
+</BaseLayout>
+
+

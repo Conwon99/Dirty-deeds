@@ -16,13 +16,60 @@ export async function getStaticPaths() {
     { params: { slug: "gates" } },
     { params: { slug: "sheds" } },
     { params: { slug: "garden-rooms" } },
+    { params: { slug: "custom-fence-construction-irvine" } },
+    { params: { slug: "wood-fence-installation-irvine" } },
+    { params: { slug: "fence-replacement-irvine" } },
+    { params: { slug: "garden-fence-installation-irvine" } },
+    { params: { slug: "composite-fencing-installation-irvine" } },
+    { params: { slug: "chainlink-fencing-installation-irvine" } },
+    { params: { slug: "timber-decking-irvine" } },
+    // Decking sub-pages
+    { params: { slug: "composite-decking-irvine" } },
+    { params: { slug: "wooden-decking-irvine" } },
+    // Fencing sub-pages
+    { params: { slug: "wooden-fencing-irvine" } },
+    { params: { slug: "composite-fencing-irvine" } },
+    { params: { slug: "chainlink-fencing-irvine" } },
+    { params: { slug: "nylofor-fencing-irvine" } },
+    { params: { slug: "concrete-fencing-irvine" } },
   ];
 }
 
 const { slug } = Astro.params;
+
+// Generate title based on slug
+const getTitle = (slug: string | undefined) => {
+  const titleMap: Record<string, string> = {
+    "fencing": "Fence Installation Ayrshire | Professional Fencing Services | Ayrshire Fencing Group",
+    "fence-repairs": "Fence Repair Ayrshire | Expert Repair & Restoration | Ayrshire Fencing Group",
+    "decking": "Decking Installation Ayrshire | Professional Timber Decking | Ayrshire Fencing Group",
+    "gates": "Gate Installation Ayrshire | Garden & Security Gates | Ayrshire Fencing Group",
+    "sheds": "Shed Installation Ayrshire | Custom Shed Building | Ayrshire Fencing Group",
+    "garden-rooms": "Garden Rooms Ayrshire | Professional Installation | Ayrshire Fencing Group",
+    "custom-fence-construction-irvine": "Custom Fence Construction Ayrshire | Bespoke Fencing Solutions | Ayrshire Fencing Group",
+    "wood-fence-installation-irvine": "Wood Fence Installation Ayrshire | Professional Timber Fencing | Ayrshire Fencing Group",
+    "fence-replacement-irvine": "Fence Replacement Ayrshire | Expert Fence Replacement Services | Ayrshire Fencing Group",
+    "garden-fence-installation-irvine": "Garden Fence Installation Ayrshire | Garden Fencing Services | Ayrshire Fencing Group",
+    "composite-fencing-installation-irvine": "Composite Fencing Installation Ayrshire | Low-Maintenance Fencing | Ayrshire Fencing Group",
+    "chainlink-fencing-installation-irvine": "Chainlink Fencing Installation Ayrshire | Security Fencing | Ayrshire Fencing Group",
+    "timber-decking-irvine": "Timber Decking Ayrshire | Professional Decking Installation | Ayrshire Fencing Group",
+    // Decking sub-pages
+    "composite-decking-irvine": "Composite Decking Ayrshire | Professional Installation & Design | Ayrshire Fencing Group",
+    "wooden-decking-irvine": "Wooden Decking Ayrshire | Professional Timber Decking | Ayrshire Fencing Group",
+    // Fencing sub-pages
+    "wooden-fencing-irvine": "Wooden Fencing Ayrshire | Professional Timber Fencing | Ayrshire Fencing Group",
+    "composite-fencing-irvine": "Composite Fencing Ayrshire | Low-Maintenance Fencing | Ayrshire Fencing Group",
+    "chainlink-fencing-irvine": "Chainlink Fencing Ayrshire | Security Fencing | Ayrshire Fencing Group",
+    "nylofor-fencing-irvine": "Nylofor Fencing Ayrshire | Modern Privacy Fencing | Ayrshire Fencing Group",
+    "concrete-fencing-irvine": "Concrete Fencing Ayrshire | Durable Security Fencing | Ayrshire Fencing Group",
+  };
+  return titleMap[slug || ""] || "Service - Ayrshire Fencing Group";
+};
+
+const pageTitle = getTitle(slug);
 ---
 
-<BaseLayout title="Service - Ayrshire Fencing Group">
+<BaseLayout title={pageTitle}>
     <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
       <Header client:only="react" />
       <Hero slug={slug} client:only="react" />

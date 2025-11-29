@@ -1,0 +1,55 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { Hero } from "@/pages/services/sections/Hero";
+import { ServicesSection } from "@/pages/services/sections/ServicesSection";
+import { WhyChooseSection } from "@/pages/services/sections/WhyChooseSection";
+import { FAQSection } from "@/pages/services/sections/FAQSection";
+import { CTASection } from "@/sections/Footer/components/CTASection";
+import { Footer } from "@/sections/Footer";
+---
+
+<BaseLayout title="Fence Contractor Ayrshire | Professional Fencing Services | Ayrshire Fencing Group">
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:only="react" />
+      <Hero client:only="react" />
+      <section class="box-border caret-transparent pt-5 md:pt-0">
+        <div class="box-border caret-transparent max-w-[1540px] mx-auto px-[15px] md:px-[30px]">
+          <div class="text-white text-center mb-10">
+            <h1 class="text-4xl font-bold mb-4 md:text-5xl">Professional Fence Contractor in Ayrshire</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto">
+              As experienced fence contractors in Ayrshire, Ayrshire Fencing Group provides comprehensive fencing services including installation, repair, and replacement. We offer all types of fencing solutions for residential and commercial properties.
+            </p>
+          </div>
+          <div class="text-white mb-8">
+            <h2 class="text-2xl font-bold mb-4">Our Fencing Services in Ayrshire</h2>
+            <ul class="list-disc list-inside space-y-2 mb-6">
+              <li><a href="/service/custom-fence-construction-irvine" class="text-[#787e59] hover:underline">Custom Fence Construction Ayrshire</a> - Bespoke fencing solutions tailored to your needs</li>
+              <li><a href="/service/fencing" class="text-[#787e59] hover:underline">Fence Installation Ayrshire</a> - Professional installation of all fence types</li>
+              <li><a href="/service/wooden-fencing-irvine" class="text-[#787e59] hover:underline">Wooden Fencing Ayrshire</a> - Professional timber fencing with natural beauty</li>
+              <li><a href="/service/wood-fence-installation-irvine" class="text-[#787e59] hover:underline">Wood Fence Installation Ayrshire</a> - High-quality timber fencing</li>
+              <li><a href="/service/composite-fencing-irvine" class="text-[#787e59] hover:underline">Composite Fencing Ayrshire</a> - Low-maintenance composite fencing</li>
+              <li><a href="/service/composite-fencing-installation-irvine" class="text-[#787e59] hover:underline">Composite Fencing Installation Ayrshire</a> - Low-maintenance composite fencing</li>
+              <li><a href="/service/chainlink-fencing-irvine" class="text-[#787e59] hover:underline">Chainlink Fencing Ayrshire</a> - Security chainlink fencing</li>
+              <li><a href="/service/chainlink-fencing-installation-irvine" class="text-[#787e59] hover:underline">Chainlink Fencing Installation Ayrshire</a> - Security chainlink fencing</li>
+              <li><a href="/service/nylofor-fencing-irvine" class="text-[#787e59] hover:underline">Nylofor Fencing Ayrshire</a> - Modern privacy fencing solutions</li>
+              <li><a href="/service/concrete-fencing-irvine" class="text-[#787e59] hover:underline">Concrete Fencing Ayrshire</a> - Durable security fencing</li>
+              <li><a href="/service/fence-repairs" class="text-[#787e59] hover:underline">Fence Repair Ayrshire</a> - Expert repair and restoration services</li>
+              <li><a href="/service/fence-replacement-irvine" class="text-[#787e59] hover:underline">Fence Replacement Ayrshire</a> - Complete fence replacement services</li>
+              <li><a href="/service/garden-fence-installation-irvine" class="text-[#787e59] hover:underline">Garden Fence Installation Ayrshire</a> - Garden fencing solutions</li>
+              <li><a href="/service/gates" class="text-[#787e59] hover:underline">Gate Installation Ayrshire</a> - Garden and security gates</li>
+            </ul>
+            <p class="text-lg">
+              Our professional fence contractors in Ayrshire have over 13 years of experience providing quality fencing solutions. We work with wooden, composite, chainlink, nylofor, and concrete fencing materials.
+            </p>
+          </div>
+        </div>
+      </section>
+      <ServicesSection client:only="react" />
+      <WhyChooseSection client:only="react" />
+      <FAQSection client:only="react" />
+      <CTASection client:only="react" />
+      <Footer client:only="react" />
+    </div>
+</BaseLayout>
+

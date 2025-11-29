@@ -1,0 +1,45 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { Hero } from "@/pages/services/sections/Hero";
+import { ServicesSection } from "@/pages/services/sections/ServicesSection";
+import { WhyChooseSection } from "@/pages/services/sections/WhyChooseSection";
+import { FAQSection } from "@/pages/services/sections/FAQSection";
+import { CTASection } from "@/sections/Footer/components/CTASection";
+import { Footer } from "@/sections/Footer";
+---
+
+<BaseLayout title="Deck Builder Ayrshire | Professional Installation & Design | Ayrshire Fencing Group">
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:only="react" />
+      <Hero client:only="react" />
+      <section class="box-border caret-transparent pt-5 md:pt-0">
+        <div class="box-border caret-transparent max-w-[1540px] mx-auto px-[15px] md:px-[30px]">
+          <div class="text-white text-center mb-10">
+            <h1 class="text-4xl font-bold mb-4 md:text-5xl">Professional Deck Builder in Ayrshire</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto">
+              As experienced deck builders in Ayrshire, Ayrshire Fencing Group specializes in professional decking installation and design. We create beautiful, durable timber decking solutions that transform your outdoor space.
+            </p>
+          </div>
+          <div class="text-white mb-8">
+            <h2 class="text-2xl font-bold mb-4">Our Decking Services in Ayrshire</h2>
+            <ul class="list-disc list-inside space-y-2 mb-6">
+              <li><a href="/service/decking" class="text-[#787e59] hover:underline">Decking Installation Ayrshire</a> - Professional installation of high-quality decking</li>
+              <li><a href="/service/wooden-decking-irvine" class="text-[#787e59] hover:underline">Wooden Decking Ayrshire</a> - Professional timber decking with natural beauty</li>
+              <li><a href="/service/composite-decking-irvine" class="text-[#787e59] hover:underline">Composite Decking Ayrshire</a> - Low-maintenance composite decking solutions</li>
+              <li><a href="/service/timber-decking-irvine" class="text-[#787e59] hover:underline">Timber Decking Ayrshire</a> - Premium timber decking solutions for your outdoor space</li>
+            </ul>
+            <p class="text-lg">
+              Whether you need decking for your garden, patio, or commercial property, our expert deck builders in Ayrshire provide comprehensive decking services with attention to detail and quality craftsmanship.
+            </p>
+          </div>
+        </div>
+      </section>
+      <ServicesSection client:only="react" />
+      <WhyChooseSection client:only="react" />
+      <FAQSection client:only="react" />
+      <CTASection client:only="react" />
+      <Footer client:only="react" />
+    </div>
+</BaseLayout>
+

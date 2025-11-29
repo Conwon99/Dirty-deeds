@@ -24,7 +24,7 @@ export const CTASection = () => {
             </p>
             <a
               href="/contact"
-              className="text-gray-900 text-sm font-bold bg-orange-500 box-border caret-transparent block leading-[19.6px] text-center border border-orange-500 px-5 py-2 rounded-[50px] border-solid md:text-lg md:leading-[25.2px] md:px-[30px] md:py-3 hover:text-white hover:bg-gray-900 hover:decoration-transparent"
+              className="text-white text-sm font-bold bg-[#787e59] box-border caret-transparent block leading-[19.6px] text-center border border-[#787e59] px-5 py-2 rounded-[50px] border-solid md:text-lg md:leading-[25.2px] md:px-[30px] md:py-3 hover:bg-[#8a9168] hover:decoration-transparent shadow-[0_0_20px_rgba(120,126,89,0.5),0_0_40px_rgba(120,126,89,0.3)] hover:shadow-[0_0_30px_rgba(120,126,89,0.7),0_0_60px_rgba(120,126,89,0.5)] transition-shadow duration-300"
             >
               Request a free quote
             </a>
@@ -78,7 +78,7 @@ export const CTASection = () => {
             <div
               role="region"
               aria-label="Footer Email Form failure"
-              className="text-white bg-orange-700 box-border caret-transparent hidden text-center mt-2.5 p-[15px] rounded-[20px]"
+              className="text-white bg-[#8a9168] box-border caret-transparent hidden text-center mt-2.5 p-[15px] rounded-[20px]"
             >
               <div className="box-border caret-transparent">
                 Oops! Something went wrong while submitting the form.
@@ -243,7 +243,7 @@ export const CTASection = () => {
           <div className="box-border caret-transparent gap-x-[15px] flex gap-y-[15px]">
             <a
               href="https://www.instagram.com/"
-              className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-orange-500 hover:decoration-transparent"
+              className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-[#787e59] hover:decoration-transparent"
             >
               <img
                 src="https://c.animaapp.com/miakqmnoJuBvHF/assets/670f58e333797fd0eb9fa085_instagram.svg"
@@ -253,7 +253,7 @@ export const CTASection = () => {
             </a>
             <a
               href="https://www.facebook.com/"
-              className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-orange-500 hover:decoration-transparent"
+              className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-[#787e59] hover:decoration-transparent"
             >
               <img
                 src="https://c.animaapp.com/miakqmnoJuBvHF/assets/670f58e375e253beb4db0e54_facebook.svg"
@@ -263,7 +263,7 @@ export const CTASection = () => {
             </a>
             <a
               href="https://twitter.com/"
-              className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-orange-500 hover:decoration-transparent"
+              className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-[#787e59] hover:decoration-transparent"
             >
               <img
                 src="https://c.animaapp.com/miakqmnoJuBvHF/assets/670f58e3c0bab665af9c269a_twitter-x.svg"

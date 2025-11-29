@@ -41,11 +41,12 @@ export const ServiceCard = (props: ServiceCardProps) => {
           className="absolute box-border caret-transparent h-5 max-w-full -rotate-90 w-5 -right-5 bottom-0 md:h-[26px] md:right-[-25px] md:w-[26px] md:-bottom-px"
           style={{ filter: 'brightness(0) saturate(100%) invert(20%)' }}
         />
-        <div className="relative items-center bg-gray-700 box-border caret-transparent flex h-10 justify-center w-10 rounded-[50%] md:h-[54px] md:w-[54px]">
+        <div className="relative items-center bg-[#787e59] box-border caret-transparent flex h-10 justify-center w-10 rounded-[50%] md:h-[54px] md:w-[54px]">
           <img
             src="https://c.animaapp.com/mial13ktyN5Jkh/assets/670f922e1c7b30c0affab90e_arrow-01.svg"
             alt=""
             className="box-border caret-transparent h-3.5 max-w-full w-5 md:h-4 md:w-[22px]"
+            style={{ filter: 'brightness(0) saturate(100%)' }}
           />
         </div>
       </div>

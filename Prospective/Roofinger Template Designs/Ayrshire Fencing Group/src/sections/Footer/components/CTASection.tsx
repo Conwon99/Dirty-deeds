@@ -1,4 +1,5 @@
 
+import { PhoneLink } from "@/components/PhoneLink";
 
 export const CTASection = () => {
   return (
@@ -21,11 +22,21 @@ export const CTASection = () => {
           <p className="text-gray-200 box-border caret-transparent max-w-md mb-2.5">
             Get your free quote today for bespoke fencing, sheds & gates, trellis, decking, palisade fencing, or fencing repairs. Fully qualified and insured contractors with over 13 years' experience.
           </p>
-          <a href="/contact"
-            className="text-gray-900 text-sm font-bold bg-green-500 box-border caret-transparent inline-block leading-[19.6px] text-center border border-green-500 px-5 py-2 rounded-[50px] border-solid md:text-lg md:leading-[25.2px] md:px-[30px] md:py-3 hover:text-white hover:bg-gray-900 hover:decoration-transparent"
-          >
-            Request a free quote
-          </a>
+          <div className="flex flex-col items-center gap-4 w-full max-w-2xl">
+            <a href="/contact"
+              className="text-white text-xl font-bold bg-[#787e59] box-border caret-transparent inline-flex items-center justify-center gap-x-4 leading-[28px] text-center border border-[#787e59] px-8 py-4 rounded-[50px] border-solid md:text-2xl md:leading-[36px] md:px-12 md:py-6 hover:bg-[#8a9168] hover:decoration-transparent shadow-[0_0_20px_rgba(120,126,89,0.5),0_0_40px_rgba(120,126,89,0.3)] hover:shadow-[0_0_30px_rgba(120,126,89,0.7),0_0_60px_rgba(120,126,89,0.5)] transition-shadow duration-300 min-h-[64px] md:min-h-[80px] w-full"
+            >
+              Request a free quote
+            </a>
+            <PhoneLink
+              variant="default"
+              iconSrc="https://c.animaapp.com/mhooxuovKXaEfR/assets/670f86de88858acaf330ddd9_phone.svg"
+              iconAlt="Phone"
+              className="text-white text-lg font-semibold bg-[#787e59] box-border caret-transparent inline-flex items-center justify-center gap-x-3 text-center border border-[#787e59] px-8 py-4 rounded-[50px] border-solid md:text-xl md:leading-[28px] md:px-12 md:py-6 hover:bg-[#8a9168] hover:decoration-transparent shadow-[0_0_20px_rgba(120,126,89,0.5),0_0_40px_rgba(120,126,89,0.3)] hover:shadow-[0_0_30px_rgba(120,126,89,0.7),0_0_60px_rgba(120,126,89,0.5)] transition-shadow duration-300 min-h-[64px] md:min-h-[80px] w-full"
+              displayClassName="text-white text-lg font-semibold md:text-xl"
+              showIcon={true}
+            />
+          </div>
         </div>
       </div>
     </section>

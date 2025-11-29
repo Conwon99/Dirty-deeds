@@ -46,7 +46,7 @@ export const BookingForm = () => {
 
   return (
     <div className="box-border caret-transparent">
-      <div className="static bg-orange-500 box-border caret-transparent p-5 rounded-[20px] top-[50px] md:sticky md:p-[50px]">
+      <div className="static bg-[#787e59] box-border caret-transparent p-5 rounded-[20px] top-[50px] md:sticky md:p-[50px]">
         <h2 className="text-gray-900 text-3xl font-bold box-border caret-transparent leading-9 mb-2.5 md:text-[46px] md:leading-[55.2px]">
           Book a call
         </h2>
@@ -146,7 +146,7 @@ export const BookingForm = () => {
             <input
               type="submit"
               value="Request a call"
-              className="text-orange-500 text-sm bg-gray-900 box-border caret-transparent leading-[19.6px] text-center text-nowrap w-full border border-gray-900 px-5 py-2 rounded-[50px] border-solid md:text-lg md:leading-[25.2px] md:px-[30px] md:py-3 hover:text-gray-900 hover:bg-orange-500"
+              className="text-white text-sm bg-[#787e59] box-border caret-transparent leading-[19.6px] text-center text-nowrap w-full border border-[#787e59] px-5 py-2 rounded-[50px] border-solid md:text-lg md:leading-[25.2px] md:px-[30px] md:py-3 hover:bg-[#8a9168] shadow-[0_0_20px_rgba(120,126,89,0.5),0_0_40px_rgba(120,126,89,0.3)] hover:shadow-[0_0_30px_rgba(120,126,89,0.7),0_0_60px_rgba(120,126,89,0.5)] transition-shadow duration-300"
             />
           </form>
           <div
@@ -161,7 +161,7 @@ export const BookingForm = () => {
           <div
             role="region"
             aria-label="Booking Form failure"
-            className="text-white bg-orange-700 box-border caret-transparent hidden text-center mt-2.5 p-[15px] rounded-[20px]"
+            className="text-white bg-[#8a9168] box-border caret-transparent hidden text-center mt-2.5 p-[15px] rounded-[20px]"
           >
             <div className="box-border caret-transparent">
               Oops! Something went wrong while submitting the form.

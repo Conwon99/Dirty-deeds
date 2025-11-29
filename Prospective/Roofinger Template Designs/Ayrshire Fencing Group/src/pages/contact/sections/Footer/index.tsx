@@ -14,14 +14,14 @@ export const Footer = () => {
                 Designed by{" "}
                 <a
                   href="https://webestica.com/"
-                  className="text-orange-500 text-sm box-border caret-transparent leading-[21px] md:text-lg md:leading-[27px] hover:text-gray-900 hover:decoration-transparent hover:border-gray-900"
+                  className="text-[#787e59] text-sm box-border caret-transparent leading-[21px] md:text-lg md:leading-[27px] hover:text-[#8a9168] hover:decoration-transparent hover:border-[#8a9168]"
                 >
                   Webestica
                 </a>
                 , Powered by{" "}
                 <a
                   href="https://webflow.com/"
-                  className="text-orange-500 text-sm box-border caret-transparent leading-[21px] md:text-lg md:leading-[27px] hover:text-gray-900 hover:decoration-transparent hover:border-gray-900"
+                  className="text-[#787e59] text-sm box-border caret-transparent leading-[21px] md:text-lg md:leading-[27px] hover:text-[#8a9168] hover:decoration-transparent hover:border-[#8a9168]"
                 >
                   Webflow
                 </a>

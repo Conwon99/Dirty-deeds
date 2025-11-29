@@ -53,46 +53,46 @@ export const ContactForm = () => {
       className="box-border caret-transparent"
     >
       <div className="text-base items-start box-border caret-transparent flex-col w-full mb-5 md:text-lg md:items-center md:flex-row">
-        <label className="text-gray-900 text-base box-border caret-transparent block mb-[5px] md:text-lg">
+        <label className="text-white text-base font-semibold box-border caret-transparent block mb-[5px] md:text-lg">
           Name
         </label>
         <input
           name="name"
           placeholder="Dennis Barrett"
           type="text"
-          className="text-gray-900 text-base bg-slate-200 box-border caret-transparent block h-12 leading-[25.6px] align-middle w-full border border-slate-200 mb-2.5 px-5 py-2.5 rounded-[20px] border-solid"
+          className="text-gray-900 text-base bg-white box-border caret-transparent block h-12 leading-[25.6px] align-middle w-full border-2 border-white mb-2.5 px-5 py-2.5 rounded-[20px] border-solid focus:outline-none focus:ring-2 focus:ring-white focus:border-white"
         />
       </div>
       <div className="text-base items-start box-border caret-transparent flex-col w-full mb-5 md:text-lg md:items-center md:flex-row">
-        <label className="text-gray-900 text-base box-border caret-transparent block mb-[5px] md:text-lg">
+        <label className="text-white text-base font-semibold box-border caret-transparent block mb-[5px] md:text-lg">
           Email
         </label>
         <input
           name="email"
           placeholder="your.email@example.com"
           type="email"
-          className="text-gray-900 text-base bg-slate-200 box-border caret-transparent block h-12 leading-[25.6px] align-middle w-full border border-slate-200 mb-2.5 px-5 py-2.5 rounded-[20px] border-solid"
+          className="text-gray-900 text-base bg-white box-border caret-transparent block h-12 leading-[25.6px] align-middle w-full border-2 border-white mb-2.5 px-5 py-2.5 rounded-[20px] border-solid focus:outline-none focus:ring-2 focus:ring-white focus:border-white"
         />
       </div>
       <div className="items-start box-border caret-transparent gap-x-0 flex flex-col justify-start gap-y-0 md:[align-items:normal] md:gap-x-[30px] md:flex-row md:justify-normal md:gap-y-[30px]">
         <div className="text-base items-start box-border caret-transparent flex-col w-full mb-5 md:text-lg md:items-center md:flex-row">
-          <label className="text-gray-900 text-base box-border caret-transparent block mb-[5px] md:text-lg">
+          <label className="text-white text-base font-semibold box-border caret-transparent block mb-[5px] md:text-lg">
             Phone
           </label>
           <input
             name="phone"
             placeholder="07926 592704"
             type="tel"
-            className="text-gray-900 text-base bg-slate-200 box-border caret-transparent block h-12 leading-[25.6px] align-middle w-full border border-slate-200 mb-2.5 px-5 py-2.5 rounded-[20px] border-solid"
+            className="text-gray-900 text-base bg-white box-border caret-transparent block h-12 leading-[25.6px] align-middle w-full border-2 border-white mb-2.5 px-5 py-2.5 rounded-[20px] border-solid focus:outline-none focus:ring-2 focus:ring-white focus:border-white"
           />
         </div>
         <div className="text-base items-start box-border caret-transparent flex-col w-full mb-5 md:text-lg md:items-center md:flex-row">
-          <label className="text-gray-900 text-base box-border caret-transparent block mb-[5px] md:text-lg">
+          <label className="text-white text-base font-semibold box-border caret-transparent block mb-[5px] md:text-lg">
             Select Service
           </label>
           <select
             name="service"
-            className="text-base bg-slate-200 caret-transparent block h-12 leading-[normal] align-middle w-full border-slate-200 mb-2.5 px-5 py-2 rounded-[20px]"
+            className="text-gray-900 text-base bg-white caret-transparent block h-12 leading-[normal] align-middle w-full border-2 border-white mb-2.5 px-5 py-2 rounded-[20px] focus:outline-none focus:ring-2 focus:ring-white focus:border-white"
           >
             <option
               value=""
@@ -140,20 +140,20 @@ export const ContactForm = () => {
         </div>
       </div>
       <div className="text-base items-start box-border caret-transparent flex-col w-full mb-5 md:text-lg md:items-center md:flex-row">
-        <label className="text-gray-900 text-base box-border caret-transparent block mb-[5px] md:text-lg">
+        <label className="text-white text-base font-semibold box-border caret-transparent block mb-[5px] md:text-lg">
           Message
         </label>
         <textarea
           name="message"
           placeholder="Tell us about your fencing and decking needs..."
           rows={6}
-          className="text-gray-900 text-base bg-slate-200 box-border caret-transparent block leading-[25.6px] align-middle w-full border border-slate-200 mb-2.5 px-5 py-2.5 rounded-[20px] border-solid resize-vertical"
+          className="text-gray-900 text-base bg-white box-border caret-transparent block leading-[25.6px] align-middle w-full border-2 border-white mb-2.5 px-5 py-2.5 rounded-[20px] border-solid resize-vertical focus:outline-none focus:ring-2 focus:ring-white focus:border-white"
         />
       </div>
       <input
         type="submit"
         value="Submit"
-        className="text-gray-900 text-sm font-bold bg-orange-500 box-border caret-transparent leading-[19.6px] text-center text-nowrap w-full border border-orange-500 px-5 py-2 rounded-[50px] border-solid md:text-lg md:leading-[25.2px] md:px-[30px] md:py-3 hover:text-white hover:bg-gray-900"
+        className="text-white text-base font-bold bg-orange-500 box-border caret-transparent leading-[24px] text-center text-nowrap w-full border-2 border-orange-500 px-6 py-3 rounded-[50px] border-solid md:text-xl md:leading-[28px] md:px-8 md:py-4 hover:bg-orange-600 hover:border-orange-600 transition-all duration-300 min-h-[56px] md:min-h-[64px] shadow-lg"
       />
     </form>
   );

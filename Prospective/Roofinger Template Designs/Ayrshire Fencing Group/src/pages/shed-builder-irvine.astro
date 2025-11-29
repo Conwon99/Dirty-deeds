@@ -1,0 +1,42 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Header } from "@/sections/Header";
+import { Hero } from "@/pages/services/sections/Hero";
+import { ServicesSection } from "@/pages/services/sections/ServicesSection";
+import { WhyChooseSection } from "@/pages/services/sections/WhyChooseSection";
+import { FAQSection } from "@/pages/services/sections/FAQSection";
+import { CTASection } from "@/sections/Footer/components/CTASection";
+import { Footer } from "@/sections/Footer";
+---
+
+<BaseLayout title="Shed Builder Irvine | Custom Shed Installation | Ayrshire Fencing Group">
+    <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
+      <Header client:only="react" />
+      <Hero client:only="react" />
+      <section class="box-border caret-transparent pt-5 md:pt-0">
+        <div class="box-border caret-transparent max-w-[1540px] mx-auto px-[15px] md:px-[30px]">
+          <div class="text-white text-center mb-10">
+            <h1 class="text-4xl font-bold mb-4 md:text-5xl">Expert Shed Builder in Irvine</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto">
+              As professional shed builders in Irvine, Ayrshire Fencing Group designs and installs custom sheds tailored to your requirements. We provide quality shed building services for storage and garden use.
+            </p>
+          </div>
+          <div class="text-white mb-8">
+            <h2 class="text-2xl font-bold mb-4">Our Shed Building Services in Irvine</h2>
+            <ul class="list-disc list-inside space-y-2 mb-6">
+              <li><a href="/service/sheds" class="text-[#787e59] hover:underline">Shed Installation Irvine</a> - Professional installation of custom sheds</li>
+            </ul>
+            <p class="text-lg">
+              Our experienced shed builders in Irvine work with you to create the perfect shed solution for your property. From design to installation, we ensure quality craftsmanship and attention to detail.
+            </p>
+          </div>
+        </div>
+      </section>
+      <ServicesSection client:only="react" />
+      <WhyChooseSection client:only="react" />
+      <FAQSection client:only="react" />
+      <CTASection client:only="react" />
+      <Footer client:only="react" />
+    </div>
+</BaseLayout>
+

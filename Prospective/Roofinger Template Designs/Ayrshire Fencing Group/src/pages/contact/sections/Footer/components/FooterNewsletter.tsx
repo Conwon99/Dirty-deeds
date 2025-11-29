@@ -31,7 +31,7 @@ export const FooterNewsletter = () => {
         <div
           role="region"
           aria-label="Footer Email Form failure"
-          className="text-white bg-orange-700 box-border caret-transparent hidden text-center mt-2.5 p-[15px] rounded-[20px]"
+          className="text-white bg-[#8a9168] box-border caret-transparent hidden text-center mt-2.5 p-[15px] rounded-[20px]"
         >
           <div className="box-border caret-transparent">
             Oops! Something went wrong while submitting the form.

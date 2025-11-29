@@ -12,7 +12,7 @@ export const FooterContact = () => {
           />
           <a
             href="mailto:ayrshirefencinggroup@outlook.com"
-            className="box-border caret-transparent block underline hover:text-orange-500 hover:decoration-transparent hover:border-orange-500"
+            className="box-border caret-transparent block underline hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]"
           >
             ayrshirefencinggroup@outlook.com
           </a>
@@ -26,7 +26,7 @@ export const FooterContact = () => {
           <PhoneLink
             variant="footer"
             showIcon={false}
-            className="box-border caret-transparent block underline hover:text-orange-500 hover:decoration-transparent hover:border-orange-500"
+            className="box-border caret-transparent block underline hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59]"
           />
         </div>
         <div className="text-white items-start box-border caret-transparent gap-x-2.5 flex justify-start gap-y-2.5">
@@ -43,7 +43,7 @@ export const FooterContact = () => {
       <div className="box-border caret-transparent gap-x-[15px] flex gap-y-[15px]">
         <a
           href="https://www.instagram.com/"
-          className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-orange-500 hover:decoration-transparent"
+          className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-[#787e59] hover:decoration-transparent"
         >
           <img
             src="https://c.animaapp.com/mhqqiiyn5JzZir/assets/670f58e333797fd0eb9fa085_instagram.svg"
@@ -53,7 +53,7 @@ export const FooterContact = () => {
         </a>
         <a
           href="https://www.facebook.com/100089970103885/"
-          className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-orange-500 hover:decoration-transparent"
+          className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-[#787e59] hover:decoration-transparent"
         >
           <img
             src="https://c.animaapp.com/mhqqiiyn5JzZir/assets/670f58e375e253beb4db0e54_facebook.svg"
@@ -63,7 +63,7 @@ export const FooterContact = () => {
         </a>
         <a
           href="https://twitter.com/"
-          className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-orange-500 hover:decoration-transparent"
+          className="items-center bg-white box-border caret-transparent flex h-10 justify-center max-w-full underline w-10 rounded-[50%] hover:bg-[#787e59] hover:decoration-transparent"
         >
           <img
             src="https://c.animaapp.com/mhqqiiyn5JzZir/assets/670f58e3c0bab665af9c269a_twitter-x.svg"
