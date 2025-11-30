@@ -65,6 +65,15 @@ const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
     
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VV87ESBXDF"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VV87ESBXDF');
+    </script>
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": ["HomeAndConstructionBusiness", "ProfessionalService", "LocalBusiness"],
@@ -120,45 +129,166 @@ const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
         }
       ],
       "serviceType": [
-        "Custom Fence Construction",
-        "Fence Installation",
-        "Wood Fence Installation",
-        "Fence Repair",
-        "Fence Replacement",
-        "Garden Fence Installation",
-        "Composite Fencing Installation",
-        "Chainlink Fencing Installation",
-        "Decking Installation",
-        "Timber Decking",
-        "Gate Installation",
-        "Shed Installation",
-        "Garden Room Installation"
+        // Fence Contractor (Primary Category)
+        "Aluminium fence installation",
+        "Chain link fence installation",
+        "Custom fence construction",
+        "Deer fencing and ranch rail installation",
+        "Dog fence installation",
+        "Fence design",
+        "Fence installation",
+        "Iron fence installation",
+        "Pool fence installation",
+        "Privacy fence installation",
+        "Security fencing and metal cage installation",
+        "Vinyl fence installation",
+        "Wood fence installation",
+        "Fence repair",
+        "Fence replacement",
+        "Garden fence installation",
+        "Composite fencing installation",
+        "Concrete fence installation",
+        "Decorative panels",
+        "Domestic and commercial fencing",
+        "Metal fencing",
+        "Metal fence installation",
+        "Gate installation",
+        // Contractor
+        "Deck construction",
+        "Patio construction",
+        // Deck Builder
+        "Composite decks",
+        "Deck cleaning",
+        "Deck design",
+        "Deck installation",
+        "Deck painting",
+        "Deck railing repair",
+        "Deck refinishing",
+        "Deck remodelling",
+        "Deck repair",
+        "Deck replacement",
+        "Patio decks",
+        "Timber decking",
+        // Shed Builder
+        "Cabin design and building",
+        "Custom shed design",
+        "Shed installation",
+        "Storage shed design and building",
+        // Landscape Designer
+        "Landscape installations",
+        "Outdoor step construction",
+        "Patio design",
+        // Construction Company
+        "Repairs and maintenance",
+        // Additional Services
+        "Garden room installation"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Fencing and Decking Services",
+        "name": "Fencing, Decking, and Construction Services",
         "itemListElement": [
+          // Fence Contractor Services (Primary Category)
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Custom Fence Construction",
-              "description": "Bespoke custom fence construction tailored to your needs"
+              "name": "Aluminium fence installation",
+              "description": "Professional aluminium fence installation for durability and low maintenance"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Fence Installation",
-              "description": "Professional fence installation services in Ayrshire"
+              "name": "Chain link fence installation",
+              "description": "Cost-effective chain link fence installation for security and boundaries"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Wood Fence Installation",
+              "name": "Custom fence construction",
+              "description": "Bespoke custom fence construction tailored to your specific needs"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deer fencing and ranch rail installation",
+              "description": "Specialist deer fencing and ranch rail installation for rural properties"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dog fence installation",
+              "description": "Secure dog fence installation to keep pets safe and contained"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fence design",
+              "description": "Professional fence design services to create the perfect solution"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Fence installation",
+              "description": "Professional fence installation services across Ayrshire"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Iron fence installation",
+              "description": "Elegant and durable iron fence installation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pool fence installation",
+              "description": "Safety-compliant pool fence installation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Privacy fence installation",
+              "description": "Privacy fence installation for seclusion and security"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Security fencing and metal cage installation",
+              "description": "High-security fencing and metal cage installation for maximum protection"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Vinyl fence installation",
+              "description": "Low-maintenance vinyl fence installation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wood fence installation",
               "description": "Professional wood fence installation using quality timber"
             }
           },
@@ -166,7 +296,7 @@ const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Fence Repair",
+              "name": "Fence repair",
               "description": "Expert fence repair and restoration services"
             }
           },
@@ -174,7 +304,7 @@ const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Fence Replacement",
+              "name": "Fence replacement",
               "description": "Complete fence replacement services"
             }
           },
@@ -182,7 +312,7 @@ const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Garden Fence Installation",
+              "name": "Garden fence installation",
               "description": "Garden fence installation for privacy and security"
             }
           },
@@ -190,7 +320,7 @@ const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Composite Fencing Installation",
+              "name": "Composite fencing installation",
               "description": "Low-maintenance composite fencing installation"
             }
           },
@@ -198,47 +328,237 @@ const defaultOgImage = ogImage || `${siteUrl}/logo.webp`;
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Chainlink Fencing Installation",
-              "description": "Cost-effective chainlink fencing installation"
+              "name": "Concrete fence installation",
+              "description": "Durable concrete fence installation for long-lasting boundaries"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Decking Installation",
-              "description": "Professional decking installation and design"
+              "name": "Decorative panels",
+              "description": "Decorative fence panels to enhance your property's appearance"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Timber Decking",
-              "description": "High-quality timber decking installation"
+              "name": "Domestic and commercial fencing",
+              "description": "Fencing solutions for both domestic and commercial properties"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Gate Installation",
+              "name": "Metal fencing",
+              "description": "Professional metal fencing installation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Metal fence installation",
+              "description": "Expert metal fence installation services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gate installation",
               "description": "Garden and security gate installation"
             }
           },
+          // Contractor Services
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Shed Installation",
-              "description": "Custom shed building and installation"
+              "name": "Deck construction",
+              "description": "Professional deck construction services"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "Garden Room Installation",
+              "name": "Patio construction",
+              "description": "Expert patio construction and installation"
+            }
+          },
+          // Deck Builder Services
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Composite decks",
+              "description": "Low-maintenance composite deck installation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deck cleaning",
+              "description": "Professional deck cleaning and maintenance services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deck design",
+              "description": "Custom deck design services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deck installation",
+              "description": "Professional deck installation and design"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deck painting",
+              "description": "Expert deck painting and finishing services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deck railing repair",
+              "description": "Deck railing repair and replacement services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deck refinishing",
+              "description": "Professional deck refinishing services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deck remodelling",
+              "description": "Complete deck remodelling and renovation services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deck repair",
+              "description": "Expert deck repair services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Deck replacement",
+              "description": "Complete deck replacement services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Patio decks",
+              "description": "Patio deck installation and construction"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Timber decking",
+              "description": "High-quality timber decking installation"
+            }
+          },
+          // Shed Builder Services
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cabin design and building",
+              "description": "Custom cabin design and building services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom shed design",
+              "description": "Bespoke custom shed design services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Shed installation",
+              "description": "Professional shed installation services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Storage shed design and building",
+              "description": "Custom storage shed design and building"
+            }
+          },
+          // Landscape Designer Services
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Landscape installations",
+              "description": "Professional landscape installation services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Outdoor step construction",
+              "description": "Expert outdoor step construction and installation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Patio design",
+              "description": "Professional patio design services"
+            }
+          },
+          // Construction Company Services
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Repairs and maintenance",
+              "description": "Comprehensive repairs and maintenance services"
+            }
+          },
+          // Additional Services
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Garden room installation",
               "description": "Professional garden room installation"
             }
           }

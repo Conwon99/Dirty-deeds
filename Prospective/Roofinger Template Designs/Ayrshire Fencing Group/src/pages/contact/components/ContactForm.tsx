@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { trackFormStart } from "@/utils/analytics";
 
 export const ContactForm = () => {
   useEffect(() => {
@@ -7,6 +8,20 @@ export const ContactForm = () => {
     const errorMessage = document.querySelector('[aria-label="Contact Form failure"]') as HTMLElement;
 
     if (form) {
+      // Track form start when user first interacts with any form field
+      let formStarted = false;
+      const handleFormStart = () => {
+        if (!formStarted) {
+          formStarted = true;
+          trackFormStart('contact');
+        }
+      };
+
+      const formFields = form.querySelectorAll('input, textarea, select');
+      formFields.forEach((field) => {
+        field.addEventListener('focus', handleFormStart, { once: true });
+        field.addEventListener('click', handleFormStart, { once: true });
+      });
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
         

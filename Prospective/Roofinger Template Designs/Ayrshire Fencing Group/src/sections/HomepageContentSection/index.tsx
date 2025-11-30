@@ -4,20 +4,20 @@ export const HomepageContentSection = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="box-border caret-transparent py-[50px] md:py-[70px] bg-[#323232]">
+    <section className="box-border caret-transparent pt-[50px] pb-0 md:pt-[70px] md:pb-0 bg-transparent">
       <div className="box-border caret-transparent max-w-[1200px] mx-auto px-[15px] md:px-[30px]">
         
         {/* Accordion Button - Always Visible */}
-        <div className="box-border caret-transparent text-center mb-6">
+        <div className="box-border caret-transparent text-center mb-2">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-white bg-[#787e59] hover:bg-[#8a9168] box-border caret-transparent inline-flex items-center justify-center gap-3 text-center px-8 py-4 rounded-lg font-semibold text-base md:text-lg transition-colors hover:decoration-transparent shadow-[0_0_20px_rgba(120,126,89,0.5),0_0_40px_rgba(120,126,89,0.3)] hover:shadow-[0_0_30px_rgba(120,126,89,0.7),0_0_60px_rgba(120,126,89,0.5)]"
+            className="text-gray-300 hover:text-white box-border caret-transparent inline-flex items-center justify-center gap-2 text-center px-4 py-2 rounded text-sm md:text-base transition-colors hover:decoration-transparent"
             aria-expanded={isOpen}
             aria-controls="homepage-content-accordion"
           >
             <span>{isOpen ? "Hide" : "View"} All Services & Information</span>
             <svg
-              className={`box-border caret-transparent h-5 w-5 transition-transform ${
+              className={`box-border caret-transparent h-4 w-4 transition-transform ${
                 isOpen ? "rotate-180" : ""
               }`}
               fill="none"

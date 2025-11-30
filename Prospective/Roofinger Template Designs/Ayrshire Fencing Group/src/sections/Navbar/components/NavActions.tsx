@@ -1,4 +1,5 @@
 import { PhoneLink } from "@/components/PhoneLink";
+import { trackQuoteButton } from "@/utils/analytics";
 
 interface NavActionsProps {
   onToggleMobileMenu?: () => void;
@@ -12,6 +13,7 @@ export const NavActions = ({ onToggleMobileMenu }: NavActionsProps) => {
           iconSrc="https://c.animaapp.com/mhooxuovKXaEfR/assets/670f86de88858acaf330ddd9_phone.svg"
           iconAlt="Phone"
           showIcon={true}
+          trackingLocation="nav"
           className="text-white items-center box-border caret-transparent gap-x-1.5 flex justify-start max-w-full gap-y-1.5 whitespace-nowrap hover:text-[#787e59] hover:decoration-transparent hover:border-[#787e59] relative z-0"
           displayClassName="box-border caret-transparent text-lg font-medium md:text-xl md:font-semibold lg:text-2xl lg:font-semibold text-white"
         />
@@ -19,6 +21,7 @@ export const NavActions = ({ onToggleMobileMenu }: NavActionsProps) => {
           <div className="box-border caret-transparent flex">
             <a
               href="/contact"
+              onClick={() => trackQuoteButton('nav')}
               className="text-white items-center bg-[#787e59] box-border caret-transparent gap-x-2 flex min-h-0 min-w-0 text-center border px-4 py-2 rounded-[100px] border-solid border-transparent md:min-h-[auto] md:min-w-[auto] md:px-6 md:py-2.5 lg:px-8 lg:py-3 hover:bg-[#8a9168] hover:border-[#787e59] whitespace-nowrap flex-shrink-0 relative z-10 shadow-[0_0_20px_rgba(120,126,89,0.5),0_0_40px_rgba(120,126,89,0.3)] hover:shadow-[0_0_30px_rgba(120,126,89,0.7),0_0_60px_rgba(120,126,89,0.5)] transition-shadow duration-300"
             >
               <div className="relative box-border caret-transparent min-h-0 min-w-0 overflow-hidden md:min-h-[auto] md:min-w-[auto]">

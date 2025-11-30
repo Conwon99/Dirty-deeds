@@ -13,18 +13,18 @@ export const ReviewsSection = () => {
         <ReviewStats />
         <div className="box-border caret-transparent gap-x-[30px] grid auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] gap-y-[30px] md:grid-cols-[1fr_1fr] md:gap-y-[30px] lg:grid-cols-[1fr_1fr_1fr]">
           <ReviewCard
-            author="Nicole Saunders"
-            text="Brilliant service and an amazing job completed. Would highly recommend!"
+            author="Janey Traill"
+            text="I had Stewart from Ayrshire Fencing Group erect a new fence for me. He did an excellent job at a reasonable price. I would highly recommend him."
             isRecommendation={true}
           />
           <ReviewCard
-            author="Nicole Saunders"
-            text="Highly recommend Ayrshire Fencing Group! Stewart and the guys turned up exactly when they said they would (even after I kept having to rearrange due to house moving dates) and finished the whole area so quickly! They have made such a difference to our garden and will definitely get the guys back to do another area in our garden and maybe even a pergola now I have noticed they do them 🤣!"
+            author="SC Kelly"
+            text="Excellent job every time. Stuart has worked for myself, my mum and several other family members and friends. He is hard working, reliable and does a fantastic job."
             isRecommendation={true}
           />
           <ReviewCard
-            author="Susan Greenlees"
-            text="I highly recommend Ayrshire fencing and I will definitely be using them again. Stewart was reliable and done a brilliant job on my fence and pergola. He went over and above to help with no issues at all, absolute brilliant price and I couldn't rave about this company enough. They also cleaned away all the mess from the rubble and the old fence which made things a lot easier. Thanks so much!"
+            author="David Warnes"
+            text="Fantastic job, professional though and though. This is my second job done by Ayrshire fencing group!"
             isRecommendation={true}
           />
         </div>

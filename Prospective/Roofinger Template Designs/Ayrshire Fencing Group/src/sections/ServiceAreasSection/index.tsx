@@ -76,23 +76,20 @@ export const ServiceAreasSection = () => {
   };
 
   return (
-    <section className="box-border caret-transparent py-[50px] md:py-[70px] bg-[#323232]">
+    <section className="box-border caret-transparent pt-0 pb-[50px] md:pt-0 md:pb-[70px] bg-transparent">
       <div className="box-border caret-transparent max-w-[1200px] mx-auto px-[15px] md:px-[30px]">
         
         {/* Accordion Button - Always Visible */}
-        <div className="box-border caret-transparent text-center mb-6">
-          <h2 className="text-white text-3xl font-bold box-border caret-transparent leading-[38px] sm:text-4xl sm:leading-[43.2px] md:text-[56px] md:leading-[67.2px] mb-6">
-            Our Service Areas
-          </h2>
+        <div className="box-border caret-transparent text-center mb-2">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-white bg-[#787e59] hover:bg-[#8a9168] box-border caret-transparent inline-flex items-center justify-center gap-3 text-center px-8 py-4 rounded-lg font-semibold text-base md:text-lg transition-colors hover:decoration-transparent shadow-[0_0_20px_rgba(120,126,89,0.5),0_0_40px_rgba(120,126,89,0.3)] hover:shadow-[0_0_30px_rgba(120,126,89,0.7),0_0_60px_rgba(120,126,89,0.5)]"
+            className="text-gray-300 hover:text-white box-border caret-transparent inline-flex items-center justify-center gap-2 text-center px-4 py-2 rounded text-sm md:text-base transition-colors hover:decoration-transparent"
             aria-expanded={isOpen}
             aria-controls="service-areas-accordion"
           >
             <span>{isOpen ? "Hide" : "View"} Service Areas</span>
             <svg
-              className={`box-border caret-transparent h-5 w-5 transition-transform ${
+              className={`box-border caret-transparent h-4 w-4 transition-transform ${
                 isOpen ? "rotate-180" : ""
               }`}
               fill="none"
@@ -123,6 +120,13 @@ export const ServiceAreasSection = () => {
           }}
         >
           <div className="box-border caret-transparent">
+            {/* Title moved inside dropdown */}
+            <div className="box-border caret-transparent text-center mb-6">
+              <h2 className="text-white text-3xl font-bold box-border caret-transparent leading-[38px] sm:text-4xl sm:leading-[43.2px] md:text-[56px] md:leading-[67.2px] mb-6">
+                Our Service Areas
+              </h2>
+            </div>
+            
             <div className="box-border caret-transparent text-center mb-[30px] md:mb-[50px]">
               <p className="text-gray-200 text-base sm:text-lg md:text-xl box-border caret-transparent mt-4 max-w-3xl mx-auto">
                 Ayrshire Fencing Group provides professional fencing and decking services across Ayrshire and Glasgow. Our experienced team serves residential and commercial properties throughout these regions, bringing quality craftsmanship and expert installation to your local area.
@@ -143,13 +147,13 @@ export const ServiceAreasSection = () => {
                 >
                   <button
                     onClick={() => handleAreaClick(areaName)}
-                    className="box-border caret-transparent w-full text-left p-6 md:p-8 hover:bg-gray-700 transition-colors flex items-center justify-between"
+                    className="box-border caret-transparent w-full text-left p-6 md:p-8 hover:bg-gray-700/50 transition-colors flex items-center justify-between border-b border-gray-700/50"
                   >
                     <h3 className="text-white text-xl font-bold box-border caret-transparent md:text-2xl">
                       {areaName}
                     </h3>
                     <svg
-                      className={`box-border caret-transparent h-6 w-6 text-white transition-transform ${
+                      className={`box-border caret-transparent h-5 w-5 text-gray-400 transition-transform ${
                         selectedArea === areaName ? "rotate-180" : ""
                       }`}
                       fill="none"
@@ -200,18 +204,6 @@ export const ServiceAreasSection = () => {
                   )}
                 </div>
               ))}
-            </div>
-
-            <div className="box-border caret-transparent mt-8 md:mt-12 text-center">
-              <p className="text-gray-200 text-sm sm:text-base md:text-lg box-border caret-transparent mb-4">
-                Don't see your area listed? We may still be able to help!
-              </p>
-              <a
-                href="/contact"
-                className="text-white bg-[#787e59] hover:bg-[#8a9168] box-border caret-transparent inline-flex items-center justify-center gap-2 text-center px-8 py-4 rounded-lg font-semibold text-base md:text-lg transition-colors hover:decoration-transparent shadow-[0_0_20px_rgba(120,126,89,0.5),0_0_40px_rgba(120,126,89,0.3)] hover:shadow-[0_0_30px_rgba(120,126,89,0.7),0_0_60px_rgba(120,126,89,0.5)]"
-              >
-                Contact Us to Discuss Your Location
-              </a>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { CANONICAL_PHONE, CANONICAL_PHONE_TEL, TRACKING_PHONE_TEL, formatTrackingPhoneDisplay } from "@/utils/phoneTracking";
+import { trackPhone } from "@/utils/analytics";
 
 interface PhoneLinkProps {
   className?: string;
@@ -8,6 +9,7 @@ interface PhoneLinkProps {
   iconAlt?: string;
   showIcon?: boolean;
   variant?: "default" | "footer" | "hero";
+  trackingLocation?: string; // e.g., "hero", "nav", "services"
 }
 
 export const PhoneLink = ({ 
@@ -16,7 +18,8 @@ export const PhoneLink = ({
   iconSrc,
   iconAlt = "Phone",
   showIcon = true,
-  variant = "default"
+  variant = "default",
+  trackingLocation
 }: PhoneLinkProps) => {
   const [phoneNumber, setPhoneNumber] = useState(CANONICAL_PHONE);
   const [telHref, setTelHref] = useState(`tel:${CANONICAL_PHONE_TEL}`);
@@ -26,6 +29,18 @@ export const PhoneLink = ({
     setPhoneNumber(formatTrackingPhoneDisplay());
     setTelHref(`tel:${TRACKING_PHONE_TEL}`);
   }, []);
+
+  const handleClick = () => {
+    if (trackingLocation) {
+      trackPhone(trackingLocation);
+    } else if (variant === "hero") {
+      trackPhone("hero");
+    } else if (variant === "footer") {
+      // Footer phone links don't need tracking by default
+    } else {
+      trackPhone("nav");
+    }
+  };
 
   const defaultClasses = variant === "hero" 
     ? "text-white items-center box-border caret-transparent gap-x-2 flex max-w-full gap-y-2 overflow-hidden hover:text-green-500 min-h-[44px] touch-manipulation"
@@ -42,6 +57,7 @@ export const PhoneLink = ({
   return (
     <a
       href={telHref}
+      onClick={handleClick}
       className={className || defaultClasses}
     >
       {showIcon && iconSrc && (() => {

@@ -41,26 +41,68 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Category Pages -->
+  <!-- Category Pages (GBP Categories) -->
   <url>
     <loc>https://www.ayrshirefencinggroup.com/fence-contractor-irvine</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/contractor-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://www.ayrshirefencinggroup.com/deck-builder-irvine</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
 
   <url>
     <loc>https://www.ayrshirefencinggroup.com/shed-builder-irvine</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/garage-builder-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/general-contractor-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/landscape-designer-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/landscape-architect-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/construction-company-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <!-- Main Service Pages -->
@@ -106,7 +148,21 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Fencing Sub-Service Pages -->
+  <!-- Fence Contractor Services (Primary Category) -->
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/aluminium-fence-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/chain-link-fence-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://www.ayrshirefencinggroup.com/service/custom-fence-construction-irvine</loc>
     <lastmod>2025-01-15</lastmod>
@@ -115,7 +171,77 @@
   </url>
 
   <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/deer-fencing-and-ranch-rail-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/dog-fence-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/fence-design-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/fence-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/iron-fence-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/pool-fence-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/privacy-fence-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/security-fencing-and-metal-cage-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/vinyl-fence-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.ayrshirefencinggroup.com/service/wood-fence-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/fence-repair-irvine</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -143,7 +269,224 @@
   </url>
 
   <url>
-    <loc>https://www.ayrshirefencinggroup.com/service/chainlink-fencing-installation-irvine</loc>
+    <loc>https://www.ayrshirefencinggroup.com/service/concrete-fence-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/decorative-panels-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/domestic-and-commercial-fencing-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/metal-fencing-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/metal-fence-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/gate-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contractor Services -->
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/deck-construction-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/patio-construction-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Deck Builder Services -->
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/composite-decks-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/deck-cleaning-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/deck-design-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/deck-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/deck-painting-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/deck-railing-repair-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/deck-refinishing-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/deck-remodelling-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/deck-repair-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/deck-replacement-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/patio-decks-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/timber-decking-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Shed Builder Services -->
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/cabin-design-and-building-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/custom-shed-design-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/shed-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/storage-shed-design-and-building-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Landscape Designer Services -->
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/landscape-installations-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/outdoor-step-construction-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/patio-design-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Construction Company Services -->
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/repairs-and-maintenance-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Additional Services -->
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/garden-room-installation-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Legacy Service Pages (for backward compatibility) -->
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/composite-decking-irvine</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ayrshirefencinggroup.com/service/wooden-decking-irvine</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -179,28 +522,6 @@
 
   <url>
     <loc>https://www.ayrshirefencinggroup.com/service/concrete-fencing-irvine</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Decking Sub-Service Pages -->
-  <url>
-    <loc>https://www.ayrshirefencinggroup.com/service/timber-decking-irvine</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.ayrshirefencinggroup.com/service/composite-decking-irvine</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.ayrshirefencinggroup.com/service/wooden-decking-irvine</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -250,4 +571,3 @@
   </url>
 
 </urlset>
-

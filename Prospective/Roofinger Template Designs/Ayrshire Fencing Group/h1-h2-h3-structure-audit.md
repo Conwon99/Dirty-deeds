@@ -344,3 +344,4 @@ H2: Shed Builder Services ✅
 - Each H2/H3 section needs 50-100 words and links to dedicated pages
 - This structure creates topical relevance and helps with rankings
 
+

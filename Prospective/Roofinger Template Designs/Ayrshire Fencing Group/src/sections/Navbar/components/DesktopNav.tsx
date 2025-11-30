@@ -68,8 +68,12 @@ export const DesktopNav = ({ isMobileMenuOpen = false, onCloseMobileMenu }: Desk
         </li>
         <li className="box-border caret-transparent min-h-0 min-w-0 bg-[position:0px_0px] mx-0 md:min-h-[auto] md:min-w-[auto] md:mx-1 lg:mx-1.5">
           <a
-            href={isHomePage ? "#about" : "/#about"}
-            onClick={(e) => handleLinkClick(e, isHomePage ? "#about" : "/#about")}
+            href="/about"
+            onClick={() => {
+              if (onCloseMobileMenu) {
+                onCloseMobileMenu();
+              }
+            }}
             className="text-white box-border caret-transparent flex justify-center max-w-full text-center md:text-white hover:text-green-500 hover:border-green-500"
           >
             <div className="text-white text-xs box-border caret-transparent leading-4 min-h-0 min-w-0 md:text-white md:text-sm md:leading-5 lg:text-[15px] lg:leading-6 lg:min-h-[auto] lg:min-w-[auto]">

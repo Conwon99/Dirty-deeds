@@ -25,6 +25,7 @@ export const FooterContact = () => {
           />
           <PhoneLink
             variant="footer"
+            trackingLocation="services"
             showIcon={false}
             className="box-border caret-transparent block underline hover:text-orange-500 hover:decoration-transparent hover:border-orange-500"
           />

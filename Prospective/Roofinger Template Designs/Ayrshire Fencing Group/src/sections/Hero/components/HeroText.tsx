@@ -64,6 +64,7 @@ export const HeroText = () => {
         <div className="box-border caret-transparent flex">
           <PhoneLink 
             variant="hero"
+            trackingLocation="hero"
             iconSrc="https://c.animaapp.com/mhooxuovKXaEfR/assets/670f86de88858acaf330ddd9_phone.svg"
             iconAlt="Phone"
             className="text-white items-center bg-transparent box-border caret-transparent gap-x-3 flex max-w-full gap-y-2 border-2 border-white rounded-[100px] px-6 py-3 sm:px-8 sm:py-3 md:px-10 md:py-4 hover:bg-white/10 hover:border-white min-h-[56px] sm:min-h-[60px] md:min-h-[64px] touch-manipulation transition-all duration-300"
