@@ -8,7 +8,7 @@ export const HeroText = () => {
           [Best Fence Contractor in Ayrshire & Glasgow]
         </div>
         <h1 className="text-white text-[40px] font-semibold box-border caret-transparent blur-0 tracking-[-1.2px] leading-[48px] sm:text-[48px] sm:leading-[56px] md:text-8xl md:leading-[88px]">
-          Fencing & Decking{" "}
+          Fence Contractor in{" "}
           <span className="text-[#787e59] text-[40px] italic box-border caret-transparent leading-[48px] sm:text-[48px] sm:leading-[56px] md:text-8xl md:leading-[88px]">
             Ayrshire
           </span>
