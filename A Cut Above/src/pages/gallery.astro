@@ -1,0 +1,125 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar } from '../sections/Navbar';
+import { FooterSection } from '../sections/FooterSection';
+import galleryImageOne from '../../ImagesPhotos/tree_pruning.jpg?url';
+import galleryImageTwo from '../../ImagesPhotos/670431316_18087555836056361_5022063728821463636_n (1).jpg?url';
+import galleryImageThree from '../../ImagesPhotos/670298543_18085986425056361_7899633911350532168_n.jpg?url';
+import galleryImageFour from '../../ImagesPhotos/670068124_18085351625056361_8543755538711337465_n (1).jpg?url';
+import galleryImageFive from '../../ImagesPhotos/fallen tree.jpg?url';
+import galleryImageSix from '../../ImagesPhotos/670428133_18087555848056361_2695285749880354502_n.jpg?url';
+
+const galleryImages = [
+  { src: galleryImageOne, alt: "Tree pruning by A Cut Above Arborist" },
+  { src: galleryImageTwo, alt: "Professional tree surgery work" },
+  { src: galleryImageThree, alt: "A Cut Above Arborist team at work" },
+  { src: galleryImageFour, alt: "Tree surgeon completing safe tree work" },
+  { src: galleryImageFive, alt: "Fallen tree emergency clearance" },
+  { src: galleryImageSix, alt: "Arborist work across Perth and Kinross and Angus" },
+];
+---
+
+<Layout 
+  title="Gallery - A Cut Above Arborist | Our Tree Work"
+  description="View our tree surgery gallery. Tree pruning, removals, emergency tree work and arborist services across Perth and Kinross and Angus."
+>
+  <div class="min-h-screen bg-neutral-100 font-figtree text-black text-sm leading-5 antialiased">
+    <Navbar client:load />
+    <main class="pt-0">
+      <section class="box-border pt-[120px] pb-[60px] md:pt-[140px] md:pb-[100px]">
+        <div class="box-border max-w-[1204px] mx-auto px-5 md:px-8">
+          <div class="box-border gap-x-4 flex flex-col gap-y-4">
+            <div class="box-border flex justify-center">
+              <div class="box-border border border-neutral-200 px-3 py-1 rounded-[1000px] border-solid">
+                <span class="font-medium leading-[22px]">Gallery</span>
+              </div>
+            </div>
+            <div class="box-border max-w-[680px] text-center mx-auto">
+              <h1 class="text-3xl font-bold box-border tracking-[-0.52px] leading-[35px] md:text-[52px] md:leading-[62px] font-heading uppercase">
+                Our Tree Work Gallery
+              </h1>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5 mt-10 md:mt-14">
+            {galleryImages.map((image, index) => {
+              return (
+                <div
+                  class="relative box-border overflow-hidden rounded-lg md:rounded-xl aspect-[4/3] bg-[#E4E9D5]"
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    class="w-full h-full object-cover"
+                    loading={index < 12 ? "eager" : "lazy"}
+                  />
+                </div>
+              );
+            })}
+          </div>
+          <div class="box-border mt-8 text-center">
+            <div class="box-border flex justify-center">
+              <a
+                href="/contact/"
+                id="gallery-book-now-btn"
+                class="text-black items-center bg-cta box-border gap-x-5 flex max-w-full gap-y-5 text-center border pl-6 pr-1 py-1 rounded-[100px] border-solid border-transparent hover:bg-white hover:border-cta-dark transition"
+              >
+                <div class="relative box-border overflow-hidden">
+                  <div class="box-border">
+                    <div class="relative text-sm font-medium box-border leading-5 z-[2] md:text-base md:leading-6">
+                      Get a FREE Quote
+                    </div>
+                  </div>
+                  <div class="absolute box-border w-full">
+                    <div class="relative text-sm font-medium box-border leading-5 z-[2] md:text-base md:leading-6">
+                      Get a FREE Quote
+                    </div>
+                  </div>
+                </div>
+                <div class="text-white items-center bg-[#5F6F3A] box-border flex h-12 justify-center w-12 overflow-hidden rounded-[50%]">
+                  <div class="relative box-border">
+                    <div class="box-border">
+                      <div class="box-border h-3.5 w-3.5">
+                        <img
+                          src="https://c.animaapp.com/mhnzg6knJo6lE7/assets/icon-4.svg"
+                          alt="Icon"
+                          class="box-border h-full w-full"
+                          style="filter: brightness(0) saturate(100%) invert(78%) sepia(45%) saturate(500%) hue-rotate(330deg) brightness(110%) contrast(85%)"
+                        />
+                      </div>
+                    </div>
+                    <div class="absolute bottom-[-200%] box-border left-[-200%]">
+                      <div class="box-border h-3.5 w-3.5">
+                        <img
+                          src="https://c.animaapp.com/mhnzg6knJo6lE7/assets/icon-4.svg"
+                          alt="Icon"
+                          class="box-border h-full w-full"
+                          style="filter: brightness(0) saturate(100%) invert(78%) sepia(45%) saturate(500%) hue-rotate(330deg) brightness(110%) contrast(85%)"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <FooterSection client:load />
+    </main>
+  </div>
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', function() {
+      const bookNowBtn = document.getElementById('gallery-book-now-btn');
+      if (bookNowBtn) {
+        bookNowBtn.addEventListener('click', function() {
+          if (typeof window !== 'undefined' && window.gtag) {
+            window.gtag('event', 'quoteButton_gallery', {
+              event_category: 'CTA',
+              event_label: 'Gallery Page'
+            });
+          }
+        });
+      }
+    });
+  </script>
+</Layout>

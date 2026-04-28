@@ -1,0 +1,245 @@
+@tailwind components;
+@tailwind utilities;
+
+/* Cabinet Grotesk Font */
+@font-face {
+  font-family: 'CabinetGrotesk-Variable';
+  src: url('/fonts/CabinetGrotesk-Variable.woff2') format('woff2'),
+       url('/fonts/CabinetGrotesk-Variable.woff') format('woff'),
+       url('/fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Thin';
+  src: url('/fonts/CabinetGrotesk-Thin.woff2') format('woff2'),
+       url('/fonts/CabinetGrotesk-Thin.woff') format('woff'),
+       url('/fonts/CabinetGrotesk-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Extralight';
+  src: url('/fonts/CabinetGrotesk-Extralight.woff2') format('woff2'),
+       url('/fonts/CabinetGrotesk-Extralight.woff') format('woff'),
+       url('/fonts/CabinetGrotesk-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Light';
+  src: url('/fonts/CabinetGrotesk-Light.woff2') format('woff2'),
+       url('/fonts/CabinetGrotesk-Light.woff') format('woff'),
+       url('/fonts/CabinetGrotesk-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Regular';
+  src: url('/fonts/CabinetGrotesk-Regular.woff2') format('woff2'),
+       url('/fonts/CabinetGrotesk-Regular.woff') format('woff'),
+       url('/fonts/CabinetGrotesk-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Medium';
+  src: url('/fonts/CabinetGrotesk-Medium.woff2') format('woff2'),
+       url('/fonts/CabinetGrotesk-Medium.woff') format('woff'),
+       url('/fonts/CabinetGrotesk-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Bold';
+  src: url('/fonts/CabinetGrotesk-Bold.woff2') format('woff2'),
+       url('/fonts/CabinetGrotesk-Bold.woff') format('woff'),
+       url('/fonts/CabinetGrotesk-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Extrabold';
+  src: url('/fonts/CabinetGrotesk-Extrabold.woff2') format('woff2'),
+       url('/fonts/CabinetGrotesk-Extrabold.woff') format('woff'),
+       url('/fonts/CabinetGrotesk-Extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Black';
+  src: url('/fonts/CabinetGrotesk-Black.woff2') format('woff2'),
+       url('/fonts/CabinetGrotesk-Black.woff') format('woff'),
+       url('/fonts/CabinetGrotesk-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Refrigerator Deluxe Font */
+@font-face {
+  font-family: 'RefrigeratorDeluxe';
+  src: url('/fonts/deff549f5c443598a8380e1f91055c01.woff2') format('woff2'),
+       url('/fonts/deff549f5c443598a8380e1f91055c01.woff') format('woff'),
+       url('/fonts/deff549f5c443598a8380e1f91055c01.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwYGFWfOw.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwcGFU.woff2') format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwYGFWfOw.woff2') format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwcGFU.woff2') format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwYGFWfOw.woff2') format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwcGFU.woff2') format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwYGFWfOw.woff2') format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('https://fonts.gstatic.com/s/geist/v4/gyByhwUxId8gMEwcGFU.woff2') format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@tailwind base;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 82 42% 16%;
+
+    --muted: 80 28% 95%;
+    --muted-foreground: 82 18% 40%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 82 42% 16%;
+
+    --border: 82 24% 84%;
+    --input: 82 24% 84%;
+
+    --card: transparent;
+    --card-foreground: 82 42% 16%;
+
+    --primary: 78 32% 33%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 80 28% 95%;
+    --secondary-foreground: 82 42% 16%;
+
+    --accent: 80 35% 88%;
+    --accent-foreground: 82 42% 16%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 78 32% 42%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 88 34% 8%;
+    --foreground: 80 24% 90%;
+
+    --muted: 86 28% 14%;
+    --muted-foreground: 80 16% 62%;
+
+    --accent: 78 32% 33%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 88 34% 8%;
+    --popover-foreground: 80 16% 66%;
+
+    --border: 82 25% 22%;
+    --input: 82 25% 22%;
+
+    --card: transparent;
+    --card-foreground: 80 24% 90%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 82 42% 16%;
+
+    --secondary: 78 32% 33%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 78 32% 42%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}

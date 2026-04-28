@@ -1,0 +1,89 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Navbar } from "../../sections/Navbar";
+import { getLocationBySlug } from "../../data/locations";
+import {
+  LocationHero,
+  LocationServiceIntro,
+  LocationServicesSection,
+  LocationContentSection,
+} from "../../sections/LocationPage";
+import { Breadcrumbs } from "../../components/Breadcrumbs";
+import { GallerySection } from "../../sections/GallerySection";
+import { ProcessSection } from "../../sections/ProcessSection";
+import { ServiceAreasSection } from "../../sections/ServiceAreasSection";
+import ReviewsSection from "../../sections/ReviewsSection.astro";
+import { QuoteSection } from "../../sections/QuoteSection";
+import { FooterSection } from "../../sections/FooterSection";
+
+export async function getStaticPaths() {
+  const { locationSlugs } = await import("../../data/locations");
+  return locationSlugs.map((location) => ({
+    params: { location },
+  }));
+}
+
+const { location: locationSlug } = Astro.params;
+const location = getLocationBySlug(locationSlug ?? "");
+
+if (!location) {
+  return Astro.redirect("/404");
+}
+
+const title = `Tree Surgeon ${location.name} | Tree Surgery & Emergency Tree Work | A Cut Above Arborist`;
+const description = `Professional tree surgeon and arborist services in ${location.name} and nearby. Tree pruning, removals, stump grinding, hedge cutting and 24 hour emergency tree work. Get a free quote.`;
+
+const locationSchema =
+  location.geo && location.addressLocality
+    ? {
+        name: location.name,
+        slug: location.slug,
+        addressLocality: location.addressLocality,
+        latitude: location.geo.latitude,
+        longitude: location.geo.longitude,
+      }
+    : undefined;
+---
+
+<Layout
+  title={title}
+  description={description}
+  locationSchema={locationSchema}
+>
+  <div class="min-h-screen bg-neutral-100 font-figtree text-black text-sm leading-5 antialiased">
+    <Navbar client:load />
+    <main class="pt-0">
+      <div class="relative mx-auto max-w-[1204px] px-5 pt-8 md:px-8">
+        <Breadcrumbs
+          client:load
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Locations", href: "/locations/" },
+            { label: location.name },
+          ]}
+        />
+      </div>
+      <LocationHero client:load location={location} />
+      <LocationServiceIntro client:load location={location} />
+      <LocationServicesSection client:load location={location} />
+      <GallerySection client:load />
+      <ProcessSection client:load />
+      <ServiceAreasSection client:load />
+      <ReviewsSection />
+      <LocationContentSection client:load location={location} />
+      <QuoteSection client:load showTerms={false} />
+      <FooterSection
+        client:load
+        mapLocation={
+          location.geo
+            ? {
+                lat: location.geo.latitude,
+                lng: location.geo.longitude,
+                name: location.name,
+              }
+            : undefined
+        }
+      />
+    </main>
+  </div>
+</Layout>

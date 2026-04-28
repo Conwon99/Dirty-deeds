@@ -1,0 +1,246 @@
+---
+import '../styles/tailwind.css';
+import { locations } from '../data/locations';
+import logoImageUrl from '../../ImagesPhotos/ChatGPT Image Apr 28, 2026, 12_18_57 PM.png?url';
+
+interface LocationSchemaProp {
+  name: string;
+  slug: string;
+  addressLocality: string;
+  latitude: string;
+  longitude: string;
+}
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  type?: string;
+  canonical?: string;
+  noindex?: boolean;
+  locationSchema?: LocationSchemaProp;
+}
+
+const siteUrl = "https://acutabovearborist.co.uk";
+// Canonical: trailing slash (trailingSlash: 'always' in astro.config).
+const pathname = Astro.url.pathname;
+const pathWithSlash = pathname.endsWith("/") ? pathname : pathname + "/";
+const defaultCanonical =
+  pathWithSlash === "/" ? `${siteUrl}/` : `${siteUrl}${pathWithSlash}`;
+
+const {
+  title = "A Cut Above Arborist - Professional Tree Surgeon in Perth and Kinross",
+  description = "Professional tree surgeon and arborist services across Perth and Kinross. Fully qualified for all types of tree work and 24 hour emergency tree work.",
+  image = logoImageUrl,
+  type = "website",
+  canonical = defaultCanonical,
+  noindex = false,
+  locationSchema,
+} = Astro.props;
+
+const fullImageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`;
+const fullLogoUrl = logoImageUrl.startsWith('http') ? logoImageUrl : `${siteUrl}${logoImageUrl}`;
+
+const defaultAreaServed = [
+  ...locations.map((loc) => ({ "@type": "City", "name": loc.name })),
+  { "@type": "AdministrativeArea", "name": "Perth and Kinross" },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href={logoImageUrl} />
+    <link rel="apple-touch-icon" href={logoImageUrl} />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="tree surgeon, arborist, tree surgery, emergency tree work, tree removal, tree pruning, stump grinding, hedge cutting, Perth and Kinross" />
+    <meta name="author" content="A Cut Above Arborist" />
+    <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonical} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={fullImageUrl} />
+    <meta property="og:site_name" content="A Cut Above Arborist" />
+    <meta property="og:locale" content="en_GB" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonical} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={fullImageUrl} />
+    
+    <!-- Business Information -->
+    <meta name="geo.region" content="GB-SCT" />
+    <meta name="geo.placename" content="Perth and Kinross, Scotland" />
+    <meta name="geo.position" content="55.6190;-4.6551" />
+    <meta name="ICBM" content="55.6190, -4.6551" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Bungee&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Luckiest+Guy&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMJS781CJF"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YMJS781CJF');
+    </script>
+    
+    <!-- JSON-LD Schema: LocalBusiness (primary) -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://acutabovearborist.co.uk/#localbusiness",
+      "name": "A Cut Above Arborist",
+      "alternateName": "A Cut Above Tree Surgeon",
+      "description": "Professional tree surgeon and arborist services across Perth and Kinross. Fully qualified for all types of tree work and 24 hour emergency tree work.",
+      "url": "https://acutabovearborist.co.uk",
+      "logo": fullLogoUrl,
+      "image": fullLogoUrl,
+      "telephone": "+447860203475",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Perth and Kinross",
+        "addressRegion": "Scotland",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "55.6190",
+        "longitude": "-4.6551"
+      },
+      "areaServed": defaultAreaServed,
+      "serviceType": [
+        "Tree Surgery",
+        "Emergency Tree Work",
+        "Tree Removal",
+        "Tree Pruning",
+        "Crown Reduction",
+        "Stump Grinding",
+        "Hedge Cutting",
+        "Arborist Services"
+      ],
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61589055055704&mibextid=wwXIfr&rdid=VfRzALqUuwCsjOSL&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17KGNZ644q%2F%3Fmibextid%3DwwXIfr#"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "23",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "parentOrganization": { "@id": "https://acutabovearborist.co.uk/#organization" }
+    })} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://acutabovearborist.co.uk/#website",
+      "name": "A Cut Above Arborist",
+      "url": "https://acutabovearborist.co.uk",
+      "description": "Professional tree surgery and arborist services across Perth and Kinross.",
+      "publisher": { "@id": "https://acutabovearborist.co.uk/#organization" },
+      "inLanguage": "en-GB",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://acutabovearborist.co.uk/contact?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    })} />
+    
+    {locationSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": `A Cut Above Arborist - ${locationSchema.name}`,
+        "description": "Professional tree surgery, arborist services and 24 hour emergency tree work.",
+        "url": `${siteUrl}/${locationSchema.slug}`,
+        "telephone": "+447860203475",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": locationSchema.addressLocality,
+          "addressRegion": "Scotland",
+          "addressCountry": "GB"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": locationSchema.latitude,
+          "longitude": locationSchema.longitude
+        },
+        "areaServed": { "@type": "City", "name": locationSchema.addressLocality },
+        "serviceType": ["Tree Surgery", "Emergency Tree Work", "Tree Removal", "Tree Pruning", "Stump Grinding", "Hedge Cutting"],
+        "priceRange": "$$",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "23",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      })} />
+    )}
+    
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://acutabovearborist.co.uk/#organization",
+      "name": "A Cut Above Arborist",
+      "url": "https://acutabovearborist.co.uk",
+      "logo": fullLogoUrl,
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+447860203475",
+        "contactType": "Customer Service",
+        "areaServed": "GB",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61589055055704&mibextid=wwXIfr&rdid=VfRzALqUuwCsjOSL&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17KGNZ644q%2F%3Fmibextid%3DwwXIfr#"
+      ]
+    })} />
+  </head>
+  <body>
+    <slot />
+    <!-- Mobile message widget - bottom right, visible on small screens only -->
+    <a
+      href="/contact/"
+      class="fixed bottom-5 right-5 z-50 flex md:hidden items-center gap-2 bg-cta-dark text-white px-4 py-3 rounded-full shadow-lg hover:bg-cta focus:outline-none focus:ring-2 focus:ring-cta-dark focus:ring-offset-2"
+      aria-label="Message us / Get a quote"
+    >
+      <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.864 9.864 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+      </svg>
+      <span class="font-medium text-sm">Message</span>
+    </a>
+  </body>
+</html>

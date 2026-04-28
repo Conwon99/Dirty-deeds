@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar } from '../sections/Navbar';
+import { Hero } from '../sections/Hero';
+import { CoreValuesSection } from '../sections/CoreValuesSection';
+import { ServicePageServices } from '../sections/ServicePageServices';
+import { GallerySection } from '../sections/GallerySection';
+import { ProcessSection } from '../sections/ProcessSection';
+import { ServiceAreasSection } from '../sections/ServiceAreasSection';
+import { HomeFAQ } from '../sections/FAQSection/HomeFAQ';
+import ReviewsSection from '../sections/ReviewsSection.astro';
+import { QuoteSection } from '../sections/QuoteSection';
+import { FooterSection } from '../sections/FooterSection';
+---
+
+<Layout 
+  title="A Cut Above Arborist - Professional Tree Surgeon in Perth and Kinross"
+  description="Professional tree surgeon and arborist services across Perth and Kinross. Fully qualified for all types of tree work and 24 hour emergency tree work."
+>
+  <div class="min-h-screen bg-neutral-100 font-figtree text-black text-sm leading-5 antialiased">
+    <Navbar client:load />
+    <main class="pt-0">
+      <Hero client:load />
+      <CoreValuesSection client:load />
+      <ServicePageServices client:load />
+      <section class="bg-white box-border py-[60px] md:py-[100px]">
+        <div class="box-border max-w-[1204px] mx-auto px-5 md:px-8">
+          <div class="box-border flex flex-wrap justify-center gap-3">
+            <a
+              href="/contact/"
+              class="text-white items-center bg-cta-dark box-border gap-x-3 flex max-w-full gap-y-3 text-center border border-cta-dark px-6 py-4 rounded-[100px] border-solid hover:text-neutral-800 hover:bg-white transition"
+            >
+              <span class="relative text-sm font-medium z-[2] md:text-base md:leading-6">Get a FREE Quote</span>
+              <span class="box-border">
+                <svg class="h-2 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+              </span>
+            </a>
+            <a
+              href="/services/"
+              class="text-neutral-800 items-center box-border gap-x-3 flex max-w-full gap-y-3 text-center border border-cta-dark px-6 py-4 rounded-[100px] border-solid hover:bg-cta-dark hover:text-white transition"
+            >
+              <span class="relative text-sm font-medium z-[2] md:text-base md:leading-6">View Services</span>
+              <span class="box-border">
+                <svg class="h-2 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <GallerySection client:load />
+      <ProcessSection client:load />
+      <HomeFAQ client:load />
+      <ServiceAreasSection client:load />
+      <ReviewsSection />
+      <QuoteSection client:load showTerms={false} />
+      <FooterSection client:load />
+    </main>
+  </div>
+</Layout>

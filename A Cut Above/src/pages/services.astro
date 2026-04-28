@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar } from '../sections/Navbar';
+import { ServicePageHero } from '../sections/ServicePageHero';
+import { ServicePageServices } from '../sections/ServicePageServices';
+import { QuoteSection } from '../sections/QuoteSection';
+import { FooterSection } from '../sections/FooterSection';
+---
+
+<Layout 
+  title="Tree Services - A Cut Above Arborist"
+  description="Tree pruning, tree removal, stump grinding, hedge maintenance and emergency tree work across Perth and Kinross."
+>
+  <div class="min-h-screen bg-neutral-100 font-figtree text-black text-sm leading-5 antialiased">
+    <Navbar client:load />
+    <main class="pt-0">
+      <ServicePageHero client:load />
+      <ServicePageServices client:load />
+      <QuoteSection client:load showTerms={false} />
+      <FooterSection client:load />
+    </main>
+  </div>
+</Layout>
